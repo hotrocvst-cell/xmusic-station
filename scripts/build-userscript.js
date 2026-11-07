@@ -6,11 +6,14 @@ const js = fs.readFileSync(path.join(__dirname, '../extension/content.js'), 'utf
 
 const header = `// ==UserScript==
 // @name         XMusicStation - Tự Động Đăng Nhập & Tạo Playlist Phát Nhạc (Left Sidebar)
-// @namespace    https://player.xmusicstation.com/
+// @namespace    https://github.com/hotrocvst-cell/xmusic-station
 // @version      2.2.0
-// @description  Tự động đăng nhập tài khoản tgd111, kho 450 bài hát tuyển chọn (75 bài/playlist), chia sẻ playlist qua mã, đồng bộ Cloud và sửa lỗi nạp lệch bài trên player.xmusicstation.com
-// @author       Antigravity
+// @description  Tự động đăng nhập tài khoản tgd111, kho 450 bài hát tuyển chọn (75 bài/playlist), chia sẻ playlist qua mã, đồng bộ Cloud chính thức từ hotrocvst-cell/xmusic-station
+// @author       hotrocvst-cell
 // @match        https://player.xmusicstation.com/*
+// @homepageURL  https://github.com/hotrocvst-cell/xmusic-station
+// @updateURL    https://raw.githubusercontent.com/hotrocvst-cell/xmusic-station/main/userscript/xmusic-auto-playlist.user.js
+// @downloadURL  https://raw.githubusercontent.com/hotrocvst-cell/xmusic-station/main/userscript/xmusic-auto-playlist.user.js
 // @grant        none
 // @run-at       document-idle
 // ==/UserScript==

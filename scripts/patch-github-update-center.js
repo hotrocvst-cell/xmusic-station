@@ -593,3 +593,4 @@ fs.writeFileSync('web-dashboard/app.js', appJs, 'utf8');
 console.log('✓ Đã cập nhật web-dashboard/app.js thành công!');
 
 console.log('--- HOÀN TẤT TÍCH HỢP GITHUB UPDATE CENTER ---');
+
