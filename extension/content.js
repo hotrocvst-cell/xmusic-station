@@ -6567,6 +6567,151 @@
   }
 
   // Inject Left Sidebar Widget
+  
+  // =========================================================================
+  // GITHUB UPDATE CENTER - NGUỒN CHÍNH THỨC DUY NHẤT TỪ ADMIN (KHÓA BẢO MẬT)
+  // =========================================================================
+  const OFFICIAL_GITHUB_REPO = Object.freeze({
+    owner: 'hotrocvst-cell',
+    repo: 'xmusic-station',
+    fullName: 'hotrocvst-cell/xmusic-station',
+    url: 'https://github.com/hotrocvst-cell/xmusic-station',
+    rawVersionUrl: 'https://raw.githubusercontent.com/hotrocvst-cell/xmusic-station/main/version.json',
+    rawPlaylistsUrl: 'https://raw.githubusercontent.com/hotrocvst-cell/xmusic-station/main/sample-playlists.json',
+    rawUserscriptUrl: 'https://raw.githubusercontent.com/hotrocvst-cell/xmusic-station/main/userscript/xmusic-auto-playlist.user.js',
+    releasesUrl: 'https://github.com/hotrocvst-cell/xmusic-station/releases/latest'
+  });
+
+  function compareVersions(v1, v2) {
+    if (!v1 || !v2) return 0;
+    const p1 = String(v1).replace(/^v/, '').split('.').map(Number);
+    const p2 = String(v2).replace(/^v/, '').split('.').map(Number);
+    for (let i = 0; i < Math.max(p1.length, p2.length); i++) {
+      const num1 = p1[i] || 0;
+      const num2 = p2[i] || 0;
+      if (num1 > num2) return 1;
+      if (num1 < num2) return -1;
+    }
+    return 0;
+  }
+
+  async function checkGithubUpdates(resultContainer) {
+    if (!resultContainer) return;
+
+    resultContainer.innerHTML = `
+      <div style="color: #94a3b8; font-size: 12px; text-align: center; padding: 12px;">
+        Đang kết nối tới GitHub Admin (${OFFICIAL_GITHUB_REPO.fullName})...
+      </div>
+    `;
+
+    try {
+      const rawVersionUrl = `${OFFICIAL_GITHUB_REPO.rawVersionUrl}?t=${Date.now()}`;
+      const res = await fetch(rawVersionUrl);
+      
+      if (!res.ok) {
+        resultContainer.innerHTML = `
+          <div style="background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 8px; padding: 12px; color: #fca5a5; font-size: 12px; line-height: 1.5;">
+            Không tìm thấy file <code>version.json</code> trên kho chính thức <b>${OFFICIAL_GITHUB_REPO.fullName}</b> (HTTP ${res.status}).<br>
+            • Admin cần push commit đầu tiên lên nhánh <code>main</code> của GitHub.<br>
+            • Link kho: <a href="${OFFICIAL_GITHUB_REPO.url}" target="_blank" style="color: #38bdf8; text-decoration: underline;">${OFFICIAL_GITHUB_REPO.fullName}</a>
+          </div>
+        `;
+        return;
+      }
+
+      const remote = await res.json();
+      const currentVer = localStorage.getItem(STORAGE_KEYS.PLAYLISTS_VERSION) || APP_VERSION;
+      const isNewer = compareVersions(remote.version, currentVer) > 0;
+
+      let html = '';
+      if (isNewer) {
+        html = `
+          <div style="background: rgba(52, 211, 153, 0.1); border: 1px solid rgba(52, 211, 153, 0.35); border-radius: 10px; padding: 14px;">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+              <span class="xmusic-ver-pill new">🎉 Có phiên bản mới: v${escapeHtml(remote.version)}</span>
+              <span style="font-size: 11px; color: #94a3b8;">${escapeHtml(remote.updatedAt || '')}</span>
+            </div>
+            <div style="font-weight: 600; color: #fff; font-size: 13.5px; margin-bottom: 6px;">
+              ${escapeHtml(remote.name || 'Bản phát hành từ Admin')}
+            </div>
+            <div class="xmusic-changelog-box">
+              <div style="font-weight: 600; margin-bottom: 4px; color: #34d399;">Nội dung cập nhật mới:</div>
+              <ul>
+                ${(remote.releaseNotes || []).map(n => `<li>${escapeHtml(n)}</li>`).join('')}
+              </ul>
+            </div>
+            <div class="xmusic-update-actions">
+              <button id="xmusic-btn-apply-github-pl" class="xmusic-btn-primary" style="width: 100%;">
+                ⚡ 1. Nạp Kho Nhạc Mới Từ Admin (Giữ Playlist Riêng)
+              </button>
+              <a href="${OFFICIAL_GITHUB_REPO.rawUserscriptUrl}" target="_blank" class="xmusic-btn-secondary" style="text-align: center; text-decoration: none; display: block; padding: 8px;">
+                📥 2. Cập Nhật Tampermonkey Script
+              </a>
+              <a href="${OFFICIAL_GITHUB_REPO.releasesUrl}" target="_blank" class="xmusic-btn-secondary" style="text-align: center; text-decoration: none; display: block; padding: 8px;">
+                📦 3. Tải Extension .zip Từ GitHub Releases
+              </a>
+            </div>
+          </div>
+        `;
+      } else {
+        html = `
+          <div style="background: rgba(56, 189, 248, 0.1); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 10px; padding: 14px;">
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+              <span style="font-size: 16px;">✅</span>
+              <span style="font-weight: 700; color: #38bdf8;">Bạn đang sử dụng phiên bản mới nhất (v${escapeHtml(currentVer)})!</span>
+            </div>
+            <div style="font-size: 12px; color: #94a3b8; margin-bottom: 10px;">
+              Kho chính thức từ Admin: <b>${OFFICIAL_GITHUB_REPO.fullName}</b> • Phiên bản: v${escapeHtml(remote.version)} (${remote.totalSongs || 450} bài hát).
+            </div>
+            <div class="xmusic-update-actions">
+              <button id="xmusic-btn-force-github-pl" class="xmusic-btn-secondary" style="width: 100%;">
+                🔄 Nạp lại kho 450 bài từ Admin (Đồng bộ tức thì)
+              </button>
+              <a href="${OFFICIAL_GITHUB_REPO.url}" target="_blank" class="xmusic-btn-secondary" style="text-align: center; text-decoration: none; display: block; padding: 6px;">
+                🌐 Truy cập Kho GitHub Admin
+              </a>
+            </div>
+          </div>
+        `;
+      }
+
+      resultContainer.innerHTML = html;
+
+      const applyBtn = resultContainer.querySelector('#xmusic-btn-apply-github-pl') || resultContainer.querySelector('#xmusic-btn-force-github-pl');
+      if (applyBtn) {
+        applyBtn.onclick = async () => {
+          applyBtn.textContent = 'Đang tải từ Admin GitHub...';
+          applyBtn.disabled = true;
+          try {
+            const plRes = await fetch(`${OFFICIAL_GITHUB_REPO.rawPlaylistsUrl}?t=${Date.now()}`);
+            const plData = await plRes.json();
+            if (Array.isArray(plData) && plData.length > 0) {
+              smartUpdatePlaylists(plData, true);
+              setActivePlaylistId(plData[0].id);
+              updatePlaylistSelect();
+              renderCurrentPlaylistSongs();
+              showToast(`Đã đồng bộ thành công ${plData.length} playlist từ Admin!`, 'success');
+              checkGithubUpdates(resultContainer);
+            } else {
+              showToast('Dữ liệu playlist từ Admin không đúng định dạng!', 'error');
+            }
+          } catch (err) {
+            showToast('Lỗi khi tải playlist từ GitHub: ' + err.message, 'error');
+          } finally {
+            applyBtn.textContent = '⚡ 1. Nạp Kho Nhạc Mới Từ Admin';
+            applyBtn.disabled = false;
+          }
+        };
+      }
+    } catch (e) {
+      resultContainer.innerHTML = `
+        <div style="color: #f87171; font-size: 12px; background: rgba(239,68,68,0.1); padding: 10px; border-radius: 8px;">
+          Lỗi kết nối GitHub Admin: ${escapeHtml(e.message)}
+        </div>
+      `;
+    }
+  }
+
   function injectLeftSidebarWidget() {
     if (document.getElementById('xmusic-assistant-root')) return;
 
@@ -6725,23 +6870,22 @@
               </div>
             </div>
 
-            <div style="font-size: 12.5px; color: #cbd5e1; margin-bottom: 12px; line-height: 1.5;">
-              Kiểm tra trực tiếp các phiên bản mới, bài hát mới và mã nguồn phát hành từ GitHub Repository.
-            </div>
-
-            <div class="xmusic-form-group" style="margin-bottom: 10px;">
-              <label class="xmusic-form-label" style="display: flex; justify-content: space-between;">
-                <span>Kho GitHub Repository</span>
-                <span style="color: #64748b; font-size: 11px;">owner/repo</span>
-              </label>
-              <div style="display: flex; gap: 6px;">
-                <input type="text" id="xmusic-github-repo-input" class="xmusic-input" value="${escapeHtml(getGithubRepo())}" placeholder="owner/repo hoặc link GitHub..." style="flex: 1; font-size: 12px;" />
-                <button id="xmusic-btn-save-repo" class="xmusic-btn-secondary" style="font-size: 11.5px; padding: 4px 10px;" title="Lưu cấu hình kho">Lưu</button>
+            <!-- Locked Official Repository Card -->
+            <div style="background: rgba(15, 23, 42, 0.65); border: 1px solid rgba(99, 102, 241, 0.4); border-radius: 10px; padding: 12px 14px; margin-bottom: 14px;">
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
+                <span style="font-size: 11px; font-weight: 700; color: #a5b4fc; text-transform: uppercase; letter-spacing: 0.5px;">Kho Nguồn Chính Thức (Admin Duy Nhất)</span>
+                <span style="font-size: 10.5px; background: rgba(16, 185, 129, 0.2); color: #34d399; padding: 2px 8px; border-radius: 12px; border: 1px solid rgba(16, 185, 129, 0.4); font-weight: 700;">🔒 ĐÃ KHÓA BẢO MẬT</span>
+              </div>
+              <div style="font-weight: 700; color: #38bdf8; font-size: 13.5px; font-family: monospace;">
+                hotrocvst-cell/xmusic-station
+              </div>
+              <div style="font-size: 11px; color: #64748b; margin-top: 4px; line-height: 1.4;">
+                Nguồn cập nhật được khóa cứng từ Admin. Người dùng không thể can thiệp hoặc thay đổi địa chỉ khác.
               </div>
             </div>
 
-            <button id="xmusic-btn-check-github" class="xmusic-btn-primary" style="width: 100%; margin-top: 6px;">
-              🔍 Kiểm Tra Bản Cập Nhật Trên GitHub
+            <button id="xmusic-btn-check-github" class="xmusic-btn-primary" style="width: 100%;">
+              🔍 Kiểm Tra Bản Cập Nhật Từ Admin (GitHub)
             </button>
 
             <!-- Live check result area -->
