@@ -1,0 +1,21 @@
+{
+  "name": "xmusic-playlist-automation",
+  "version": "2.2.0",
+  "description": "Giải pháp ủy quyền tự động và quản lý playlist phát nhạc cá nhân cho https://player.xmusicstation.com/",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test-auth": "node scripts/test-auth.js",
+    "build-userscript": "node scripts/build-userscript.js"
+  },
+  "keywords": [
+    "xmusicstation",
+    "automation",
+    "playlist",
+    "chrome-extension",
+    "userscript"
+  ],
+  "author": "Antigravity Pair Programmer",
+  "license": "MIT"
+}

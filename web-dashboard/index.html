@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XMusicStation - Quản Lý Playlist & Tự Động Hóa Phát Nhạc</title>
+  <meta name="description" content="Trung tâm quản lý playlist cá nhân và tự động hóa phát nhạc cho player.xmusicstation.com với tài khoản tgd111">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-background">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <div class="app-layout">
+    <!-- Sidebar Navigation -->
+    <aside class="app-sidebar" id="app-sidebar">
+      <div class="brand-container">
+        <div class="brand-logo">
+          <span>XM</span>
+        </div>
+        <div class="brand-text">
+          <h1>XMusic Auto</h1>
+          <span class="brand-tag">MWG Edition</span>
+        </div>
+      </div>
+
+      <!-- Account Card -->
+      <div class="sidebar-account-card" id="sidebar-account-card">
+        <div class="account-status-badge" id="account-status-badge">
+          <span class="status-dot"></span>
+          <span id="account-status-text">Đã kết nối</span>
+        </div>
+        <div class="account-fullname" id="account-fullname">TGD_BRV_VTA</div>
+        <div class="account-sub" id="account-sub">tgd111 • 290 Trương Công Định</div>
+      </div>
+
+      <!-- Nav Menu -->
+      <nav class="sidebar-nav" aria-label="Menu chính">
+        <button class="nav-item active" id="nav-btn-playlists" data-view="view-playlists">
+          <span class="nav-icon">🎵</span>
+          <span class="nav-label">Danh Sách Phát</span>
+          <span class="nav-count" id="nav-playlist-count">2</span>
+        </button>
+        <button class="nav-item" id="nav-btn-publisher" data-view="view-publisher">
+          <span class="nav-icon">📻</span>
+          <span class="nav-label">Kho Nhà Phát Hành</span>
+          <span class="nav-count" id="nav-publisher-count">12</span>
+        </button>
+        <button class="nav-item" id="nav-btn-search" data-view="view-search">
+          <span class="nav-icon">🔍</span>
+          <span class="nav-label">Tìm Kiếm Bài Hát</span>
+        </button>
+        <button class="nav-item" id="nav-btn-settings" data-view="view-settings">
+          <span class="nav-icon">⚙️</span>
+          <span class="nav-label">Cấu Hình Tài Khoản</span>
+        </button>
+        <button class="nav-item" id="nav-btn-update" data-view="view-update">
+          <span class="nav-icon">🚀</span>
+          <span class="nav-label">Cập Nhật (GitHub)</span>
+        </button>
+        <button class="nav-item" id="nav-btn-guide" data-view="view-guide">
+          <span class="nav-icon">📖</span>
+          <span class="nav-label">Hướng Dẫn Cài Đặt</span>
+        </button>
+      </nav>
+
+      <!-- Launch Player Button -->
+      <div class="sidebar-footer">
+        <a href="https://player.xmusicstation.com/" target="_blank" rel="noopener noreferrer" class="btn-launch-player" id="btn-launch-player">
+          <span class="launch-icon">🚀</span>
+          <span>Mở Web Player</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="app-main">
+      <!-- Top Bar -->
+      <header class="app-topbar">
+        <div class="topbar-search-wrap">
+          <span class="topbar-search-icon">🔍</span>
+          <input type="text" id="global-search-input" class="topbar-search-input" placeholder="Tìm kiếm bài hát nhanh trong kho nhạc XMusic...">
+        </div>
+        <div class="topbar-actions">
+          <button class="topbar-btn" id="btn-share-modal" title="Chia sẻ mã hoặc nhập playlist chia sẻ">
+            <span>🔗</span>
+            <span>Chia Sẻ / Nhập Mã</span>
+          </button>
+          <button class="topbar-btn" id="btn-sync-cloud" title="Đồng bộ kho nhạc 450 bài hát tuyển chọn v2.2.0">
+            <span>☁️</span>
+            <span>Cập Nhật v2.2.0</span>
+          </button>
+          <button class="topbar-btn" id="btn-export-all" title="Xuất toàn bộ Playlist ra file JSON">
+            <span>📤</span>
+            <span>Xuất JSON</span>
+          </button>
+          <button class="topbar-btn" id="btn-import-all" title="Nhập Playlist từ file JSON">
+            <span>📥</span>
+            <span>Nhập JSON</span>
+          </button>
+          <input type="file" id="file-import-input" accept=".json" style="display: none;">
+          <button class="topbar-btn btn-accent" id="btn-new-playlist-top">
+            <span>➕</span>
+            <span>Tạo Playlist Mới</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Content Views -->
+      <div class="app-content-body">
+        
+        <!-- View 1: Playlists Management -->
+        <section class="content-view active" id="view-playlists">
+          <div class="view-header">
+            <div>
+              <h2 class="view-title">Quản Lý Danh Sách Phát Cá Nhân</h2>
+              <p class="view-desc">Cấu hình trước các playlist để tiện ích tự động nạp vào hàng đợi khi mở web player.</p>
+            </div>
+            <div class="view-actions">
+              <button class="btn-secondary" id="btn-reset-samples">
+                <span>🔄</span>
+                <span>Khôi phục 6 playlist mẫu (450 bài)</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Playlists Grid / Selector -->
+          <div class="playlists-cards-grid" id="playlists-cards-grid">
+            <!-- Rendered by JavaScript -->
+          </div>
+
+          <!-- Active Playlist Songs Detail View -->
+          <div class="playlist-detail-container" id="playlist-detail-container">
+            <div class="playlist-detail-header">
+              <div class="detail-info-wrap">
+                <span class="detail-icon" id="detail-icon">☕</span>
+                <div>
+                  <h3 class="detail-name" id="detail-title">Acoustic & Cafe Chill MWG</h3>
+                  <div class="detail-meta" id="detail-meta">12 bài hát • Khoảng 45 phút • Cập nhật tự động</div>
+                </div>
+              </div>
+              <div class="detail-controls">
+                <button class="btn-action" id="btn-share-active" title="Tạo mã hoặc link chia sẻ playlist này">
+                  <span>🔗</span>
+                  <span>Chia sẻ</span>
+                </button>
+                <button class="btn-action" id="btn-shuffle-playlist" title="Xáo trộn ngẫu nhiên thứ tự các bài hát trong danh sách">
+                  <span>🔀</span>
+                  <span>Trộn List</span>
+                </button>
+                <button class="btn-action" id="btn-undo-shuffle" style="display: none;" title="Hoàn tác thứ tự vừa trộn">
+                  <span>↩</span>
+                  <span>Hoàn tác</span>
+                </button>
+                <button class="btn-action" id="btn-edit-playlist-info" title="Sửa tên và mô tả">
+                  <span>✏️</span>
+                  <span>Đổi tên</span>
+                </button>
+                <button class="btn-action" id="btn-add-songs-to-active" title="Tìm thêm bài hát vào list">
+                  <span>➕</span>
+                  <span>Thêm bài hát</span>
+                </button>
+                <button class="btn-action btn-danger" id="btn-delete-active-playlist" title="Xóa playlist này">
+                  <span>🗑️</span>
+                  <span>Xóa list</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Songs Table -->
+            <div class="songs-table-wrapper">
+              <table class="songs-table">
+                <thead>
+                  <tr>
+                    <th style="width: 48px;">#</th>
+                    <th>Tên Bài Hát</th>
+                    <th>Nghệ Sĩ</th>
+                    <th style="width: 90px;">Thời Lượng</th>
+                    <th style="width: 140px; text-align: right;">Hành Động</th>
+                  </tr>
+                </thead>
+                <tbody id="songs-table-body">
+                  <!-- Rendered by JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- View: Publisher Playlists Catalog -->
+        <section class="content-view" id="view-publisher">
+          <div class="view-header">
+            <div>
+              <h2 class="view-title">Kho Playlist Có Sẵn Của Nhà Phát Hành</h2>
+              <p class="view-desc">Mở khóa duyệt và chọn bài hát từ các danh sách phát của hệ thống. Bạn có thể thêm từng bài lẻ vào Playlist cá nhân hoặc sao chép nguyên danh sách để tùy chỉnh.</p>
+            </div>
+            <div class="view-actions">
+              <button class="btn-primary" id="btn-clone-current-pub">
+                <span>📋</span>
+                <span>Sao chép thành Playlist cá nhân</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="publisher-layout">
+            <!-- Publisher Playlists Selector Cards Grid -->
+            <div class="publisher-cards-grid" id="publisher-cards-grid">
+              <!-- Rendered by JS -->
+            </div>
+
+            <!-- Selected Publisher Playlist Songs Table -->
+            <div class="playlist-detail-container" id="publisher-detail-container">
+              <div class="playlist-detail-header">
+                <div class="detail-info-wrap">
+                  <span class="detail-icon" id="pub-detail-icon">📻</span>
+                  <div>
+                    <h3 class="detail-name" id="pub-detail-title">Chọn Danh Sách</h3>
+                    <div class="detail-meta" id="pub-detail-meta">0 bài hát</div>
+                  </div>
+                </div>
+                <div class="detail-controls">
+                  <span style="font-size: 13px; color: #94a3b8;">Thêm bài đã chọn vào:</span>
+                  <select id="pub-target-playlist-select" class="target-select" style="min-width: 180px;">
+                    <!-- Rendered by JS -->
+                  </select>
+                </div>
+              </div>
+
+              <div class="songs-table-wrapper">
+                <table class="songs-table">
+                  <thead>
+                    <tr>
+                      <th style="width: 48px;">#</th>
+                      <th>Tên Bài Hát</th>
+                      <th>Nghệ Sĩ</th>
+                      <th style="width: 90px;">Thời Lượng</th>
+                      <th style="width: 140px; text-align: right;">Hành Động</th>
+                    </tr>
+                  </thead>
+                  <tbody id="publisher-songs-table-body">
+                    <!-- Rendered by JS -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- View 2: Online Song Search & Discovery -->
+        <section class="content-view" id="view-search">
+          <div class="view-header">
+            <div>
+              <h2 class="view-title">Tìm Kiếm Bài Hát Trực Tuyến</h2>
+              <p class="view-desc">Tìm kiếm trực tiếp từ kho nhạc bản quyền XMusicStation và thêm vào danh sách phát yêu thích.</p>
+            </div>
+          </div>
+
+          <div class="search-box-large">
+            <input type="text" id="online-search-input" class="search-input-large" placeholder="Nhập tên bài hát, ca sĩ (VD: Acoustic, Chill, V-Pop, Sơn Tùng, Vũ, Hoàng Dũng)...">
+            <button class="btn-search-large" id="btn-execute-search">
+              <span>🔍</span>
+              <span>Tìm Kiếm</span>
+            </button>
+          </div>
+
+          <div class="search-target-bar">
+            <span>Thêm bài hát đã chọn vào danh sách:</span>
+            <select id="target-playlist-select" class="target-select">
+              <!-- Rendered by JS -->
+            </select>
+          </div>
+
+          <div class="search-results-container" id="search-results-container">
+            <div class="empty-state">
+              <span class="empty-icon">🎧</span>
+              <p>Gõ từ khóa bài hát phía trên để bắt đầu tìm kiếm từ kho nhạc XMusicStation.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- View 3: Account Configuration -->
+        <section class="content-view" id="view-settings">
+          <div class="view-header">
+            <div>
+              <h2 class="view-title">Cấu Hình Tài Khoản & LocalStorage</h2>
+              <p class="view-desc">Quản lý thông tin đăng nhập tự động và đồng bộ cấu hình với trình duyệt.</p>
+            </div>
+          </div>
+
+          <div class="settings-grid">
+            <div class="settings-card">
+              <h3 class="card-title">Ủy Quyền Truy Cập XMusicStation</h3>
+              <p class="card-desc">Thông tin tài khoản được lưu vào <code>localStorage</code> trên máy của bạn và sử dụng để tự động cấp token đăng nhập khi truy cập player.</p>
+
+              <div class="form-group">
+                <label for="cfg-username" class="form-label">Tài khoản (Username)</label>
+                <input type="text" id="cfg-username" class="form-input" value="tgd111">
+              </div>
+
+              <div class="form-group">
+                <label for="cfg-password" class="form-label">Mật khẩu (Password)</label>
+                <div class="input-password-wrap">
+                  <input type="password" id="cfg-password" class="form-input" value="mwg2025">
+                  <button type="button" class="btn-toggle-pw" id="btn-toggle-pw">👁️</button>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="checkbox-container">
+                  <input type="checkbox" id="cfg-autologin" checked>
+                  <span class="checkbox-mark"></span>
+                  <span class="checkbox-label-text">Tự động đăng nhập khi mở trang web</span>
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label class="checkbox-container">
+                  <input type="checkbox" id="cfg-autopopulate" checked>
+                  <span class="checkbox-mark"></span>
+                  <span class="checkbox-label-text">Tự động nạp playlist đang chọn vào hàng đợi phát nhạc khi vào web</span>
+                </label>
+              </div>
+
+              <div class="card-actions">
+                <button class="btn-primary" id="btn-save-settings">
+                  <span>💾</span>
+                  <span>Lưu Cấu Hình Vào LocalStorage</span>
+                </button>
+                <button class="btn-secondary" id="btn-test-auth">
+                  <span>🔑</span>
+                  <span>Kiểm Tra Đăng Nhập Trực Tiếp</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Account Details Card -->
+            <div class="settings-card">
+              <h3 class="card-title">Thông Tin Tài Khoản Máy Trạm</h3>
+              <div class="account-info-list" id="account-info-list">
+                <div class="info-row">
+                  <span class="info-key">Tên cửa hàng:</span>
+                  <span class="info-val" id="info-val-fullname">TGD_BRV_VTA - 290 Trương Công Định</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-key">Địa chỉ:</span>
+                  <span class="info-val" id="info-val-address">290 Trương Công Định, P.8, TP. Vũng Tàu, Bà Rịa - Vũng Tàu</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-key">Nhóm quyền:</span>
+                  <span class="info-val">Cửa hàng / Người dùng trạm</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-key">Hạn token:</span>
+                  <span class="info-val" style="color: #4ade80;">Hợp lệ & Sẵn sàng</span>
+                </div>
+              </div>
+
+              <div class="sync-snippet-box">
+                <div class="snippet-title">Mã cấu hình nhanh (Dán vào Console trình duyệt nếu cần):</div>
+                <pre class="snippet-code" id="snippet-code"></pre>
+                <button class="btn-copy-snippet" id="btn-copy-snippet">📋 Sao chép mã</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        
+        <!-- View 5: GitHub Update Center -->
+        <section class="content-view" id="view-update">
+          <div class="view-header">
+            <div>
+              <h2 class="view-title">Trung Tâm Cập Nhật & Đồng Bộ GitHub</h2>
+              <p class="view-desc">Kiểm tra phiên bản mới, đồng bộ 450 bài hát tuyển chọn và tải bản cập nhật trực tiếp từ kho GitHub.</p>
+            </div>
+            <div class="view-actions">
+              <button class="btn-primary" id="btn-check-github-dash">
+                <span>🔍</span>
+                <span>Kiểm tra cập nhật GitHub</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="xm-update-card">
+            <div class="xm-update-status">
+              <span style="font-size: 26px;">🚀</span>
+              <div>
+                <div style="font-weight: 700; color: #fff; font-size: 16px;">Phiên Bản Ứng Dụng Hiện Tại</div>
+                <div style="font-size: 13px; color: #94a3b8; margin-top: 3px;">
+                  Bản cài đặt: <span class="xm-ver-pill current">v2.2.0</span> • Kho 450 bài hát tuyển chọn (75 bài/chủ đề) • Ngày: 07/11/2026
+                </div>
+              </div>
+            </div>
+
+            <div style="max-width: 650px; margin-top: 16px;">
+              <label style="display: block; font-size: 12.5px; font-weight: 600; color: #cbd5e1; margin-bottom: 6px;">
+                Cấu hình kho GitHub Repository (owner/repo hoặc URL đầy đủ):
+              </label>
+              <div style="display: flex; gap: 8px;">
+                <input type="text" id="dash-github-repo-input" class="topbar-search-input" value="https://github.com/vibe-code/xmusic-playlist-automation" placeholder="owner/repo..." style="flex: 1;" />
+                <button id="dash-btn-save-repo" class="btn-secondary">Lưu cấu hình</button>
+              </div>
+            </div>
+
+            <!-- Live Check Results Area -->
+            <div id="dash-github-check-result" style="margin-top: 20px;"></div>
+          </div>
+
+          <!-- Deployment Guide Quick Card -->
+          <div class="guide-card" style="margin-top: 20px;">
+            <div class="guide-badge">Quy Trình Triển Khai</div>
+            <h3>📖 Cách Tải Code Lên GitHub & Phát Hành Bản Cập Nhật</h3>
+            <p style="font-size: 13.5px; color: #94a3b8; line-height: 1.6; margin-bottom: 12px;">
+              Để đưa dự án lên GitHub và phát hành bản cập nhật cho người dùng khác, bạn chỉ cần thực hiện 3 bước đơn giản:
+            </p>
+            <ol class="guide-steps">
+              <li><b>Tạo Repository trên GitHub</b>: Đặt tên ví dụ <code>xmusic-playlist-automation</code>.</li>
+              <li><b>Đẩy code từ máy tính lên</b>: Chạy <code>git init</code>, <code>git add .</code>, <code>git commit -m "v2.2.0"</code>, <code>git push -u origin main</code>.</li>
+              <li><b>Khi có bản cập nhật mới</b>: Sửa số phiên bản trong file <code>version.json</code> và push lên GitHub. Mọi người dùng dùng XMusicStation bấm <b>Kiểm tra cập nhật</b> sẽ thấy bản mới và nạp bài hát trong 1-click!</li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- View 4: Installation Guide -->
+        <section class="content-view" id="view-guide">
+          <div class="view-header">
+            <div>
+              <h2 class="view-title">Hướng Dẫn Cài Đặt & Sử Dụng</h2>
+              <p class="view-desc">Hướng dẫn chi tiết từng bước để cài đặt Extension hoặc Tampermonkey Userscript trên máy tính.</p>
+            </div>
+          </div>
+
+          <div class="guide-grid">
+            <div class="guide-card">
+              <div class="guide-badge">Cách 1: Tiện ích mở rộng Chrome / Edge (Khuyên dùng)</div>
+              <h3>Cài đặt Chrome Extension (Manifest V3)</h3>
+              <ol class="guide-steps">
+                <li>Mở trình duyệt Google Chrome hoặc Microsoft Edge.</li>
+                <li>Truy cập đường dẫn: <code>chrome://extensions</code> (hoặc <code>edge://extensions</code>).</li>
+                <li>Bật công tắc <b>"Chế độ dành cho nhà phát triển" (Developer mode)</b> ở góc trên cùng bên phải.</li>
+                <li>Bấm nút <b>"Tải tiện ích đã giải nén" (Load unpacked)</b>.</li>
+                <li>Chọn thư mục: <code>xmusic-playlist-automation/extension</code> trong project này.</li>
+                <li>Truy cập <a href="https://player.xmusicstation.com/" target="_blank" style="color: #818cf8;">player.xmusicstation.com</a>, tiện ích sẽ tự động hiện thanh công cụ nổi và tự động nạp danh sách phát!</li>
+              </ol>
+            </div>
+
+            <div class="guide-card">
+              <div class="guide-badge">Cách 2: Tampermonkey Script</div>
+              <h3>Cài đặt qua Tampermonkey / Violentmonkey</h3>
+              <ol class="guide-steps">
+                <li>Cài đặt tiện ích Tampermonkey trên Chrome Web Store (nếu máy chưa có).</li>
+                <li>Mở Tampermonkey Dashboard -> chọn tab <b>Tiện ích (Utilities)</b> hoặc biểu tượng <b>+ (Thêm script mới)</b>.</li>
+                <li>Sao chép toàn bộ nội dung file <code>userscript/xmusic-auto-playlist.user.js</code> và dán vào.</li>
+                <li>Nhấn <b>File -> Save (Lưu lại)</b>.</li>
+                <li>Khi truy cập <a href="https://player.xmusicstation.com/" target="_blank" style="color: #818cf8;">player.xmusicstation.com</a>, script sẽ tự động chạy mượt mà trên mọi trình duyệt!</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Audio Preview Player (Fixed Bottom Mini Player) -->
+  <div class="audio-preview-bar" id="audio-preview-bar" style="display: none;">
+    <div class="preview-song-meta">
+      <span class="preview-icon">🎶</span>
+      <div>
+        <div class="preview-title" id="preview-song-title">Đang phát thử...</div>
+        <div class="preview-artist" id="preview-song-artist">Ca sĩ</div>
+      </div>
+    </div>
+    <audio id="audio-element" controls preload="none"></audio>
+    <button class="preview-close-btn" id="btn-close-preview" title="Đóng nghe thử">✕</button>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

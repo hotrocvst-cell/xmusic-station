@@ -1,0 +1,17 @@
+{
+  "xm_mw6i2xmc_de0f": {
+    "name": "My Shared Mix",
+    "description": "Test share playlist",
+    "songs": [
+      {
+        "key": "abc",
+        "title": "Test Song",
+        "artists": [
+          "Artist A"
+        ]
+      }
+    ],
+    "sharedAt": "2026-11-07T14:30:11.892Z",
+    "author": "Test User"
+  }
+}

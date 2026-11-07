@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "XMusicStation - Auto Playlist & Manager",
+  "version": "2.2.0",
+  "description": "Tự động đăng nhập, kho 450 bài hát tuyển chọn, chia sẻ playlist qua mã, đồng bộ Cloud và sửa lỗi nạp lệch bài trên XMusicStation",
+  "author": "Antigravity Pair Programmer",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://player.xmusicstation.com/*",
+    "https://web.xmusicstation.com/*"
+  ],
+  "action": {
+    "default_title": "XMusicStation Playlist Manager",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://player.xmusicstation.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

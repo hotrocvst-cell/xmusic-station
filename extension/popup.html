@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XMusic Assistant</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <div class="popup-header">
+      <div class="logo-wrap">
+        <div class="logo-icon">XM</div>
+        <div>
+          <div class="title">XMusicStation</div>
+          <div class="subtitle">Auto Playlist Assistant</div>
+        </div>
+      </div>
+      <div id="auth-badge" class="badge">● Sẵn sàng</div>
+    </div>
+
+    <div class="account-card">
+      <div class="account-label">Tài khoản ủy quyền</div>
+      <div class="account-name" id="user-display">tgd111 (TGD_BRV_VTA)</div>
+      <div class="account-note">Tự động đăng nhập & lưu cấu hình LocalStorage</div>
+    </div>
+
+    <div class="field-group">
+      <label class="field-label">Danh sách phát đang kích hoạt</label>
+      <select id="popup-playlist-select" class="select-input">
+        <option value="sample-playlist-1">☕ Acoustic & Cafe Chill MWG (12 bài)</option>
+        <option value="sample-playlist-2">⚡ Top Hits & Năng Động V-Pop (12 bài)</option>
+      </select>
+    </div>
+
+    <div class="action-buttons">
+      <button id="btn-open-player" class="btn btn-primary">
+        <span>🚀</span>
+        <span>Mở player.xmusicstation.com</span>
+      </button>
+    </div>
+
+    <div class="footer-note">
+      Kích hoạt tự động tạo danh sách phát khi mở trang web. Có thể tùy chỉnh thêm bài hát ngay trên thanh công cụ nổi của trang web!
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

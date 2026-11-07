@@ -1,0 +1,18 @@
+{
+  "version": "2.2.0",
+  "name": "XMusicStation Auto Playlist & Queue Manager",
+  "updatedAt": "2026-11-07",
+  "playlistsCount": 6,
+  "totalSongs": 450,
+  "releaseNotes": [
+    "🔥 Mở rộng 6 playlist tuyển chọn lên 75 bài/playlist (tổng 450 bài bản quyền chuẩn XMusic).",
+    "🔗 Bổ sung tính năng Chia sẻ Playlist qua mã XMPL2 và link mạng nội bộ.",
+    "🚀 Chuyên mục GitHub Update Center: Tự động kiểm tra bản cập nhật mới từ GitHub, tải playlist và userscript 1-click.",
+    "🔀 Smart Shuffle tách nghệ sĩ và nạp nhạc trực tiếp qua Vue Memory Bridge với độ chính xác 100%."
+  ],
+  "downloadUrls": {
+    "samplePlaylists": "sample-playlists.json",
+    "userscript": "userscript/xmusic-auto-playlist.user.js",
+    "releases": "https://github.com/{owner}/{repo}/releases/latest"
+  }
+}
