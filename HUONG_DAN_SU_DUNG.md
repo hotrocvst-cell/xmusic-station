@@ -118,33 +118,31 @@ Khi có phiên bản kho nhạc mới hoặc bạn muốn đồng bộ 450 bài 
 
 ---
 
-### 7. Chuyên Mục Cập Nhật GitHub (Update Center) & Quy Trình Triển Khai
-Hệ thống tích hợp sẵn tab **`🚀 Cập Nhật`** ngay trên thanh công cụ của Web Player và mục **`🚀 Cập Nhật (GitHub)`** trên Web Dashboard:
+### 7. Chuyên Mục Cập Nhật GitHub (Update Center) - Khóa Cứng Nguồn Admin
+Hệ thống tích hợp sẵn tab **`🚀 Cập Nhật`** ngay trên thanh công cụ của Web Player và mục **`🚀 Cập Nhật (GitHub)`** trên Web Dashboard, được **khóa cứng bảo mật duy nhất trỏ về kho chính thức của Admin**:
+👉 **`https://github.com/hotrocvst-cell/xmusic-station.git`** (Người dùng không thể chỉnh sửa, can thiệp hoặc thay đổi nguồn khác).
 
 #### A. Cách người dùng kiểm tra & tải bản cập nhật:
 1. Mở thanh công cụ trên Web Player -> Chuyển sang tab **`🚀 Cập Nhật`** (hoặc chọn menu *Cập Nhật (GitHub)* trên Dashboard).
-2. Hệ thống sẽ kết nối tới GitHub Repository được cấu hình (ví dụ: `https://github.com/vibe-code/xmusic-playlist-automation` hoặc repo của bạn):
-   - Nếu phát hiện **Phiên bản mới hơn**:
-     - Hiển thị badge: `🎉 Có phiên bản mới: v2.3.0` kèm danh sách tính năng mới (*Release Notes*).
-     - Bấm **`⚡ 1. Nạp Kho Nhạc Mới Từ GitHub`**: Tải thẳng `sample-playlists.json` mới nhất về và chạy Smart Merge (giữ nguyên playlist cá nhân).
+2. Hệ thống hiển thị nguồn Admin được bảo vệ: `hotrocvst-cell/xmusic-station` (Khóa bảo mật 🔒).
+3. Bấm **`🔍 Kiểm Tra Bản Cập Nhật Từ Admin (GitHub)`**:
+   - Nếu phát hiện **Phiên bản mới hơn từ Admin**:
+     - Hiển thị badge: `🎉 Có phiên bản mới: v2.3.0` kèm danh sách tính năng & bài hát mới (*Release Notes*).
+     - Bấm **`⚡ 1. Nạp Kho Nhạc Mới Từ Admin`**: Tải thẳng `sample-playlists.json` mới nhất về và chạy Smart Merge (bảo toàn nguyên vẹn playlist cá nhân).
      - Bấm **`📥 2. Cập Nhật Tampermonkey Script`**: Mở link raw userscript để Tampermonkey tự động nạp bản mới.
      - Bấm **`📦 3. Tải Extension .zip Từ GitHub`**: Tải file zip tiện ích từ GitHub Releases.
-   - Nếu đã là bản mới nhất: Hiện thông báo xác nhận `✅ Bạn đang sử dụng phiên bản mới nhất!`.
+   - Nếu đã là bản mới nhất: Hiện thông báo xác nhận `✅ Bạn đang sử dụng phiên bản mới nhất từ Admin!`.
 
-#### B. Hướng dẫn chi tiết cách tải code lên GitHub & phát hành bản mới:
-1. **Bước 1: Tạo Repository mới trên GitHub**
-   - Đăng nhập vào [GitHub](https://github.com/) -> Bấm nút **New** (hoặc vào [github.com/new](https://github.com/new)).
-   - Đặt tên repository: `xmusic-playlist-automation` (để chế độ **Public** để người dùng có thể tải bản cập nhật trực tiếp).
-   - *Lưu ý*: Không tích chọn "Add a README file" vì chúng ta đã có sẵn. Bấm **Create repository**.
-2. **Bước 2: Kết nối & Đẩy toàn bộ mã nguồn lên GitHub**
-   - Mở PowerShell tại thư mục dự án và chạy 2 lệnh sau:
-     ```powershell
-     # Thay <tai-khoan-github> bằng username GitHub của bạn
-     git remote add origin https://github.com/<tai-khoan-github>/xmusic-playlist-automation.git
-     git push -u origin main
-     ```
-3. **Bước 3: Cách phát hành phiên bản mới (về sau)**
-   - Mỗi khi bạn cập nhật thêm bài hát hoặc tính năng mới:
+#### B. Quy trình đẩy code & phát hành bản mới dành cho Admin (`hotrocvst-cell`):
+1. **Kho đã được liên kết sẵn với GitHub**:
+   - Remote `origin`: `https://github.com/hotrocvst-cell/xmusic-station.git`
+   - Nhánh mặc định: `main`
+2. **Đẩy code lên GitHub lần đầu**:
+   ```powershell
+   git push -u origin main
+   ```
+3. **Cách phát hành phiên bản mới (về sau)**:
+   - Khi bạn (Admin) muốn bổ sung bài hát hoặc cập nhật tính năng:
      1. Mở file `version.json` và sửa `version` (ví dụ: `"2.3.0"`) kèm nội dung trong `releaseNotes`.
      2. Mở file `package.json` và `manifest.json` nâng phiên bản tương ứng.
      3. Chạy lệnh:
@@ -153,7 +151,7 @@ Hệ thống tích hợp sẵn tab **`🚀 Cập Nhật`** ngay trên thanh côn
         git commit -m "release: v2.3.0 - Cập nhật kho nhạc & tính năng mới"
         git push origin main
         ```
-     4. Ngay lập tức, tất cả người dùng XMusicStation khi mở tab **`🚀 Cập Nhật`** sẽ thấy phiên bản mới v2.3.0 và có thể cập nhật trong 1-click!
+     4. Ngay lập tức, tất cả người dùng XMusicStation khi mở tab **`🚀 Cập Nhật`** sẽ thấy bản mới và nạp bài hát trong 1-click!
 
 ---
 

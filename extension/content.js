@@ -7286,23 +7286,12 @@
 
     // Reset to Sample Playlists
     
-    // GitHub Update Center bindings
+    // GitHub Update Center bindings (Locked to official Admin source)
     const btnCheckGithub = document.getElementById('xmusic-btn-check-github');
-    const btnSaveRepo = document.getElementById('xmusic-btn-save-repo');
-    const repoInput = document.getElementById('xmusic-github-repo-input');
     const resultArea = document.getElementById('xmusic-github-check-result');
-
-    if (btnSaveRepo && repoInput) {
-      btnSaveRepo.onclick = () => {
-        setGithubRepo(repoInput.value);
-        showToast('Đã lưu cấu hình kho GitHub!', 'success');
-        if (resultArea) checkGithubUpdates(resultArea);
-      };
-    }
 
     if (btnCheckGithub && resultArea) {
       btnCheckGithub.onclick = () => {
-        if (repoInput) setGithubRepo(repoInput.value);
         checkGithubUpdates(resultArea);
       };
     }

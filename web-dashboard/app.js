@@ -6545,26 +6545,12 @@ console.log('✅ Đã đồng bộ thành công ' + ${currentPlaylists.length} +
     if (btnNewTop) btnNewTop.addEventListener('click', createNewPlaylist);
 
     
+    // GitHub Update Center (Locked to Admin official repo)
     const btnCheckGithubDash = document.getElementById('btn-check-github-dash');
-    const dashRepoInput = document.getElementById('dash-github-repo-input');
-    const btnSaveDashRepo = document.getElementById('dash-btn-save-repo');
     const dashResultArea = document.getElementById('dash-github-check-result');
-
-    if (dashRepoInput) {
-      dashRepoInput.value = getGithubRepo();
-    }
-
-    if (btnSaveDashRepo && dashRepoInput) {
-      btnSaveDashRepo.addEventListener('click', () => {
-        setGithubRepo(dashRepoInput.value);
-        showToast('Đã lưu cấu hình kho GitHub!', 'success');
-        if (dashResultArea) checkDashboardGithubUpdates(dashResultArea);
-      });
-    }
 
     if (btnCheckGithubDash && dashResultArea) {
       btnCheckGithubDash.addEventListener('click', () => {
-        if (dashRepoInput) setGithubRepo(dashRepoInput.value);
         checkDashboardGithubUpdates(dashResultArea);
       });
     }
