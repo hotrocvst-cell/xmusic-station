@@ -108,20 +108,43 @@ Mở trình duyệt truy cập: **`http://localhost:3000`**
 
 ## 🔒 DÀNH CHO ADMIN: QUY TRÌNH PHÁT HÀNH BẢN CẬP NHẬT TỰ ĐỘNG
 
-Dự án đã được tích hợp sẵn quy trình tự động hóa GitHub Actions. Mỗi khi Admin phát hành bản cập nhật mới:
+Dự án đã được tích hợp sẵn công cụ đồng bộ và quy trình tự động hóa GitHub Actions. Xem chi tiết tại [QUY_TRINH_PHAT_HANH.md](QUY_TRINH_PHAT_HANH.md).
 
-1. **Bước 1**: Cập nhật thông tin trong file [`version.json`](version.json) (sửa số `version` và nội dung `releaseNotes`).
-2. **Bước 2**: Tạo tag và đẩy lên GitHub:
-   ```bash
-   git add .
-   git commit -m "release: v2.3.0"
-   git tag v2.3.0
-   git push origin main --tags
-   ```
-3. **Tự động hóa hoàn toàn**:
-   - GitHub Actions sẽ tự động kích hoạt workflow, đóng gói file `xmusic-station-extension.zip`.
-   - Tự động tạo 1 lượt **Release mới** trên mục [Releases](https://github.com/hotrocvst-cell/xmusic-station/releases) với đầy đủ file zip, file script và ghi chú cập nhật.
-   - Toàn bộ người dùng khi mở tab **`🚀 Cập Nhật`** trên trình duyệt sẽ thấy thông báo cập nhật mới và tải về trong 1-click!
+### Bước 1: Đồng bộ cấu hình dự án (1 lệnh duy nhất)
+Chạy lệnh sau tại thư mục dự án:
+```bash
+npm run bump 2.3.0 "Nội dung cập nhật mới"
+```
+*(Lệnh này tự động cập nhật `version.json`, `package.json`, `manifest.json`, đồng thời build lại userscript và tài liệu).*
+
+---
+
+### Bước 2: Phát hành bản mới
+
+#### 🖥️ Cách 1: Sử dụng GitHub Desktop App (Khuyên dùng)
+1. Mở **GitHub Desktop** -> Ở cột bên trái (tab **Changes**), bạn sẽ thấy các file đã cập nhật.
+2. Nhập vào ô Summary: `release: v2.3.0` -> Bấm nút xanh **`Commit to main`**.
+3. Bấm **`Push origin`** ở thanh công cụ trên cùng.
+4. **Tạo Tag để kích hoạt Release**:
+   - Chuyển sang tab **History** (cạnh tab *Changes*).
+   - Chuột phải vào commit vừa tạo trên cùng -> Chọn **`Create Tag...`**.
+   - Nhập tên tag: `v2.3.0` -> Bấm **`Create Tag`**.
+   - Bấm nút **`Push origin`** ở thanh trên cùng để đẩy tag lên GitHub!
+
+#### ⌨️ Cách 2: Sử dụng dòng lệnh Git (CLI)
+```bash
+git add .
+git commit -m "release: v2.3.0"
+git tag v2.3.0
+git push origin main --tags
+```
+
+---
+
+### Kết quả tự động từ GitHub Actions:
+- GitHub Actions tự động kích hoạt workflow, đóng gói file **`xmusic-station-extension.zip`**.
+- Tự động tạo 1 lượt **Release mới** trên mục [Releases](https://github.com/hotrocvst-cell/xmusic-station/releases) với đầy đủ file zip, file script và ghi chú cập nhật.
+- Toàn bộ người dùng khi mở tab **`🚀 Cập Nhật`** trên trình duyệt sẽ thấy thông báo cập nhật mới và tải về trong 1-click!
 
 ---
 

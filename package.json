@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js",
-    "test-auth": "node scripts/test-auth.js",
+    "bump": "node scripts/bump-version.js",
+    "release": "node scripts/bump-version.js",
     "build-userscript": "node scripts/build-userscript.js"
   },
   "keywords": [
@@ -16,6 +17,6 @@
     "chrome-extension",
     "userscript"
   ],
-  "author": "Antigravity Pair Programmer",
+  "author": "hotrocvst-cell",
   "license": "MIT"
 }

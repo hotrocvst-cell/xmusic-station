@@ -135,24 +135,36 @@ Hệ thống tích hợp sẵn tab **`🚀 Cập Nhật`** ngay trên thanh côn
    - Nếu đã là bản mới nhất: Hiện thông báo xác nhận `✅ Bạn đang sử dụng phiên bản mới nhất từ Admin!`.
 
 #### B. Quy trình đẩy code & phát hành bản mới dành cho Admin (`hotrocvst-cell`):
-1. **Kho đã được liên kết sẵn với GitHub**:
-   - Remote `origin`: `https://github.com/hotrocvst-cell/xmusic-station.git`
-   - Nhánh mặc định: `main`
-2. **Đẩy code lên GitHub lần đầu**:
+Chi tiết đầy đủ xem tại [QUY_TRINH_PHAT_HANH.md](QUY_TRINH_PHAT_HANH.md).
+
+1. **Bước 1: Tự động đồng bộ cấu hình phiên bản (1 câu lệnh)**:
+   Tại thư mục dự án, chạy:
    ```powershell
-   git push -u origin main
+   npm run bump 2.3.0 "Nội dung cập nhật tính năng hoặc kho nhạc"
    ```
-3. **Cách phát hành phiên bản mới (về sau)**:
-   - Khi bạn (Admin) muốn bổ sung bài hát hoặc cập nhật tính năng:
-     1. Mở file `version.json` và sửa `version` (ví dụ: `"2.3.0"`) kèm nội dung trong `releaseNotes`.
-     2. Mở file `package.json` và `manifest.json` nâng phiên bản tương ứng.
-     3. Chạy lệnh:
-        ```powershell
-        git add .
-        git commit -m "release: v2.3.0 - Cập nhật kho nhạc & tính năng mới"
-        git push origin main
-        ```
-     4. Ngay lập tức, tất cả người dùng XMusicStation khi mở tab **`🚀 Cập Nhật`** sẽ thấy bản mới và nạp bài hát trong 1-click!
+   *(Công cụ tự động cập nhật `version.json`, `package.json`, `extension/manifest.json` và build lại Userscript).*
+
+2. **Bước 2: Phát hành qua GitHub Desktop App (Khuyên dùng)**:
+   - Mở ứng dụng **GitHub Desktop** -> Ở tab **Changes**, kiểm tra danh sách file đã cập nhật.
+   - Ô Summary: nhập `release: v2.3.0` -> Bấm nút **`Commit to main`**.
+   - Bấm nút **`Push origin`** ở thanh trên cùng để đẩy commit.
+   - **Tạo Tag kích hoạt Release**:
+     1. Chuyển sang tab **History** ở cột bên trái.
+     2. Bấm chuột phải vào Commit vừa tạo trên cùng -> Chọn **`Create Tag...`**.
+     3. Nhập tên tag: `v2.3.0` (phải có chữ `v` ở đầu) -> Bấm **`Create Tag`**.
+     4. Bấm nút **`Push origin`** ở thanh trên cùng để đẩy Tag lên GitHub.
+
+3. **Bước 2 (Dự phòng): Phát hành qua dòng lệnh Git CLI**:
+   ```powershell
+   git add .
+   git commit -m "release: v2.3.0"
+   git tag v2.3.0
+   git push origin main --tags
+   ```
+
+4. **Kết quả tự động hóa**:
+   - GitHub Actions lập tức đóng gói `xmusic-station-extension.zip` và tạo Release mới tại [Releases](https://github.com/hotrocvst-cell/xmusic-station/releases).
+   - Tất cả người dùng khi mở tab **`🚀 Cập Nhật`** trên trình duyệt sẽ thấy bản mới và nạp bài hát ngay!
 
 ---
 

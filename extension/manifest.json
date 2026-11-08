@@ -3,7 +3,7 @@
   "name": "XMusicStation - Auto Playlist & Manager",
   "version": "2.2.0",
   "description": "Tự động đăng nhập, kho 450 bài hát tuyển chọn, chia sẻ playlist qua mã, đồng bộ Cloud và sửa lỗi nạp lệch bài trên XMusicStation",
-  "author": "Antigravity Pair Programmer",
+  "author": "hotrocvst-cell",
   "permissions": [
     "storage",
     "activeTab"

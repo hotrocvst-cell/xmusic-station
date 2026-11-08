@@ -1,14 +1,18 @@
 const fs = require('fs');
 const path = require('path');
 
+const versionConfig = JSON.parse(fs.readFileSync(path.join(__dirname, '../version.json'), 'utf8'));
+const currentVersion = versionConfig.version || '2.2.0';
+const totalSongs = versionConfig.totalSongs || 450;
+
 const css = fs.readFileSync(path.join(__dirname, '../extension/content.css'), 'utf8');
 const js = fs.readFileSync(path.join(__dirname, '../extension/content.js'), 'utf8');
 
 const header = `// ==UserScript==
 // @name         XMusicStation - Tự Động Đăng Nhập & Tạo Playlist Phát Nhạc (Left Sidebar)
 // @namespace    https://github.com/hotrocvst-cell/xmusic-station
-// @version      2.2.0
-// @description  Kho 450 bài hát tuyển chọn (75 bài/playlist), chia sẻ playlist qua mã, đồng bộ Cloud chính thức từ hotrocvst-cell/xmusic-station
+// @version      ${currentVersion}
+// @description  Kho ${totalSongs} bài hát tuyển chọn (75 bài/playlist), chia sẻ playlist qua mã, đồng bộ Cloud chính thức từ hotrocvst-cell/xmusic-station
 // @author       hotrocvst-cell
 // @match        https://player.xmusicstation.com/*
 // @homepageURL  https://github.com/hotrocvst-cell/xmusic-station
@@ -31,7 +35,7 @@ const header = `// ==UserScript==
 
 const fullScript = header + js;
 fs.writeFileSync(path.join(__dirname, '../userscript/xmusic-auto-playlist.user.js'), fullScript, 'utf8');
-console.log('✅ Generated userscript/xmusic-auto-playlist.user.js successfully! Length:', fullScript.length);
+console.log(`✅ Generated userscript/xmusic-auto-playlist.user.js (v${currentVersion}) successfully! Length: ${fullScript.length}`);
 
 // Now update tampermonkey-guide.html using reliable markers
 const guidePath = path.join(__dirname, '../tampermonkey-guide.html');
@@ -48,6 +52,14 @@ function escapeHtml(str) {
 
 const escapedScript = escapeHtml(fullScript);
 const base64Script = Buffer.from(fullScript, 'utf8').toString('base64');
+
+// Update version tags in guide
+guideHtml = guideHtml.replace(
+  /<span class="file-badge">[^<]*<\/span>/,
+  `<span class="file-badge">Bản Ổn Định v${currentVersion} (Mới Nhất)</span>`
+);
+guideHtml = guideHtml.replace(/Userscript v[\d\.]+/g, `Userscript v${currentVersion}`);
+guideHtml = guideHtml.replace(/Đã Sẵn Sàng v[\d\.]+/g, `Đã Sẵn Sàng v${currentVersion}`);
 
 const startMarker = '<!-- USERSCRIPT_CODE_START -->';
 const endMarker = '<!-- USERSCRIPT_CODE_END -->';
@@ -67,4 +79,4 @@ if (guideHtml.includes(b64Marker) && guideHtml.includes(b64EndMarker)) {
 }
 
 fs.writeFileSync(guidePath, guideHtml, 'utf8');
-console.log('✅ Updated tampermonkey-guide.html successfully!');
+console.log(`✅ Updated tampermonkey-guide.html (v${currentVersion}) successfully!`);
