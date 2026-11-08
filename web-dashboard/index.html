@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>XMusicStation - Quản Lý Playlist & Tự Động Hóa Phát Nhạc</title>
-  <meta name="description" content="Trung tâm quản lý playlist cá nhân và tự động hóa phát nhạc cho player.xmusicstation.com với tài khoản tgd111">
+  <meta name="description" content="Trung tâm quản lý playlist cá nhân và tự động hóa phát nhạc cho player.xmusicstation.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -36,8 +36,8 @@
           <span class="status-dot"></span>
           <span id="account-status-text">Đã kết nối</span>
         </div>
-        <div class="account-fullname" id="account-fullname">TGD_BRV_VTA</div>
-        <div class="account-sub" id="account-sub">tgd111 • 290 Trương Công Định</div>
+        <div class="account-fullname" id="account-fullname">Tài khoản XMusic</div>
+        <div class="account-sub" id="account-sub">Đang đồng bộ...</div>
       </div>
 
       <!-- Nav Menu -->
@@ -300,13 +300,13 @@
 
               <div class="form-group">
                 <label for="cfg-username" class="form-label">Tài khoản (Username)</label>
-                <input type="text" id="cfg-username" class="form-input" value="tgd111">
+                <input type="text" id="cfg-username" class="form-input" placeholder="Nhập tài khoản XMusicStation">
               </div>
 
               <div class="form-group">
                 <label for="cfg-password" class="form-label">Mật khẩu (Password)</label>
                 <div class="input-password-wrap">
-                  <input type="password" id="cfg-password" class="form-input" value="mwg2025">
+                  <input type="password" id="cfg-password" class="form-input" placeholder="Nhập mật khẩu">
                   <button type="button" class="btn-toggle-pw" id="btn-toggle-pw">👁️</button>
                 </div>
               </div>
@@ -344,12 +344,12 @@
               <h3 class="card-title">Thông Tin Tài Khoản Máy Trạm</h3>
               <div class="account-info-list" id="account-info-list">
                 <div class="info-row">
-                  <span class="info-key">Tên cửa hàng:</span>
-                  <span class="info-val" id="info-val-fullname">TGD_BRV_VTA - 290 Trương Công Định</span>
+                  <span class="info-key">Tên tài khoản / Điểm phát:</span>
+                  <span class="info-val" id="info-val-fullname">Tài khoản XMusic của bạn</span>
                 </div>
                 <div class="info-row">
-                  <span class="info-key">Địa chỉ:</span>
-                  <span class="info-val" id="info-val-address">290 Trương Công Định, P.8, TP. Vũng Tàu, Bà Rịa - Vũng Tàu</span>
+                  <span class="info-key">Địa chỉ / Vị trí:</span>
+                  <span class="info-val" id="info-val-address">Địa chỉ người dùng trạm</span>
                 </div>
                 <div class="info-row">
                   <span class="info-key">Nhóm quyền:</span>
@@ -423,8 +423,8 @@
               Để đưa dự án lên GitHub và phát hành bản cập nhật cho người dùng khác, bạn chỉ cần thực hiện 3 bước đơn giản:
             </p>
             <ol class="guide-steps">
-              <li><b>Tạo Repository trên GitHub</b>: Đặt tên ví dụ <code>xmusic-playlist-automation</code>.</li>
-              <li><b>Đẩy code từ máy tính lên</b>: Chạy <code>git init</code>, <code>git add .</code>, <code>git commit -m "v2.2.0"</code>, <code>git push -u origin main</code>.</li>
+              <li><b>Kho GitHub chính thức</b>: Được lưu trữ tại <code>https://github.com/hotrocvst-cell/xmusic-station</code>.</li>
+              <li><b>Đẩy code từ máy tính lên</b>: Chạy <code>git add .</code>, <code>git commit -m "v2.2.0"</code>, <code>git push origin main</code>.</li>
               <li><b>Khi có bản cập nhật mới</b>: Sửa số phiên bản trong file <code>version.json</code> và push lên GitHub. Mọi người dùng dùng XMusicStation bấm <b>Kiểm tra cập nhật</b> sẽ thấy bản mới và nạp bài hát trong 1-click!</li>
             </ol>
           </div>
@@ -448,19 +448,18 @@
                 <li>Truy cập đường dẫn: <code>chrome://extensions</code> (hoặc <code>edge://extensions</code>).</li>
                 <li>Bật công tắc <b>"Chế độ dành cho nhà phát triển" (Developer mode)</b> ở góc trên cùng bên phải.</li>
                 <li>Bấm nút <b>"Tải tiện ích đã giải nén" (Load unpacked)</b>.</li>
-                <li>Chọn thư mục: <code>xmusic-playlist-automation/extension</code> trong project này.</li>
-                <li>Truy cập <a href="https://player.xmusicstation.com/" target="_blank" style="color: #818cf8;">player.xmusicstation.com</a>, tiện ích sẽ tự động hiện thanh công cụ nổi và tự động nạp danh sách phát!</li>
+                <li>Chọn thư mục <code>extension</code> (từ thư mục tải về hoặc giải nén từ file zip trên GitHub Releases).</li>
+                <li>Truy cập <a href="https://player.xmusicstation.com/" target="_blank" style="color: #818cf8;">player.xmusicstation.com</a>, tiện ích sẽ tự động hiện thanh công cụ nổi và quản lý danh sách phát!</li>
               </ol>
             </div>
 
             <div class="guide-card">
-              <div class="guide-badge">Cách 2: Tampermonkey Script</div>
+              <div class="guide-badge">Cách 2: Tampermonkey Script (Nhanh nhất)</div>
               <h3>Cài đặt qua Tampermonkey / Violentmonkey</h3>
               <ol class="guide-steps">
-                <li>Cài đặt tiện ích Tampermonkey trên Chrome Web Store (nếu máy chưa có).</li>
-                <li>Mở Tampermonkey Dashboard -> chọn tab <b>Tiện ích (Utilities)</b> hoặc biểu tượng <b>+ (Thêm script mới)</b>.</li>
-                <li>Sao chép toàn bộ nội dung file <code>userscript/xmusic-auto-playlist.user.js</code> và dán vào.</li>
-                <li>Nhấn <b>File -> Save (Lưu lại)</b>.</li>
+                <li>Cài đặt tiện ích Tampermonkey trên trình duyệt (nếu chưa có).</li>
+                <li>Bấm vào liên kết cài đặt tự động: <a href="https://raw.githubusercontent.com/hotrocvst-cell/xmusic-station/main/userscript/xmusic-auto-playlist.user.js" target="_blank" style="color: #38bdf8; font-weight: 600;">Cài đặt xmusic-auto-playlist.user.js</a> (Tampermonkey sẽ tự nhận diện và hiện nút <b>Cài đặt / Install</b>).</li>
+                <li>Hoặc sao chép toàn bộ nội dung file <code>userscript/xmusic-auto-playlist.user.js</code> và dán vào script mới trong Tampermonkey -> Nhấn <b>Ctrl + S</b> để lưu.</li>
                 <li>Khi truy cập <a href="https://player.xmusicstation.com/" target="_blank" style="color: #818cf8;">player.xmusicstation.com</a>, script sẽ tự động chạy mượt mà trên mọi trình duyệt!</li>
               </ol>
             </div>

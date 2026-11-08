@@ -1,0 +1,78 @@
+name: Auto Release on Important Update
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      tag_name:
+        description: 'Tên tag phiên bản (ví dụ: v2.3.0). Để trống để tự động lấy từ version.json'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Extract Version & Generate Release Notes
+        id: info
+        run: |
+          node -e "
+            const fs = require('fs');
+            const v = JSON.parse(fs.readFileSync('version.json', 'utf8'));
+            let tag = process.env.INPUT_TAG_NAME || '';
+            if (!tag) {
+              const ref = process.env.GITHUB_REF || '';
+              if (ref.startsWith('refs/tags/')) {
+                tag = ref.replace('refs/tags/', '');
+              } else {
+                tag = v.version.startsWith('v') ? v.version : 'v' + v.version;
+              }
+            }
+            
+            const title = (v.name || 'XMusicStation') + ' ' + tag;
+            const notes = (v.releaseNotes || []).map(n => '- ' + n).join('\n');
+            const body = '## 🚀 ' + title + ' (' + (v.updatedAt || new Date().toISOString().split('T')[0]) + ')\n\n' +
+              '### 📝 Nội dung cập nhật:\n' + notes + '\n\n' +
+              '**Tổng số bài hát tuyển chọn:** ' + (v.totalSongs || 450) + ' bài hát (6 chủ đề x 75 bài).\n\n' +
+              '---\n' +
+              '### 📥 Tải & Cài đặt nhanh:\n' +
+              '- **Chrome / Edge Extension**: Tải file \`xmusic-station-extension.zip\` bên dưới -> Giải nén -> Nạp vào \`chrome://extensions\` (Bật Developer Mode -> Load unpacked).\n' +
+              '- **Tampermonkey Userscript**: Bấm link trực tiếp [Cài đặt Userscript](https://raw.githubusercontent.com/hotrocvst-cell/xmusic-station/main/userscript/xmusic-auto-playlist.user.js) (1 click).\n' +
+              '- **Kho bài hát mẫu JSON**: Tải file \`sample-playlists.json\` bên dưới nếu muốn import thủ công.';
+
+            fs.appendFileSync(process.env.GITHUB_OUTPUT, 'tag=' + tag + '\n');
+            fs.appendFileSync(process.env.GITHUB_OUTPUT, 'title=' + title + '\n');
+            fs.writeFileSync('RELEASE_BODY.md', body);
+          "
+        env:
+          INPUT_TAG_NAME: ${{ github.event.inputs.tag_name }}
+
+      - name: Package Extension ZIP
+        run: |
+          zip -r xmusic-station-extension.zip extension/
+
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.info.outputs.tag }}
+          name: ${{ steps.info.outputs.title }}
+          body_path: RELEASE_BODY.md
+          draft: false
+          prerelease: false
+          files: |
+            xmusic-station-extension.zip
+            sample-playlists.json
+            userscript/xmusic-auto-playlist.user.js

@@ -3,8 +3,8 @@
  */
 async function test() {
   const credentials = {
-    username: 'tgd111',
-    password: 'mwg2025'
+    username: process.env.XMUSIC_USERNAME || 'YOUR_USERNAME',
+    password: process.env.XMUSIC_PASSWORD || 'YOUR_PASSWORD'
   };
 
   console.log('1. Đang gửi yêu cầu đăng nhập tới XMusicStation API...');

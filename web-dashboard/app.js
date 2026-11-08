@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Default configuration
   const DEFAULT_AUTH = {
-    username: 'tgd111',
-    password: 'mwg2025',
-    autoLogin: true,
+    username: '',
+    password: '',
+    autoLogin: false,
     autoPopulate: true
   };
 

@@ -6,9 +6,9 @@
 
   // Default configuration
   const DEFAULT_AUTH = {
-    username: 'tgd111',
-    password: 'mwg2025',
-    autoLogin: true
+    username: '',
+    password: '',
+    autoLogin: false
   };
 
   const DEFAULT_PLAYLISTS = [
@@ -6749,7 +6749,7 @@
           </div>
           <div class="xmusic-header-actions">
             <div id="xmusic-auth-status" class="xmusic-status-pill ${token ? 'logged-in' : 'logged-out'}">
-              ${token ? '● ' + auth.username : '○ Chưa đăng nhập'}
+              ${token ? '● ' + (auth.username || 'Đã đăng nhập') : '○ Chưa đăng nhập'}
             </div>
             <button id="xmusic-btn-close-sidebar" class="xmusic-btn-close" title="Đóng Sidebar">✕</button>
           </div>
@@ -6897,11 +6897,11 @@
         <div id="tab-config" class="xmusic-content tab-content" style="display: none;">
           <div class="xmusic-form-group">
             <label class="xmusic-form-label">Tài khoản XMusicStation</label>
-            <input type="text" id="xmusic-cfg-user" class="xmusic-input" value="${auth.username}" placeholder="tgd111" />
+            <input type="text" id="xmusic-cfg-user" class="xmusic-input" value="${auth.username || ''}" placeholder="Nhập tên tài khoản" />
           </div>
           <div class="xmusic-form-group">
             <label class="xmusic-form-label">Mật khẩu</label>
-            <input type="password" id="xmusic-cfg-pass" class="xmusic-input" value="${auth.password}" placeholder="mwg2025" />
+            <input type="password" id="xmusic-cfg-pass" class="xmusic-input" value="${auth.password || ''}" placeholder="Nhập mật khẩu" />
           </div>
           <div class="xmusic-form-group">
             <label class="xmusic-checkbox-label">
@@ -7544,7 +7544,7 @@
     const isLoginPage = window.location.pathname.includes('/login') || !!document.querySelector('.login-form-wrap');
     const auth = getAuthConfig();
 
-    if ((!token || isLoginPage) && auth.autoLogin) {
+    if ((!token || isLoginPage) && auth.autoLogin && auth.username && auth.password) {
       console.log('[XMusic Assistant] Triggering auto-login for user:', auth.username);
       try {
         const res = await fetch('https://web.xmusicstation.com/api/v1/pub/player/auth/login', {

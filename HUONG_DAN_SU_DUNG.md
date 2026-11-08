@@ -5,7 +5,7 @@ Cung cấp giải pháp trọn gói tự động hóa và nâng cấp trình ph�
 1. **Kho 450 Bài Hát Tuyển Chọn Chuẩn XMusic (75 bài/chủ đề)**: Mở rộng 6 danh sách phát theo Top Trending V-Pop 2026, Acoustic Chill, Vinahouse Bass Cực Sung, Ballad Lofi Suy, Gen Z Indie và Pop Tình Ca Yêu Đời.
 2. **Giải Pháp Chia Sẻ Nhanh Qua Mã (Share Code `XMPL2`) & Mạng Nội Bộ**: Tạo mã chia sẻ nhỏ gọn gửi qua Zalo/Teams/Email, người nhận chỉ cần 1 cú click là nhập ngay vào thư viện.
 3. **Đồng Bộ Cloud & Cập Nhật Thông Minh (Smart Merge Update)**: Dễ dàng nâng cấp kho playlist tuyển chọn khi có phiên bản mới mà **tuyệt đối không làm mất** các playlist do người dùng tự tạo.
-4. **Ủy quyền tự động**: Tự động đăng nhập tài khoản cấu hình trong `localStorage` (mặc định: `tgd111` / `mwg2025`).
+4. **Ủy quyền tự động**: Tự động đăng nhập tài khoản cấu hình trong `localStorage` (cấu hình trong tab `⚙ Cấu Hình`).
 5. **Mở khóa Kho Nhạc Nhà Phát Hành (12 Playlist có sẵn)**: Cho phép duyệt, nghe thử và thêm bài lẻ từ các playlist mặc định của nhà phát hành sang Playlist cá nhân hoặc hàng đợi phát.
 6. **Sửa triệt để lỗi lệch bài hát khi nạp (100% Accurate)**: Nạp trực tiếp qua Vue memory bridge và thuật toán đối soát điểm thông minh (Smart Match Engine).
 7. **Tùy biến Shuffle Playlist đã lưu**: Hỗ trợ nạp trộn ngẫu nhiên thông minh (Smart Artist Separation) kèm nút hoàn tác (Undo).
@@ -28,8 +28,9 @@ Cung cấp giải pháp trọn gói tự động hóa và nâng cấp trình ph�
    👉 **Tải tiện ích đã giải nén (Load unpacked)**.
 5. Tìm và chọn thư mục:
    ```
-   d:\01-VibeCode\xmusic-playlist-automation\extension
+   xmusic-station/extension
    ```
+   *(hoặc thư mục `extension` sau khi giải nén từ file zip tải tại [GitHub Releases](https://github.com/hotrocvst-cell/xmusic-station/releases)).*
 6. Tiện ích **"XMusicStation - Auto Playlist & Manager"** sẽ xuất hiện với icon màu tím.
 
 ---
@@ -37,9 +38,9 @@ Cung cấp giải pháp trọn gói tự động hóa và nâng cấp trình ph�
 ### Cách 2: Cài đặt qua Tampermonkey / Violentmonkey (1 click)
 
 1. Cài đặt tiện ích Tampermonkey trên trình duyệt.
-2. Mở file `tampermonkey-guide.html` trên trình duyệt hoặc sao chép mã nguồn từ file:
-   `d:\01-VibeCode\xmusic-playlist-automation\userscript\xmusic-auto-playlist.user.js`
-3. Tạo script mới trong Tampermonkey, dán mã vào và nhấn **Save (Ctrl + S)**.
+2. Bấm vào link cài đặt trực tiếp từ GitHub Raw:
+   👉 **[Cài đặt xmusic-auto-playlist.user.js](https://raw.githubusercontent.com/hotrocvst-cell/xmusic-station/main/userscript/xmusic-auto-playlist.user.js)** *(Tampermonkey sẽ tự động mở hộp thoại xác nhận cài đặt).*
+3. Hoặc mở file `tampermonkey-guide.html` trên trình duyệt để copy mã script vào Tampermonkey.
 
 ---
 
@@ -160,7 +161,8 @@ Hệ thống tích hợp sẵn tab **`🚀 Cập Nhật`** ngay trên thanh côn
 Nếu muốn có giao diện bảng điều khiển toàn màn hình để nghe thử trực tiếp bài hát, duyệt kho nhà phát hành và quản lý playlist:
 
 ```bash
-cd d:\01-VibeCode\xmusic-playlist-automation
+git clone https://github.com/hotrocvst-cell/xmusic-station.git
+cd xmusic-station
 npm start
 ```
 
