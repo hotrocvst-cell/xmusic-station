@@ -119,3 +119,4 @@ Khi cấu hình dự án, các file sau đây nắm giữ các thông tin cốt 
 | [`userscript/xmusic-auto-playlist.user.js`](userscript/xmusic-auto-playlist.user.js) | File script cài đặt trên Tampermonkey | Tự động build qua `build-userscript.js` |
 | [`sample-playlists.json`](sample-playlists.json) | Kho 450 bài hát tuyển chọn chuẩn XMusic | Cập nhật khi bổ sung bài hát |
 | [`.github/workflows/release.yml`](.github/workflows/release.yml) | Kịch bản tự động hóa GitHub Actions | Khởi chạy tự động khi push tag `v*` |
+
