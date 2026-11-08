@@ -6533,6 +6533,142 @@ localStorage.setItem('xmusic_auto_populate_on_load', '${authConfig.autoPopulate}
 console.log('✅ Đã đồng bộ thành công ' + ${currentPlaylists.length} + ' Playlist sang Web Player!');`;
   }
 
+  const OFFICIAL_GITHUB_REPO = Object.freeze({
+    owner: 'hotrocvst-cell',
+    repo: 'xmusic-station',
+    fullName: 'hotrocvst-cell/xmusic-station',
+    url: 'https://github.com/hotrocvst-cell/xmusic-station',
+    rawVersionUrl: 'https://raw.githubusercontent.com/hotrocvst-cell/xmusic-station/main/version.json',
+    rawPlaylistsUrl: 'https://raw.githubusercontent.com/hotrocvst-cell/xmusic-station/main/sample-playlists.json',
+    rawUserscriptUrl: 'https://raw.githubusercontent.com/hotrocvst-cell/xmusic-station/main/userscript/xmusic-auto-playlist.user.js',
+    releasesUrl: 'https://github.com/hotrocvst-cell/xmusic-station/releases/latest'
+  });
+
+  function compareVersions(v1, v2) {
+    if (!v1 || !v2) return 0;
+    const p1 = String(v1).replace(/^v/, '').split('.').map(Number);
+    const p2 = String(v2).replace(/^v/, '').split('.').map(Number);
+    for (let i = 0; i < Math.max(p1.length, p2.length); i++) {
+      const num1 = p1[i] || 0;
+      const num2 = p2[i] || 0;
+      if (num1 > num2) return 1;
+      if (num1 < num2) return -1;
+    }
+    return 0;
+  }
+
+  async function checkDashboardGithubUpdates(resultContainer) {
+    if (!resultContainer) return;
+
+    resultContainer.innerHTML = `
+      <div style="color: #94a3b8; font-size: 13px; text-align: center; padding: 16px;">
+        Đang kết nối tới GitHub Admin (${OFFICIAL_GITHUB_REPO.fullName})...
+      </div>
+    `;
+
+    try {
+      const rawVersionUrl = `${OFFICIAL_GITHUB_REPO.rawVersionUrl}?t=${Date.now()}`;
+      const res = await fetch(rawVersionUrl);
+
+      if (!res.ok) {
+        resultContainer.innerHTML = `
+          <div style="background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 8px; padding: 12px; color: #fca5a5; font-size: 13px; line-height: 1.5;">
+            Không tìm thấy file <code>version.json</code> trên kho chính thức <b>${OFFICIAL_GITHUB_REPO.fullName}</b> (HTTP ${res.status}).
+          </div>
+        `;
+        return;
+      }
+
+      const remote = await res.json();
+      const currentVer = '2.2.0';
+      const isNewer = compareVersions(remote.version, currentVer) > 0;
+
+      let html = '';
+      if (isNewer) {
+        html = `
+          <div style="background: rgba(52, 211, 153, 0.1); border: 1px solid rgba(52, 211, 153, 0.35); border-radius: 12px; padding: 18px;">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+              <span class="xmusic-ver-pill new" style="background: rgba(52,211,153,0.2); color:#34d399; font-weight:700; padding:4px 12px; border-radius:20px;">
+                🎉 Có phiên bản mới: v${escapeHtml(remote.version)}
+              </span>
+              <span style="font-size: 12px; color: #94a3b8;">${escapeHtml(remote.updatedAt || '')}</span>
+            </div>
+            <div style="font-weight: 700; color: #fff; font-size: 15px; margin-bottom: 8px;">
+              ${escapeHtml(remote.name || 'Bản cập nhật từ Admin')}
+            </div>
+            <div style="background: rgba(15,23,42,0.6); padding: 12px; border-radius: 8px; margin-bottom: 14px;">
+              <div style="font-weight: 600; color: #34d399; font-size: 13px; margin-bottom: 6px;">Nội dung cập nhật mới:</div>
+              <ul style="margin: 0 0 0 18px; color: #cbd5e1; font-size: 13px; line-height: 1.6;">
+                ${(remote.releaseNotes || []).map(n => `<li>${escapeHtml(n)}</li>`).join('')}
+              </ul>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <button id="btn-dash-apply-github-pl" class="btn btn-primary" style="width: 100%;">
+                ⚡ 1. Nạp Kho Nhạc Mới Từ Admin (Giữ Playlist Riêng)
+              </button>
+              <a href="${OFFICIAL_GITHUB_REPO.rawUserscriptUrl}" target="_blank" class="btn btn-secondary" style="text-align: center; text-decoration: none;">
+                📥 2. Cập Nhật Tampermonkey Script
+              </a>
+              <a href="${OFFICIAL_GITHUB_REPO.releasesUrl}" target="_blank" class="btn btn-secondary" style="text-align: center; text-decoration: none;">
+                📦 3. Tải Extension .zip Từ GitHub Releases
+              </a>
+            </div>
+          </div>
+        `;
+      } else {
+        html = `
+          <div style="background: rgba(56, 189, 248, 0.1); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 12px; padding: 18px;">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+              <span style="font-size: 20px;">✅</span>
+              <span style="font-weight: 700; color: #38bdf8; font-size: 15px;">Bạn đang sử dụng phiên bản mới nhất (v${escapeHtml(currentVer)})!</span>
+            </div>
+            <p style="font-size: 13px; color: #94a3b8; margin-bottom: 14px;">
+              Kho Admin: <b>${OFFICIAL_GITHUB_REPO.fullName}</b> • Tổng bài hát: ${remote.totalSongs || 450} bài tuyển chọn.
+            </p>
+            <button id="btn-dash-force-github-pl" class="btn btn-secondary" style="width: 100%; margin-bottom: 8px;">
+              🔄 Nạp lại kho 450 bài từ Admin (Đồng bộ tức thì)
+            </button>
+            <a href="${OFFICIAL_GITHUB_REPO.url}" target="_blank" class="btn btn-secondary" style="display: block; text-align: center; text-decoration: none;">
+              🌐 Mở Kho GitHub Admin
+            </a>
+          </div>
+        `;
+      }
+
+      resultContainer.innerHTML = html;
+
+      const applyBtn = resultContainer.querySelector('#btn-dash-apply-github-pl') || resultContainer.querySelector('#btn-dash-force-github-pl');
+      if (applyBtn) {
+        applyBtn.addEventListener('click', async () => {
+          applyBtn.textContent = 'Đang tải từ Admin GitHub...';
+          applyBtn.disabled = true;
+          try {
+            const plRes = await fetch(`${OFFICIAL_GITHUB_REPO.rawPlaylistsUrl}?t=${Date.now()}`);
+            const plData = await plRes.json();
+            if (Array.isArray(plData) && plData.length > 0) {
+              smartUpdatePlaylists(plData, true);
+              showToast(`Đã đồng bộ ${plData.length} playlist từ Admin!`, 'success');
+              checkDashboardGithubUpdates(resultContainer);
+            } else {
+              showToast('Dữ liệu playlist từ Admin không hợp lệ!', 'error');
+            }
+          } catch (err) {
+            showToast('Lỗi khi tải từ GitHub: ' + err.message, 'error');
+          } finally {
+            applyBtn.textContent = '⚡ 1. Nạp Kho Nhạc Mới Từ Admin';
+            applyBtn.disabled = false;
+          }
+        });
+      }
+    } catch (e) {
+      resultContainer.innerHTML = `
+        <div style="color: #f87171; font-size: 13px; background: rgba(239,68,68,0.1); padding: 12px; border-radius: 8px;">
+          Lỗi kết nối GitHub Admin: ${escapeHtml(e.message)}
+        </div>
+      `;
+    }
+  }
+
   // Setup Actions & Event Listeners
   function setupActions() {
     // Top Bar Actions

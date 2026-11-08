@@ -1,6 +1,6 @@
 {
   "name": "xmusic-playlist-automation",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "Giải pháp ủy quyền tự động và quản lý playlist phát nhạc cá nhân cho https://player.xmusicstation.com/",
   "main": "server.js",
   "scripts": {

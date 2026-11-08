@@ -1,8 +1,9 @@
-// content.js - XMusicStation Left Sidebar & Queue Automation v2.0.0
+// content.js - XMusicStation Left Sidebar & Queue Automation v2.2.0
 (function () {
   'use strict';
 
-  console.log('[XMusic Assistant] Initializing script v2.2.0 (Cloud Sync & 450 Curated Songs) (Enhanced Matching & Publisher Catalog)...');
+  const APP_VERSION = '2.2.1';
+  console.log('[XMusic Assistant] Initializing script v' + APP_VERSION + ' (Cloud Sync & 450 Curated Songs)...');
 
   // Default configuration
   const DEFAULT_AUTH = {
@@ -6715,15 +6716,16 @@
   function injectLeftSidebarWidget() {
     if (document.getElementById('xmusic-assistant-root')) return;
 
-    const root = document.createElement('div');
-    root.id = 'xmusic-assistant-root';
+    try {
+      const root = document.createElement('div');
+      root.id = 'xmusic-assistant-root';
 
-    const playlists = getPlaylists();
-    const activeId = getActivePlaylistId();
-    const auth = getAuthConfig();
-    const isAutoPop = isAutoPopulateEnabled();
-    const isShuffleOnQ = isShuffleOnQueueEnabled();
-    const token = localStorage.getItem('token');
+      const playlists = getPlaylists();
+      const activeId = getActivePlaylistId();
+      const auth = getAuthConfig();
+      const isAutoPop = isAutoPopulateEnabled();
+      const isShuffleOnQ = isShuffleOnQueueEnabled();
+      const token = localStorage.getItem('token');
 
     root.innerHTML = `
       <!-- Launch Button (Fixed on the LEFT edge) -->
@@ -6928,13 +6930,20 @@
       </aside>
     `;
 
-    document.body.appendChild(root);
+    const targetContainer = document.body || document.documentElement;
+    if (targetContainer) {
+      targetContainer.appendChild(root);
+      console.log('[XMusic Assistant] Floating button & Left Sidebar injected into DOM.');
+    }
 
     bindSidebarEvents();
     renderCurrentPlaylistSongs();
     updateQueueCountUI();
     loadAndRenderPublisherTab();
+  } catch (err) {
+    console.error('[XMusic Assistant] Error injecting Left Sidebar Widget:', err);
   }
+}
 
   function renderCurrentPlaylistSongs() {
     const playlists = getPlaylists();
@@ -7569,31 +7578,42 @@
     // 2. Fetch publisher playlists in background
     fetchPublisherPlaylists();
 
-    // 3. Inject Left Sidebar UI
-    const checkInterval = setInterval(() => {
-      const isPlayerReady = document.querySelector('.player-wrap') || document.querySelector('.container') || document.body;
-      if (isPlayerReady) {
-        clearInterval(checkInterval);
+    // 3. Inject Left Sidebar UI immediately & retry until attached
+    function tryInject() {
+      if (document.getElementById('xmusic-assistant-root')) return true;
+      if (document.body || document.documentElement) {
         injectLeftSidebarWidget();
-
-        // 4. Auto-populate playlist on load if enabled
-        if (isAutoPopulateEnabled() && !window.location.pathname.includes('/login')) {
-          const autoKey = 'xmusic_autopopulated_session_' + new Date().toDateString();
-          if (!sessionStorage.getItem(autoKey)) {
-            sessionStorage.setItem(autoKey, 'true');
-            setTimeout(() => {
-              const playlists = getPlaylists();
-              const activeId = getActivePlaylistId();
-              const activePl = playlists.find(p => p.id === activeId);
-              if (activePl && activePl.songs && activePl.songs.length > 0) {
-                console.log('[XMusic Assistant] Tự động nạp playlist khi vào web...');
-                populateQueue(activePl, isShuffleOnQueueEnabled());
-              }
-            }, 1800);
-          }
-        }
+        return !!document.getElementById('xmusic-assistant-root');
       }
-    }, 400);
+      return false;
+    }
+
+    if (!tryInject()) {
+      let attempts = 0;
+      const checkInterval = setInterval(() => {
+        attempts++;
+        if (tryInject() || attempts > 25) {
+          clearInterval(checkInterval);
+        }
+      }, 250);
+    }
+
+    // 4. Auto-populate playlist on load if enabled
+    if (isAutoPopulateEnabled() && !window.location.pathname.includes('/login')) {
+      const autoKey = 'xmusic_autopopulated_session_' + new Date().toDateString();
+      if (!sessionStorage.getItem(autoKey)) {
+        sessionStorage.setItem(autoKey, 'true');
+        setTimeout(() => {
+          const playlists = getPlaylists();
+          const activeId = getActivePlaylistId();
+          const activePl = playlists.find(p => p.id === activeId);
+          if (activePl && activePl.songs && activePl.songs.length > 0) {
+            console.log('[XMusic Assistant] Tự động nạp playlist khi vào web...');
+            populateQueue(activePl, isShuffleOnQueueEnabled());
+          }
+        }, 1800);
+      }
+    }
   }
 
   if (document.readyState === 'loading') {

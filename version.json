@@ -1,11 +1,12 @@
 {
-  "version": "2.2.0",
+  "version": "2.2.1",
   "name": "XMusicStation Auto Playlist & Queue Manager",
-  "updatedAt": "2026-11-07",
+  "updatedAt": "2026-11-08",
   "playlistsCount": 6,
   "totalSongs": 450,
   "repository": "https://github.com/hotrocvst-cell/xmusic-station",
   "releaseNotes": [
+    "Sửa lỗi hiển thị UI Tampermonkey (APP_VERSION) và mở rộng match URL",
     "🔥 Mở rộng 6 playlist tuyển chọn lên 75 bài/playlist (tổng 450 bài bản quyền chuẩn XMusic).",
     "🔗 Bổ sung tính năng Chia sẻ Playlist qua mã XMPL2 và link mạng nội bộ.",
     "🚀 Khóa cứng nguồn cập nhật chính thức duy nhất từ Admin: hotrocvst-cell/xmusic-station.",

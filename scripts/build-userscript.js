@@ -14,7 +14,15 @@ const header = `// ==UserScript==
 // @version      ${currentVersion}
 // @description  Kho ${totalSongs} bài hát tuyển chọn (75 bài/playlist), chia sẻ playlist qua mã, đồng bộ Cloud chính thức từ hotrocvst-cell/xmusic-station
 // @author       hotrocvst-cell
+// @match        *://player.xmusicstation.com/*
+// @match        *://web.xmusicstation.com/*
 // @match        https://player.xmusicstation.com/*
+// @match        http://player.xmusicstation.com/*
+// @include      *://player.xmusicstation.com/*
+// @include      *://web.xmusicstation.com/*
+// @include      https://player.xmusicstation.com/*
+// @include      http://player.xmusicstation.com/*
+// @include      *player.xmusicstation.com*
 // @homepageURL  https://github.com/hotrocvst-cell/xmusic-station
 // @updateURL    https://raw.githubusercontent.com/hotrocvst-cell/xmusic-station/main/userscript/xmusic-auto-playlist.user.js
 // @downloadURL  https://raw.githubusercontent.com/hotrocvst-cell/xmusic-station/main/userscript/xmusic-auto-playlist.user.js

@@ -80,6 +80,13 @@ manifestData.version = cleanVersion;
 fs.writeFileSync(manifestJsonPath, JSON.stringify(manifestData, null, 2) + '\n', 'utf8');
 console.log('✅ 3. Đã cập nhật extension/manifest.json');
 
+// 5. Cập nhật extension/content.js
+const contentJsPath = path.join(rootDir, 'extension/content.js');
+let contentJs = fs.readFileSync(contentJsPath, 'utf8');
+contentJs = contentJs.replace(/const APP_VERSION = '[^']+';/, `const APP_VERSION = '${cleanVersion}';`);
+fs.writeFileSync(contentJsPath, contentJs, 'utf8');
+console.log('✅ 4. Đã cập nhật extension/content.js (const APP_VERSION)');
+
 // 5. Chạy build lại userscript và guide HTML
 console.log('⏳ 4. Đang build lại Userscript và tài liệu hướng dẫn...');
 try {
