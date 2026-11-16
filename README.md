@@ -1,6 +1,6 @@
 # 🎵 XMusicStation Auto Playlist & Queue Manager
 
-[![Version](https://img.shields.io/badge/version-2.4.0-blue.svg)](https://github.com/hotrocvst-cell/xmusic-station)
+[![Version](https://img.shields.io/badge/version-2.5.0-blue.svg)](https://github.com/hotrocvst-cell/xmusic-station)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Target](https://img.shields.io/badge/platform-player.xmusicstation.com-purple.svg)](https://player.xmusicstation.com/)
 [![Curated Songs](https://img.shields.io/badge/catalog-200%20bài%20hát-orange.svg)](sample-playlists.json)
@@ -66,9 +66,9 @@ Mở trình duyệt truy cập: **`http://localhost:3000`**
 
 ## 🌟 TÍNH NĂNG NỔI BẬT
 
-1. **Kho 200 Bài Hát Tuyển Chọn Chuẩn XMusic (50 bài / Chủ đề)**:
-   - Tuyển chọn 4 chủ đề chuẩn: **Nhạc Việt Sôi Động 2026**, **Top Hit Rap Việt Thịnh Hành**, **Ballad Cảm Xúc & Sâu Lắng**, và **Giáng Sinh & Mùa Lễ Hội Sôi Động**.
-   - Toàn bộ 200 bài hát đều được lấy trực tiếp từ kho nhạc bản quyền XMusic Station, có đầy đủ âm thanh chất lượng cao, hình ảnh bìa và thời lượng chính xác.
+1. **Kho 300 Bài Hát Tuyển Chọn Chuẩn V-Pop (100 bài / Chủ đề)**:
+   - Tuyển chọn 3 chủ đề đỉnh cao theo xu hướng nghe nhiều nhất: **Nhạc Việt Sôi Động & Remix**, **Top Hit Rap Việt Thịnh Hành**, và **Ballad Cảm Xúc & Sâu Lắng**.
+   - Toàn bộ 300 bài hát đều là những ca khúc quen thuộc, nổi tiếng của các nghệ sĩ hàng đầu V-Pop (Sơn Tùng M-TP, HIEUTHUHAI, Đen Vâu, Vũ., Trung Quân, Đức Phúc, ERIK, Hoàng Dũng, Văn Mai Hương, Tăng Duy Tân, ANH TRAI "SAY HI", EM XINH "SAY HI"...), tuyệt đối không chứa ca sĩ xa lạ.
 
 2. **Chia Sẻ Playlist Bằng Mã `XMPL2` & Mạng Nội Bộ**:
    - Bấm **`🔗 Chia Sẻ`** tại bất kỳ playlist nào để tạo mã chia sẻ siêu gọn dạng `XMPL2:...`.
@@ -95,14 +95,13 @@ Mở trình duyệt truy cập: **`http://localhost:3000`**
 
 ---
 
-## 🎶 4 DANH SÁCH PHÁT TUYỂN CHỌN CHUẨN v2.4.0 (200 BÀI HÁT)
+## 🎶 3 DANH SÁCH PHÁT TUYỂN CHỌN CHUẨN v2.5.0 (300 BÀI HÁT)
 
 | # | Tên Playlist | Số lượng | Phong cách & Nghệ sĩ tiêu biểu |
 |---|---|:---:|---|
-| 1 | **⚡ Top Nhạc Việt Sôi Động & Remix 2026** | 50 bài | *Sơn Tùng M-TP, Da LAB, Tăng Duy Tân, ANH TRAI "SAY HI", EM XINH "SAY HI", Cukak, Phong Max, Freaky Remix...* |
-| 2 | **🎤 Top Hit Rap Việt Thịnh Hành** | 50 bài | *HIEUTHUHAI, RHYDER, Pháp Kiều, HURRYKNG, Đen Vâu, BigDaddy, Negav, Tez, Double2T, Phúc Du, Gill...* |
-| 3 | **🌧️ Top Ballad Cảm Xúc & Sâu Lắng** | 50 bài | *Trung Quân Idol, Vũ., Đức Phúc, Hoàng Dũng, Văn Mai Hương, ERIK, Bùi Anh Tuấn, Quân A.P, Phan Mạnh Quỳnh...* |
-| 4 | **🎄 Giáng Sinh & Mùa Lễ Hội Sôi Động** | 50 bài | *Đêm Giáng Sinh Mùa Hạ, Đông Vừa Sang Remix, Mùa Đông Đã Đến, Một Năm Mới Bình An, Tết Đong Đầy, EDM Festival...* |
+| 1 | **⚡ Top Nhạc Việt Sôi Động & Remix 2026** | 100 bài | *Sơn Tùng M-TP, Da LAB, Tăng Duy Tân, ANH TRAI "SAY HI", EM XINH "SAY HI", TINH HÀ "SAY HI", Cukak, Phong Max, Freaky, Wren Evans, MONO, Hoàng Thùy Linh, Jack...* |
+| 2 | **🎤 Top Hit Rap Việt Thịnh Hành** | 100 bài | *HIEUTHUHAI, Đen Vâu, BigDaddy, Pháp Kiều, RHYDER, HURRYKNG, Freaky, Karik, JustaTee, B Ray, Dick, Huỳnh James, OSAD, Xesi, Kay Trần...* |
+| 3 | **🌧️ Top Ballad Cảm Xúc & Sâu Lắng** | 100 bài | *Trung Quân Idol, Vũ., Đức Phúc, ERIK, Hoàng Dũng, Văn Mai Hương, Bùi Anh Tuấn, Phan Mạnh Quỳnh, Noo Phước Thịnh, Vũ Cát Tường, Thịnh Suy, Quân A.P, AMEE, Phương Ly, Trang...* |
 
 ---
 
@@ -113,7 +112,7 @@ Dự án đã được tích hợp sẵn công cụ đồng bộ và quy trình 
 ### Bước 1: Đồng bộ cấu hình dự án (1 lệnh duy nhất)
 Chạy lệnh sau tại thư mục dự án:
 ```bash
-npm run bump 2.4.0 "Nội dung cập nhật mới"
+npm run bump 2.5.0 "Nội dung cập nhật mới"
 ```
 *(Lệnh này tự động cập nhật `version.json`, `package.json`, `manifest.json`, đồng thời build lại userscript và tài liệu).*
 
@@ -123,7 +122,7 @@ npm run bump 2.4.0 "Nội dung cập nhật mới"
 
 #### 🖥️ Cách 1: Sử dụng GitHub Desktop App (Khuyên dùng)
 1. Mở **GitHub Desktop** -> Ở cột bên trái (tab **Changes**), bạn sẽ thấy các file đã cập nhật.
-2. Nhập vào ô Summary: `release: v2.4.0` -> Bấm nút xanh **`Commit to main`**.
+2. Nhập vào ô Summary: `release: v2.5.0` -> Bấm nút xanh **`Commit to main`**.
 3. Bấm **`Push origin`** ở thanh công cụ trên cùng.
 4. **Tạo Tag để kích hoạt Release**:
    - Chuyển sang tab **History** (cạnh tab *Changes*).
@@ -134,8 +133,8 @@ npm run bump 2.4.0 "Nội dung cập nhật mới"
 #### ⌨️ Cách 2: Sử dụng dòng lệnh Git (CLI)
 ```bash
 git add .
-git commit -m "release: v2.4.0"
-git tag v2.4.0
+git commit -m "release: v2.5.0"
+git tag v2.5.0
 git push origin main --tags
 ```
 

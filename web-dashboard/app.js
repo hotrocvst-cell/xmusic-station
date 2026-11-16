@@ -12,11 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const DEFAULT_PLAYLISTS = [
   {
-    "id": "playlist-nhac-viet-soi-dong",
+    "id": "playlist-soi-dong-remix",
     "name": "⚡ Top Nhạc Việt Sôi Động & Remix 2026",
-    "description": "Tuyển chọn 50 bản hit nhạc Việt sôi động, EDM, Vinahouse và Dance Pop bùng nổ năng lượng nhất (Sơn Tùng M-TP, Da LAB, Tăng Duy Tân, Anh Trai Say Hi, Em Xinh Say Hi, Tam Vinh Producer...).",
-    "createdAt": "2026-11-16T02:57:27.235Z",
-    "version": "2.3.0",
+    "description": "Tuyển chọn 100 ca khúc V-Pop sôi động, EDM Festival, Vinahouse và Pop Dance hot nhất từ các ngôi sao hàng đầu (Sơn Tùng M-TP, Tăng Duy Tân, ANH TRAI \"SAY HI\", EM XINH \"SAY HI\", Da LAB, Cukak, Phong Max...).",
+    "createdAt": "2026-11-16T04:41:38.859Z",
+    "version": "2.5.0",
     "songs": [
       {
         "key": "9Fd4zVvPMIbf",
@@ -154,6 +154,84 @@ document.addEventListener('DOMContentLoaded', () => {
         "image": "https://image-cdn.nct.vn/song/2024/06/15/9/3/9/1/1718396273723_300.jpg"
       },
       {
+        "key": "jFehIyXrCHMm",
+        "title": "CATCH ME IF YOU CAN",
+        "artists": [
+          "ANH TRAI \"SAY HI\"",
+          "Quang Hùng MasterD",
+          "Negav",
+          "Công Dương",
+          "NICKY"
+        ],
+        "duration": 256,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/Warner_Audio248/CatchMeIfYouCanFeatQuangHungMasterdNegavCongDuongNicky-ANHTRAISAYHI-15285296.mp3?st=AVFqByZvjfYfQMBopJpaiA&e=1794662764&a=0&p=0&r=7ef1ee21196ca56483dcb6374348dce8",
+        "image": "https://image-cdn.nct.vn/song/2024/07/05/8/d/1/2/1720195916328_300.jpg"
+      },
+      {
+        "key": "ZViQdtds3AH7",
+        "title": "Tình Đầu Quá Chén",
+        "artists": [
+          "ANH TRAI \"SAY HI\"",
+          "Quang Hùng MasterD",
+          "Negav",
+          "Pháp Kiều",
+          "ERIK"
+        ],
+        "duration": 316,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/Warner_Audio270/TinhDauQuaChenFeatQuangHungMasterdNegavPhapKieuErik-ANHTRAISAYHI-16206182.mp3?st=sk043ivtYyvHl44GgUzyEg&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2024/09/13/f/1/0/2/1726246384758_300.jpg"
+      },
+      {
+        "key": "gwkZrcqfbbOI",
+        "title": "NGÁO NGƠ",
+        "artists": [
+          "ANH TRAI \"SAY HI\"",
+          "HIEUTHUHAI",
+          "ERIK",
+          "Anh Tú Atus",
+          "JSOL",
+          "Orange"
+        ],
+        "duration": 252,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/Warner_Audio256/NgaoNgoFeatHieuthuhaiErikAnhTuAtusJsolOrange-ANHTRAISAYHI-15564774.mp3?st=02_Z7bFB_42TQefUfz6m3A&e=1794577136&a=0&p=0&r=7b9cbbb321d78ed7de611debde459459",
+        "image": "https://image-cdn.nct.vn/song/2024/08/02/6/5/b/a/1722607585053_300.jpg"
+      },
+      {
+        "key": "ITZdSZPfW2PF",
+        "title": "I'M THINKING ABOUT YOU",
+        "artists": [
+          "ANH TRAI \"SAY HI\"",
+          "RHYDER",
+          "WEAN",
+          "Đức Phúc",
+          "Gemini Hùng Huỳnh",
+          "tlinh"
+        ],
+        "duration": 278,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/Warner_Audio257/IMThinkingAboutYouFeatRhyderWeanDucPhucHungHuynhTlinh-ANHTRAISAYHI-15631775.mp3?st=Ou23s_kpqQBjwcmaT5wmUA&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2024/08/09/b/d/0/0/1723211825063_300.jpg"
+      },
+      {
+        "key": "I27zoLp2Ovzz",
+        "title": "KIM PHÚT, KIM GIỜ",
+        "artists": [
+          "Isaac",
+          "Negav",
+          "HIEUTHUHAI",
+          "HURRYKNG",
+          "Pháp Kiều",
+          "ANH TRAI \"SAY HI\""
+        ],
+        "duration": 295,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/Warner_Audio260/KimPhutKimGioFeatHurrykngHieuthuhaiNegavPhapKieuIsaac-ANHTRAISAYHI-15840467.mp3?st=oHniIWHJeeYrXRs5yyxBWQ&e=1794577136&a=0&p=0&r=7b9cbbb321d78ed7de611debde459459",
+        "image": "https://image-cdn.nct.vn/song/2024/08/23/e/c/3/c/1724421820127_300.jpg"
+      },
+      {
         "key": "GhjCJqbl700Z",
         "title": "VỖ TAY",
         "artists": [
@@ -192,139 +270,19 @@ document.addEventListener('DOMContentLoaded', () => {
         "image": "https://image-cdn.nct.vn/song/2025/06/02/e/b/8/e/1748842250540_300.jpg"
       },
       {
-        "key": "hzxaln2Xti2U",
-        "title": "EM XINH EM BLING",
+        "key": "RkLxj9aLU0FD",
+        "title": "DANCIN' MY WAY",
         "artists": [
-          "EM XINH \"SAY HI\"",
-          "Pháo",
-          "Phương Ly",
-          "Juky San",
-          "Chi Xê",
-          "Hoàng Duyên"
-        ],
-        "duration": 202,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2506/19/07/dwwjpscho6.mp3?st=EHGdPPlz9F7WfJ8OSvsi8w&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2025/06/09/5/3/6/3/1749442857092_300.jpg"
-      },
-      {
-        "key": "gio1Wqg9NlIp",
-        "title": "AAA",
-        "artists": [
-          "EM XINH \"SAY HI\"",
-          "Tiên Tiên",
-          "Phương Mỹ Chi",
-          "Juky San",
-          "Lâm Bảo Ngọc",
-          "52Hz",
-          "Pháo",
-          "Han Sara",
-          "DANMY",
-          "Muộii",
-          "Ánh Sáng AZA",
-          "桃子A1J",
-          "LyHan",
-          "MAIQUINN",
-          "Châu Bùi",
-          "Yeolan"
-        ],
-        "duration": 236,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2506/a2/bd/xp08sucoef.mp3?st=w3OD2XKahYX-VOGougNDBw&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2025/06/02/e/b/8/e/1748842250540_300.jpg"
-      },
-      {
-        "key": "ljxRTVWmdNfT",
-        "title": "CŨNG MAY LÀ Ế",
-        "artists": [
-          "ANH TRAI \"SAY HI\"",
-          "B Ray",
-          "Karik",
-          "CODYNAMVO",
-          "GILL",
-          "Ryn Lee"
-        ],
-        "duration": 222,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2511/98/f0/z0qdlvettt.mp3?st=ZS_x9AjK-SxNTLqSdJxj7A&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2025/11/17/Y/f/D/T/1763353192712_300.jpg"
-      },
-      {
-        "key": "qWmc2x35NHEk",
-        "title": "MAKE UP",
-        "artists": [
-          "ANH TRAI \"SAY HI\"",
-          "DILLAN",
+          "TINH HÀ \"SAY HI\"",
           "buitruonglinh",
-          "Đỗ Nam Sơn",
-          "Lohan",
-          "Ryn Lee",
-          "Bảo Thy"
+          "Sơn.K",
+          "HYO",
+          "Song Luân"
         ],
-        "duration": 258,
+        "duration": 244,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2511/d3/53/eahs42sipx.mp3?st=SW5J3_YcUdD6H-ia5-cJ3A&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2025/11/03/D/2/u/R/1762160793118_300.jpg"
-      },
-      {
-        "key": "0U4Pr5esABDT",
-        "title": "REGRET",
-        "artists": [
-          "ANH TRAI \"SAY HI\"",
-          "Quân A.P",
-          "Pháp Kiều",
-          "Quang Trung",
-          "Ali Hoàng Dương",
-          "Lâm Bảo Ngọc"
-        ],
-        "duration": 252,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/Warner_Audio256/RegretFeatQuanApPhapKieuQuangTrungAliHoangDuongLamBaoNgoc-ANHTRAISAYHI-15564775.mp3?st=4del4Okh93yiwVJT0mxECQ&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2024/08/02/6/5/b/a/1722607585053_300.jpg"
-      },
-      {
-        "key": "0v5fPaVB4qmf",
-        "title": "ANH TRAI NƯỚC VIỆT",
-        "artists": [
-          "ANH TRAI \"SAY HI\"",
-          "ERIK",
-          "Đức Phúc",
-          "Quân A.P",
-          "JSOL",
-          "Gemini Hùng Huỳnh"
-        ],
-        "duration": 251,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/Warner_Audio259/AnhTraiNuocVietFeatErikDucPhucQuanApJsolHungHuynh-ANHTRAISAYHI-15770775.mp3?st=_hc6jCrFQbXzGGGIWLJsqQ&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2024/08/17/f/b/4/4/1723893395674_300.jpg"
-      },
-      {
-        "key": "8fBWGX9hPFRW",
-        "title": "GÃ SĂN CÁ",
-        "artists": [
-          "EM XINH \"SAY HI\"",
-          "Lâm Bảo Ngọc",
-          "Quỳnh Anh Shyn",
-          "MAIQUINN",
-          "Saabirose",
-          "Quang Hùng MasterD"
-        ],
-        "duration": 232,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2507/fd/84/4g56qmjsg0.mp3?st=9x2NubS7cNqv04-ONlxQcw&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2025/07/01/1/4/c/4/1751334001626_300.jpg"
-      },
-      {
-        "key": "A3Paw1blPQuR",
-        "title": "QUAY ĐI QUAY LẠI",
-        "artists": [
-          "HIEUTHUHAI",
-          "ANH TRAI \"SAY HI\""
-        ],
-        "duration": 210,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NCTSong/2409/55/33/8fjymv06r3.mp3?st=wHj5sEmRsw8hOfplXsrs5A&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2024/08/31/5/f/c/2/1725070519239_300.jpg"
+        "streamUrl": "https://stream.nct.vn/resa/2607/35/44/0g63j27s9w.mp3?st=VVZk03H1Sn4Sd5kOslyZWQ&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2026/07/10/6/g/w/v/1783666342729_300.jpg"
       },
       {
         "key": "lTsGgLEw63U6",
@@ -343,6 +301,21 @@ document.addEventListener('DOMContentLoaded', () => {
         "image": "https://image-cdn.nct.vn/song/2026/07/24/V/2/2/4/1784877877927_300.jpg"
       },
       {
+        "key": "K5sM5HjDRSGk",
+        "title": "IDNAT (IM ĐỢI NGƯỜI ANH THƯƠNG)",
+        "artists": [
+          "TINH HÀ \"SAY HI\"",
+          "Wren Evans",
+          "IVAN",
+          "CAPTAIN BOY",
+          "Thể Thiên"
+        ],
+        "duration": 239,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2607/ce/3a/9pr3er43fk.mp3?st=Bx8YihX9FFeLLZNITVlcNQ&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2026/07/10/6/g/w/v/1783666342729_300.jpg"
+      },
+      {
         "key": "IfYMlwyQfM6n",
         "title": "tết tình",
         "artists": [
@@ -358,81 +331,31 @@ document.addEventListener('DOMContentLoaded', () => {
         "image": "https://image-cdn.nct.vn/song/2026/08/14/t/8/e/K/1786702328021_300.jpg"
       },
       {
-        "key": "RkLxj9aLU0FD",
-        "title": "DANCIN' MY WAY",
+        "key": "oNXVQ2bkB8Ay",
+        "title": "CÔ ĐƠN ANH CŨNG VUI",
         "artists": [
           "TINH HÀ \"SAY HI\"",
-          "buitruonglinh",
-          "Sơn.K",
-          "HYO",
-          "Song Luân"
+          "WEAN",
+          "KIMLONG",
+          "Xuân Định K.Y",
+          "DILLAN"
         ],
-        "duration": 244,
+        "duration": 350,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2607/35/44/0g63j27s9w.mp3?st=VVZk03H1Sn4Sd5kOslyZWQ&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "streamUrl": "https://stream.nct.vn/resa/2607/d4/24/q8av498yb9.mp3?st=l1mR-fg7-5vzLSdWLZ4jDw&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
         "image": "https://image-cdn.nct.vn/song/2026/07/10/6/g/w/v/1783666342729_300.jpg"
       },
       {
-        "key": "tvDTOCZAUcvb",
-        "title": "CÓ GÌ ĐÂU MÀ CAY",
+        "key": "X17IY2MnscG3",
+        "title": "Thức Giấc (Pema. Remix)",
         "artists": [
-          "TINH HÀ \"SAY HI\"",
-          "CAPTAIN BOY",
-          "CoolKid",
-          "IVAN",
-          "Xuân Định K.Y",
-          "leonsash"
+          "Da LAB",
+          "PEMA"
         ],
-        "duration": 288,
+        "duration": 285,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2607/6f/12/smvquq0n4q.mp3?st=XSt7V9eDKhXV_gwvdJMHug&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2026/07/24/V/2/2/4/1784877877927_300.jpg"
-      },
-      {
-        "key": "VtFikTfhGn51",
-        "title": "TOGETHER WE SHINE",
-        "artists": [
-          "TINH HÀ \"SAY HI\"",
-          "Dương Domic",
-          "Pháp Kiều",
-          "JSOL",
-          "buitruonglinh",
-          "Sơn.K",
-          "CONGB",
-          "VƯƠNG BÌNH",
-          "Đặng Hồng Hải",
-          "IVAN",
-          "HURRYKNG",
-          "Song Luân",
-          "CODYNAMVO",
-          "CoolKid",
-          "Jaysonlei",
-          "HYO",
-          "Thể Thiên",
-          "Wren Evans",
-          "KIMLONG",
-          "CAPTAIN BOY",
-          "WEAN",
-          "Xuân Định K.Y",
-          "Quang Hùng MasterD",
-          "DILLAN",
-          "Ali Hoàng Dương"
-        ],
-        "duration": 316,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2607/ed/14/o66j2p71a9.mp3?st=J9yhVRCcr4HCSLyHXwhchQ&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2026/07/06/h/8/e/9/1783310563751_300.jpg"
-      },
-      {
-        "key": "0RquGIB484XK",
-        "title": "Như Giấc Mơ",
-        "artists": [
-          "Machiot"
-        ],
-        "duration": 176,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1000/NhuGiacMo-Machiot-6301157.mp3?st=dTpDtU-eB_KgmCZGfzolVQ&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2020/06/17/9/4/7/9/1592367923970_300.jpg"
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1024/ThucGiacPemaRemix-DaLABPEMA-7120868.mp3?st=uEv58GvnWEwoZh_Hb4fK2A&e=1794662763&a=0&p=0&r=65e39d1b5994d674c625f06f3c1fed08",
+        "image": "https://image-cdn.nct.vn/song/2021/11/22/3/0/c/0/1637550252373_300.jpg"
       },
       {
         "key": "1uWWUf6ZAHC4",
@@ -516,17 +439,6 @@ document.addEventListener('DOMContentLoaded', () => {
         "kbit": 128,
         "streamUrl": "https://stream.nct.vn/NhacCuaTui1000/DanhThucGiacMoRemixVersion-HanTruongJungLy-6317034.mp3?st=9_vtcHX1rx8YNp7eWi_d2Q&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
         "image": "https://image-cdn.nct.vn/song/2020/06/30/1/1/b/4/1593510048621_300.jpg"
-      },
-      {
-        "key": "KaaqsqZxcPMf",
-        "title": "Có Chắc Là Yêu Không? (Vinahouse Remix)",
-        "artists": [
-          "NonHanTa"
-        ],
-        "duration": 280,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1003/CoChacLaYeuKhongVinahouseRemix-NonHanTa-6638576.mp3?st=HnCBueBVFD-qztA5DRUMZA&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
-        "image": "https://image-cdn.nct.vn/singer/avatar/2019/07/19/2/3/b/1/1563509005550_300.jpg"
       },
       {
         "key": "QoeBAQxl5vKV",
@@ -618,17 +530,6 @@ document.addEventListener('DOMContentLoaded', () => {
         "image": "https://image-cdn.nct.vn/song/2020/10/26/4/3/b/8/1603696310110_300.jpg"
       },
       {
-        "key": "p2FwZLgyFW8k",
-        "title": "Chẳng Thể Nhớ Em Remix",
-        "artists": [
-          "NonHanTa"
-        ],
-        "duration": 253,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1005/ChangTheNhoEmRemix-NonHanTa-6771187.mp3?st=fWbRJI2lpfkhtnN77UbJWg&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
-        "image": "https://image-cdn.nct.vn/song/2020/10/29/5/4/e/e/1603961352001_300.jpg"
-      },
-      {
         "key": "cOXRR6nKGaaA",
         "title": "Yêu Sâu Đậm Sẽ Mang Sai Lầm (Heineken Remix)",
         "artists": [
@@ -649,17 +550,6 @@ document.addEventListener('DOMContentLoaded', () => {
         "kbit": 128,
         "streamUrl": "https://stream.nct.vn/NhacCuaTui1006/TeQuaDiThoiRemix-DeusTienDat-6819967.mp3?st=45jy8c_X2pzZ7wLVjhtW3g&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
         "image": "https://image-cdn.nct.vn/song/2020/11/17/b/e/e/2/1605585977058_300.jpg"
-      },
-      {
-        "key": "joQJcDfSEZsp",
-        "title": "Từng Một Người Yêu Em Remix",
-        "artists": [
-          "NonHanTa"
-        ],
-        "duration": 243,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1006/TungMotNguoiYeuEmRemix-NonHanTa-6812279.mp3?st=q5vv7Yi1QSNv_g4FnPgdDA&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
-        "image": "https://image-cdn.nct.vn/song/2020/11/13/b/0/9/1/1605237805727_300.jpg"
       },
       {
         "key": "BH6deqdygD7W",
@@ -707,272 +597,370 @@ document.addEventListener('DOMContentLoaded', () => {
         "kbit": 128,
         "streamUrl": "https://stream.nct.vn/NhacCuaTui1015/AiNgoKvproxRemix-QuangChoLamMaiLinh-7007838.mp3?st=-yssr9VrenxPHL6M64Sl8g&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
         "image": "https://image-cdn.nct.vn/song/2021/04/23/2/f/5/3/1619162467538_300.jpg"
-      }
-    ]
-  },
-  {
-    "id": "playlist-rap-viet-trending",
-    "name": "🎤 Top Hit Rap Việt Thịnh Hành",
-    "description": "Tuyển tập 50 ca khúc Rap Việt đỉnh cao, triệu view từ các nghệ sĩ hàng đầu (HIEUTHUHAI, RHYDER, Pháp Kiều, HURRYKNG, Đen Vâu, BigDaddy, Phúc Du, Freaky, OSAD, ICD, Anh Trai Say Hi...).",
-    "createdAt": "2026-11-16T02:57:27.241Z",
-    "version": "2.3.0",
-    "songs": [
+      },
       {
-        "key": "A3Paw1blPQuR",
-        "title": "QUAY ĐI QUAY LẠI",
+        "key": "NS7ZYnoMCMYJ",
+        "title": "Ngọt (Heineken Remix)",
         "artists": [
-          "HIEUTHUHAI",
-          "ANH TRAI \"SAY HI\""
+          "Quang Minh",
+          "Hugo"
+        ],
+        "duration": 319,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1014/NgotHeinekenRemix-QuangMinhHugoVietNam-7006286.mp3?st=Qsq6O1P6pQJKn1PQJQIVYA&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
+        "image": "https://image-cdn.nct.vn/song/2021/04/19/d/1/f/1/1618785328232_300.jpg"
+      },
+      {
+        "key": "e18TjUQDzdrP",
+        "title": "Phận Duyên Lỡ Làng (HeineKen Remix)",
+        "artists": [
+          "Phát Huy T4",
+          "Truzg"
+        ],
+        "duration": 307,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1014/PhanDuyenLoLangHeinekenRemix-PhatHuyT4Trugz-7004546.mp3?st=zKcLc9p_6_nC8FXBfMyCXw&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
+        "image": "https://image-cdn.nct.vn/song/2021/04/14/c/3/3/b/1618383680950_300.jpg"
+      },
+      {
+        "key": "GWo8sJlcCRww",
+        "title": "Vấn Duyên Tình Remix",
+        "artists": [
+          "Kaiz",
+          "Like.Q"
+        ],
+        "duration": 208,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1012/VanDuyenTinhRemix-KaizLikeQ-6962586.mp3?st=vAEvJV0-bY6mULva8_wO_w&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
+        "image": "https://image-cdn.nct.vn/song/2021/03/09/c/3/5/4/1615264374307_300.jpg"
+      },
+      {
+        "key": "2X6RFV8lW27P",
+        "title": "Tốt Cho Cả Hai (Cukak Remix)",
+        "artists": [
+          "Quang Chợ Lầm"
         ],
         "duration": 210,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NCTSong/2409/55/33/8fjymv06r3.mp3?st=wHj5sEmRsw8hOfplXsrs5A&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2024/08/31/5/f/c/2/1725070519239_300.jpg"
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1010/TotChoCaHaiCukakRemix-QuangChoLam-6916729.mp3?st=DPO6mYTKCCvFzavhJpM6UA&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
+        "image": "https://image-cdn.nct.vn/song/2021/01/13/b/d/d/4/1610510317474_300.jpg"
       },
       {
-        "key": "9hVrZ2qY9XqD",
-        "title": "Sao Hạng A",
+        "key": "UvcearXYO17c",
+        "title": "Cơn Mưa Qua (Cukak Remix)",
         "artists": [
-          "ANH TRAI \"SAY HI\"",
-          "HIEUTHUHAI",
-          "Dương Domic",
-          "Song Luân",
-          "JSOL",
-          "Trần Đăng Dương"
+          "DMD Minh Duy"
         ],
-        "duration": 252,
+        "duration": 216,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/Warner_Audio270/SaoHangAFeatHieuthuhaiDuongDomicSongLuanJsolTranDangDuong-ANHTRAISAYHI-16206185.mp3?st=4970CUZdb_MO109HFMD71w&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2024/09/13/f/1/0/2/1726246384758_300.jpg"
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1010/ConMuaQuaCukakRemix-DMDMinhDuy-6931484.mp3?st=RCuEkZzyuglp1ZJ6WXh8Ew&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
+        "image": "https://image-cdn.nct.vn/song/2021/02/01/d/0/3/0/1612156029344_300.jpg"
       },
       {
-        "key": "SE1G1K2nC0zu",
-        "title": "NỖI ĐAU NGÂY DẠI",
+        "key": "lHlED72UF0l9",
+        "title": "Thê Lương (Cukak Remix)",
         "artists": [
-          "ANH TRAI \"SAY HI\"",
-          "HIEUTHUHAI",
-          "Đức Phúc",
-          "Công Dương"
-        ],
-        "duration": 258,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/Warner_Audio245/NoiDauNgayDaiFeatHieuthuhaiDucPhucCongDuong-ANHTRAISAYHI-15145547.mp3?st=fKnA1xgbbUHk4UDhwZbx0w&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2024/06/25/4/4/7/1/1719253194515_300.jpg"
-      },
-      {
-        "key": "ITZdSZPfW2PF",
-        "title": "I'M THINKING ABOUT YOU",
-        "artists": [
-          "ANH TRAI \"SAY HI\"",
-          "RHYDER",
-          "WEAN",
-          "Đức Phúc",
-          "Gemini Hùng Huỳnh",
-          "tlinh"
-        ],
-        "duration": 278,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/Warner_Audio257/IMThinkingAboutYouFeatRhyderWeanDucPhucHungHuynhTlinh-ANHTRAISAYHI-15631775.mp3?st=Ou23s_kpqQBjwcmaT5wmUA&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2024/08/09/b/d/0/0/1723211825063_300.jpg"
-      },
-      {
-        "key": "1JITUz09WzVY",
-        "title": "SAU ĐÊM NAY",
-        "artists": [
-          "ANH TRAI \"SAY HI\"",
-          "ERIK",
-          "Đức Phúc",
-          "Quân A.P",
-          "JSOL",
-          "Gemini Hùng Huỳnh"
-        ],
-        "duration": 291,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/Warner_Audio259/SauDemNayFeatErikDucPhucQuanApJsolHungHuynh-ANHTRAISAYHI-15770779.mp3?st=tat6rq-mHbIrqc3iQL3tTg&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2024/08/17/f/b/4/4/1723893395674_300.jpg"
-      },
-      {
-        "key": "2DHGAbJCbp1b",
-        "title": "BẢNH",
-        "artists": [
-          "ANH TRAI \"SAY HI\"",
-          "Anh Tú Atus",
-          "Song Luân",
-          "RHYDER",
-          "HURRYKNG",
-          "CAPTAIN BOY",
-          "Quang Trung",
-          "Dương Domic",
-          "Anh Tú",
-          "JSOL",
-          "Đỗ Phú Quí",
-          "Tage",
-          "Phạm Đình Thái Ngân",
-          "Phạm Anh Duy",
-          "Gemini Hùng Huỳnh",
-          "ERIK"
-        ],
-        "duration": 217,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/Warner_Audio243/BangFeatAnhTuAtusSongLuanRhyderHurrykngCaptainQuangTrungDuongDomicAnhTuJsolDoPhuQuiTagePhamDinhThaiNganPhamAnhDuyHungHuynh-ANHTRAISAYHI-15065466.mp3?st=Kxof2sAB-5RkGVjffYIF-g&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2024/06/15/9/3/9/1/1718396273723_300.jpg"
-      },
-      {
-        "key": "0v5fPaVB4qmf",
-        "title": "ANH TRAI NƯỚC VIỆT",
-        "artists": [
-          "ANH TRAI \"SAY HI\"",
-          "ERIK",
-          "Đức Phúc",
-          "Quân A.P",
-          "JSOL",
-          "Gemini Hùng Huỳnh"
-        ],
-        "duration": 251,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/Warner_Audio259/AnhTraiNuocVietFeatErikDucPhucQuanApJsolHungHuynh-ANHTRAISAYHI-15770775.mp3?st=_hc6jCrFQbXzGGGIWLJsqQ&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2024/08/17/f/b/4/4/1723893395674_300.jpg"
-      },
-      {
-        "key": "PJMDWo8qSqvI",
-        "title": "Tràn Bộ Nhớ",
-        "artists": [
-          "ANH TRAI \"SAY HI\"",
-          "Dương Domic"
-        ],
-        "duration": 210,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/Warner_Audio265/TranBoNhoFeatDuongDomic-ANHTRAISAYHI-16027394.mp3?st=LGk5cFCklWAiOgHvh9EaZw&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2024/09/07/c/7/8/0/1725682110609_300.jpg"
-      },
-      {
-        "key": "vdXhGFEWSIMh",
-        "title": "ĐOẠN KỊCH CÂM",
-        "artists": [
-          "ANH TRAI \"SAY HI\"",
-          "CONGB",
-          "Negav",
-          "B Ray",
-          "CODYNAMVO",
-          "Phạm Đình Thái Ngân",
-          "Mỹ Mỹ"
-        ],
-        "duration": 241,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2511/f4/eb/5yhdkqr2nz.mp3?st=FadsrrYOt47Uwhxcm73Igg&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2025/11/03/D/2/u/R/1762160793118_300.jpg"
-      },
-      {
-        "key": "cnOYrRTVw5xV",
-        "title": "một người như thế",
-        "artists": [
-          "TINH HÀ \"SAY HI\"",
-          "WEAN",
-          "Pháp Kiều",
-          "CoolKid",
-          "HURRYKNG"
-        ],
-        "duration": 274,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2608/be/66/hjs588w69u.mp3?st=Veo84k9qbirBythJ4Wxyzg&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2026/08/14/t/8/e/K/1786702328021_300.jpg"
-      },
-      {
-        "key": "1a45uWg71oJ3",
-        "title": "người trên dây",
-        "artists": [
-          "TINH HÀ \"SAY HI\"",
-          "Dương Domic",
-          "Thể Thiên",
-          "VƯƠNG BÌNH",
-          "JSOL"
-        ],
-        "duration": 215,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2608/0f/fc/htnirw8tsr.mp3?st=tkiIQfoez_PILRXhzUdGFA&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2026/08/14/t/8/e/K/1786702328021_300.jpg"
-      },
-      {
-        "key": "hcIGyvMliDh9",
-        "title": "GENTLEMAN",
-        "artists": [
-          "TINH HÀ \"SAY HI\"",
-          "KIMLONG",
-          "HURRYKNG",
-          "Jaysonlei",
-          "DILLAN",
-          "Kobe Thuy Trio",
-          "Pierre Renaud",
-          "Misha Krasnopolsky"
-        ],
-        "duration": 262,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2607/5d/c8/jqmgnktdb9.mp3?st=BNeXZgyWLH0Sj7aS2cJxMw&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2026/07/24/V/2/2/4/1784877877927_300.jpg"
-      },
-      {
-        "key": "cOztSq7WhQmT",
-        "title": "MẤT LA BÀN",
-        "artists": [
-          "TINH HÀ \"SAY HI\"",
-          "Pháp Kiều",
-          "Thể Thiên",
-          "Đặng Hồng Hải",
-          "VƯƠNG BÌNH",
-          "TorySax"
-        ],
-        "duration": 244,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2607/34/77/kcw3xondxp.mp3?st=z5dL4mGc4LOVXXVbp1LK_g&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2026/07/24/V/2/2/4/1784877877927_300.jpg"
-      },
-      {
-        "key": "q4bHsqfsR8bp",
-        "title": "50 CUỘC GỌI NHỠ",
-        "artists": [
-          "TINH HÀ \"SAY HI\"",
-          "CoolKid",
-          "Quang Hùng MasterD",
-          "Jaysonlei",
-          "CODYNAMVO"
+          "Phúc Chinh"
         ],
         "duration": 240,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2607/8b/6e/ts3nsuthi9.mp3?st=GlDBabJySo60TIFZAQamLw&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2026/07/10/6/g/w/v/1783666342729_300.jpg"
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1012/TheLuongCukakRemix-PhucChinh-6971147.mp3?st=7dCaopp5ay8Pdt_m5DLKuQ&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
+        "image": "https://image-cdn.nct.vn/song/2021/03/12/e/2/9/e/1615555786073_300.jpg"
       },
       {
-        "key": "N4mj3v5s9vg0",
-        "title": "XOAY VÒNG",
+        "key": "xGtpfIvGtrAP",
+        "title": "Ai Đâu Hay (CM1X Remix)",
         "artists": [
-          "TINH HÀ \"SAY HI\"",
-          "HURRYKNG",
-          "CONGB",
-          "JSOL",
-          "VƯƠNG BÌNH",
-          "KADO (Việt Nam)",
-          "Reeze",
-          "Hoa Xuân Đức"
+          "SEANPOET",
+          "CM1X"
         ],
-        "duration": 205,
+        "duration": 303,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2607/e8/1a/5nymfjts9z.mp3?st=ejwpt4wGErIUHkyG-JjIOg&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2026/07/10/6/g/w/v/1783666342729_300.jpg"
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1014/AiDauHayCm1xRemix-SeanVietNamCM1X-6999077.mp3?st=xQFqQOpnb52D_dvGJTEKqw&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
+        "image": "https://image-cdn.nct.vn/song/2025/09/17/1/9/d/0/1758100151658_300.jpg"
       },
       {
-        "key": "8midsCPVi5RD",
-        "title": "BAD NIGHT",
+        "key": "InQFTpSZ2vTq",
+        "title": "Hoa Bỉ Ngạn (Hoàng Trung Remix)",
         "artists": [
-          "TINH HÀ \"SAY HI\"",
-          "Dương Domic",
-          "Pháp Kiều",
-          "Đặng Hồng Hải",
-          "Ali Hoàng Dương"
+          "Gavin",
+          "Light A"
         ],
-        "duration": 233,
+        "duration": 211,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2607/e4/b7/h8l93x8mtn.mp3?st=r7_KCT7MQrIktMzmiQjViA&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2026/07/10/6/g/w/v/1783666342729_300.jpg"
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1015/HoaBiNganHoangTrungRemix-GavinLightA-7010303.mp3?st=dANxauhtoXufnBVpd9cHXA&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
+        "image": "https://image-cdn.nct.vn/song/2021/04/26/f/c/2/5/1619444686480_300.jpg"
+      },
+      {
+        "key": "j7QPjLrmob81",
+        "title": "Lệ Sông Buồn (Anhvu, Hhd Remix)",
+        "artists": [
+          "TLong"
+        ],
+        "duration": 293,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1016/LeSongBuonAnhvuHhdRemix-TLong-7023396.mp3?st=D9nAbxYDW8MZr0bRXKr3zg&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
+        "image": "https://image-cdn.nct.vn/song/2021/05/24/f/8/d/8/1621822453238_300.jpg"
+      },
+      {
+        "key": "tCsJPR19IElv",
+        "title": "Ngày Mai Xa Rồi (Kvprox x HHD Remix)",
+        "artists": [
+          "Bình Boo"
+        ],
+        "duration": 235,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1016/NgayMaiXaRoiKvproxXHhdRemix-BinhBoo-7026375.mp3?st=HQCsFWmz2qlt19upXi8mDw&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
+        "image": "https://image-cdn.nct.vn/song/2021/05/29/2/f/2/4/1622301311404_300.jpg"
+      },
+      {
+        "key": "Rcf5UP5Bgkum",
+        "title": "Chuyện Cũ Anh Và Em (Khả Huy X HHD Remix)",
+        "artists": [
+          "Hoàng Hiệp",
+          "Tấn Vinh"
+        ],
+        "duration": 395,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1016/ChuyenCuAnhVaEmKhaHuyXHhdRemix-HoangHiep2002TanVinh2001-7026289.mp3?st=8YKvpwFxx9aIqZNjl1GZpA&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
+        "image": "https://image-cdn.nct.vn/song/2021/05/29/2/f/2/4/1622285224029_300.jpg"
+      },
+      {
+        "key": "oa22gJrwzolG",
+        "title": "Buông Tay Để Nhẹ Lòng (Remix Version)",
+        "artists": [
+          "Hoàng Anh Trung"
+        ],
+        "duration": 254,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1016/BuongTayDeNheLongRemixVersion-HoangAnhTrung-7026136.mp3?st=6UWgipJlSDPw8U-iOV-LgA&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
+        "image": "https://image-cdn.nct.vn/song/2021/05/28/a/5/3/8/1622209371218_300.jpg"
+      },
+      {
+        "key": "Vg7BFlLelWma",
+        "title": "Đắm Say Rồi (Anhvu X Hhd Remix)",
+        "artists": [
+          "Sùng Chẩn Páo"
+        ],
+        "duration": 195,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1016/DamSayRoiAnhvuXHhdRemix-SungChanPao-7030395.mp3?st=NQOeEVE4XW3nL46ojqiSnw&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
+        "image": "https://image-cdn.nct.vn/song/2021/06/07/5/c/c/c/1623040292902_300.jpg"
+      },
+      {
+        "key": "PovSJUWsLZnq",
+        "title": "Ngỡ Được Yêu (Minh Khôn x HHD Remix)",
+        "artists": [
+          "LinhTG"
+        ],
+        "duration": 161,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1017/NgoDuocYeuMinhKhonXHhdRemix-LinhTG-7032456.mp3?st=am1lxOhBKFXhU8vUmt3sng&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
+        "image": "https://image-cdn.nct.vn/song/2021/06/15/0/f/0/b/1623722304016_300.jpg"
+      },
+      {
+        "key": "8iFFtApPQ9YD",
+        "title": "Lụy Tình (Minh Khôn x HHD Remix)",
+        "artists": [
+          "TLong"
+        ],
+        "duration": 170,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1017/LuyTinhMinhKhonXHhdRemix-TLong-7036487.mp3?st=QS5hHTJq00pymib2P8VnyA&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
+        "image": "https://image-cdn.nct.vn/song/2021/06/22/0/3/e/7/1624351408334_300.jpg"
+      },
+      {
+        "key": "fQLwSKAa547j",
+        "title": "Đào Nương (Durian x HHD Remix)",
+        "artists": [
+          "Hoàng Vương"
+        ],
+        "duration": 198,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1017/DaoNuongDurianXHhdRemix-HoangVuong-7037332.mp3?st=f1waIemi6Tr8bGLeW6Eg5g&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
+        "image": "https://image-cdn.nct.vn/song/2021/06/25/e/6/6/d/1624604655968_300.jpg"
+      },
+      {
+        "key": "9a4nbWSN63nQ",
+        "title": "Em Là Dealer? (Phiusao Remix)",
+        "artists": [
+          "S.U.N"
+        ],
+        "duration": 224,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1017/EmLaDealerPhiusaoRemix-SUN-7036393.mp3?st=ajZ5afxSMyHlAmQ4kehQAw&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
+        "image": "https://image-cdn.nct.vn/song/2021/06/22/0/3/e/7/1624336516970_300.jpg"
+      },
+      {
+        "key": "k7JcJSWgCbfj",
+        "title": "Anh Từng Mơ (Mee Remix)",
+        "artists": [
+          "Lê Vũ",
+          "Xám"
+        ],
+        "duration": 294,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1018/AnhTungMoMeeRemix-LeVuXam-7050223.mp3?st=vVvlGbOF3MjixWwNO9YVXA&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
+        "image": "https://image-cdn.nct.vn/song/2021/07/16/f/4/9/8/1626428030937_300.jpg"
+      },
+      {
+        "key": "9ifQyZSICkio",
+        "title": "Một Người Tương Xứng (Kaine x HHD Remix)",
+        "artists": [
+          "Quang Chợ Lầm"
+        ],
+        "duration": 271,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1019/MotNguoiTuongXungKaineXHhdRemix-QuangChoLam-7061407.mp3?st=u-ZIOtydrCvT5M7o_QVYHg&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
+        "image": "https://image-cdn.nct.vn/song/2021/08/05/3/c/a/5/1628133110922_300.jpg"
+      },
+      {
+        "key": "KhhlwmNMt0Zv",
+        "title": "Lỡ Duyên Vậy Thôi (ChungQ x HHD Remix)",
+        "artists": [
+          "Trần Minh Vũ",
+          "Khả Huy"
+        ],
+        "duration": 257,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1019/LoDuyenVayThoiChungqXHhdRemix-TranMinhVuKhaHuy-7061387.mp3?st=Ah0xBEb6IZLmDLYH4YsqIQ&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
+        "image": "https://image-cdn.nct.vn/song/2021/08/05/3/c/a/5/1628131016229_300.jpg"
+      },
+      {
+        "key": "8hh4ABDfVzGJ",
+        "title": "Chạm Nhẹ Đôi Môi (HeineKen x HHD Remix)",
+        "artists": [
+          "M-az"
+        ],
+        "duration": 290,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1020/ChamNheDoiMoiHeinekenXHhdRemix-Maz-7065572.mp3?st=8xiP--aghShjzbs7yASyvw&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
+        "image": "https://image-cdn.nct.vn/song/2021/08/09/b/a/7/b/1628523400877_300.jpg"
+      },
+      {
+        "key": "abFPNItFKoaD",
+        "title": "Chẳng Thể Giữ Lấy (MDDanel Remix)",
+        "artists": [
+          "Giang NV"
+        ],
+        "duration": 167,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1005/ChangTheGiuLayMddanelRemix-GiangNV-6770606.mp3?st=7syEUpVEa87UHf1ynIQz4Q&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
+        "image": "https://image-cdn.nct.vn/song/2020/10/28/e/1/7/4/1603883850454_300.jpg"
+      },
+      {
+        "key": "H1HnswFaeEkP",
+        "title": "Mr Say Đắm",
+        "artists": [
+          "1DEE"
+        ],
+        "duration": 191,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1003/MrSayDam-1DEE-6651985.mp3?st=9Pfv4hC1FOJqmdVNxSBOiQ&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
+        "image": "https://image-cdn.nct.vn/song/2020/09/21/9/4/2/4/1600675444626_300.jpg"
+      },
+      {
+        "key": "Rotq7cP6GmXw",
+        "title": "Buông Xuôi Hy Vọng (Blak Remix)",
+        "artists": [
+          "Kalee Hoàng",
+          "Thành Tar"
+        ],
+        "duration": 148,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1022/BuongXuoiHyVongBlakRemix-KaleeHoangThanhTar-7098053.mp3?st=WcXQYj4v0dnmxGXj9z0xcw&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
+        "image": "https://image-cdn.nct.vn/song/2021/09/29/e/5/3/b/1632903512449_300.jpg"
+      },
+      {
+        "key": "ew5NJIueG6f3",
+        "title": "Còn Yêu Hãy Về Với Nhau (Blak Remix)",
+        "artists": [
+          "Kalee Hoàng",
+          "Thành Tar"
+        ],
+        "duration": 202,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1022/ConYeuHayVeVoiNhauBlakRemix-KaleeHoangThanhTar-7098370.mp3?st=pOdHsUoI9-0J1LDsE6RsHw&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
+        "image": "https://image-cdn.nct.vn/song/2021/09/30/7/6/2/7/1632968285049_300.jpg"
+      },
+      {
+        "key": "zhYyrFanqWlm",
+        "title": "Thương Người Không Thương Mình (Blak Remix)",
+        "artists": [
+          "Kalee Hoàng",
+          "Thành Tar"
+        ],
+        "duration": 181,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1023/ThuongNguoiKhongThuongMinhBlakRemix-KaleeHoangThanhTar-7100359.mp3?st=CaHQ2Am4B3rwAzFcJhFk8w&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
+        "image": "https://image-cdn.nct.vn/song/2021/10/03/1/e/b/b/1633272598556_300.jpg"
+      },
+      {
+        "key": "Fxxy1RhE9lFr",
+        "title": "Phía Cô Đơn (CM1X Remix)",
+        "artists": [
+          "SEANPOET",
+          "Tweny"
+        ],
+        "duration": 196,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2028/PhiaCoDonCM1XRemix-SeanTweny-7847458.mp3?st=7Hlzaeaj-9t-X0lFj7u2lQ&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
+        "image": "https://image-cdn.nct.vn/song/2025/09/17/1/9/d/0/1758102256600_300.jpg"
+      },
+      {
+        "key": "JzDZ5BW4RSTI",
+        "title": "Nơi Này Có Anh",
+        "artists": [
+          "Sơn Tùng M-TP"
+        ],
+        "duration": 260,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui937/NoiNayCoAnh-SonTungMTP-4772041.mp3?st=D9UF0YaPF7HWgfJpFzl-CA&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2024/03/15/4/c/b/d/1710498649541_300.jpg"
+      },
+      {
+        "key": "VLAGE4PTnXZa",
+        "title": "SI EM",
+        "artists": [
+          "Thanh Tú"
+        ],
+        "duration": 201,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2059/SIEM-ThanhTu-40641923.mp3?st=euQf-7vzC0iqTojyJPhO5A&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2026/02/10/6/a/c/6/1770715705598_300.jpg"
+      },
+      {
+        "key": "08DKRPTs9jKX",
+        "title": "Giá Lúc Đó",
+        "artists": [
+          "Kiên Doãn"
+        ],
+        "duration": 133,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2059/GiaLucDo-KienDoan-40460779.mp3?st=yM-Y9l8_0U8zXoFNbLyx4A&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2026/01/29/6/f/c/f/1769683923973_300.jpg"
+      },
+      {
+        "key": "BqqqXjrndL8F",
+        "title": "LEMONADE",
+        "artists": [
+          "Don Raemo"
+        ],
+        "duration": 226,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2059/LEMONADE-DonRaemo-39820077.mp3?st=ujzOs21V0fg2XsKVBtOwbg&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2025/12/18/f/6/c/0/1766036778226_300.jpg"
+      },
+      {
+        "key": "p36M0nuVmR9Z",
+        "title": "Ghét Nhau Thêm",
+        "artists": [
+          "DJ Tít"
+        ],
+        "duration": 179,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2059/GhetNhauThem-DJTit-38722416.mp3?st=ArjqFa5qYDx2NUlTbCye_g&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2025/09/25/f/2/d/6/1758791814871_300.jpg"
       },
       {
         "key": "RZBjcwPBU032",
@@ -987,192 +975,39 @@ document.addEventListener('DOMContentLoaded', () => {
         "image": "https://image-cdn.nct.vn/song/2020/06/22/e/2/9/7/1592820085014_300.jpg"
       },
       {
-        "key": "CrszKiYPQCMA",
-        "title": "Sự Tích Mùa Xuân",
+        "key": "ZZqaPOVQnYb3",
+        "title": "Thích Em Chưa!? (Remix Version)",
         "artists": [
-          "Bùi Anh Tuấn",
-          "ICD"
+          "Di Di",
+          "Longg"
         ],
-        "duration": 329,
+        "duration": 192,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1010/SuTichMuaXuan-BuiAnhTuanICD-6927849.mp3?st=zHoYy8aWy7slHEUI2_RzKg&e=1794577144&a=0&p=0&r=6be9cacb270d56628fc359ac079b8879",
-        "image": "https://image-cdn.nct.vn/song/2021/01/23/a/c/9/0/1611401459292_300.jpg"
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2036/ThichEmChuaRemixVersion-DiDiLongC-8822614.mp3?st=khrXzG2HfwsbmWDujf-fUA&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2023/03/07/d/3/e/f/1678177246121_300.jpg"
       },
       {
-        "key": "bIuRf6GR9Nid",
-        "title": "Tết Đong Đầy 5 (Remix)",
+        "key": "OUngYbcmAdkq",
+        "title": "Đi Hết Thời Tuổi Trẻ (Version 2020)",
         "artists": [
-          "KHOA",
-          "Freaky"
+          "Hà"
         ],
-        "duration": 164,
+        "duration": 243,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2059/TetDongDay5Remix-KHOATreFreaky-40087480.mp3?st=cg0G1nGubZ84-ffjtijH7w&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
-        "image": "https://image-cdn.nct.vn/song/2026/01/12/4/d/5/5/1768213763086_300.jpg"
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui996/DiHetThoiTuoiTreVersion2020-Ha-6240339.mp3?st=U-jiYA1TqVHEebxfGfQF6Q&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2020/03/25/0/7/8/4/1585117427344_300.jpg"
       },
       {
-        "key": "QusqRM2M6i2a",
-        "title": "Thằng nào làm em suy (Remix)",
+        "key": "ItohkV2tcd1v",
+        "title": "Hiếm Có Khó Tìm",
         "artists": [
-          "Freaky",
-          "Chúc Hỷ",
-          "Eopixi",
-          "King JB"
+          "JSOL",
+          "Han Sara"
         ],
-        "duration": 205,
+        "duration": 197,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2059/ThangNaoLamEmSuyRemix-FreakyChucHyEopixiKingJB-40994165.mp3?st=2ghiOosY223kI6zcOLxwYw&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
-        "image": "https://image-cdn.nct.vn/song/2026/03/10/b/0/c/d/1773141426645_300.jpg"
-      },
-      {
-        "key": "oYGU5RpkxTTH",
-        "title": "Những Cơn Mưa Dài Cuối Đông",
-        "artists": [
-          "BigDaddy",
-          "Hồng Nhung"
-        ],
-        "duration": 234,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2057/NhungConMuaDaiCuoiDong-BigDaddyHongNhung-16687122.mp3?st=rf5k1yFz7Xw2QSj1GzgzCg&e=1794662796&a=0&p=0&r=4857ad45c926386232f3a47558ccab2e",
-        "image": "https://image-cdn.nct.vn/song/2024/11/11/d/0/d/4/1731313876443_300.jpg"
-      },
-      {
-        "key": "5IoB6SmTPxXT",
-        "title": "Vài Giọt Sương Mai",
-        "artists": [
-          "Quinf",
-          "Catchellers",
-          "Billis"
-        ],
-        "duration": 206,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2059/VaiGiotSuongMai-QuinfCatchellersBillis-39150438.mp3?st=ZWWi47kWIAQs7OxvXIquFQ&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2025/10/27/0/2/e/b/1761561291852_300.jpg"
-      },
-      {
-        "key": "LOdF31bmyFFZ",
-        "title": "Summertime",
-        "artists": [
-          "datfitzx",
-          "Bluejee",
-          "Halee",
-          "Chein",
-          "Tri Dung Do",
-          "Toun"
-        ],
-        "duration": 217,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2028/Summertime-datfitzxBluejeeHaleeCheinTriDungDoTounVietNam-7846999.mp3?st=dwl5ebudjn6Gd_URKCWZ8A&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2022/09/05/e/9/8/e/1662357647813_300.jpg"
-      },
-      {
-        "key": "ls6F412920fa",
-        "title": "Mùa Hè Của Ai?",
-        "artists": [
-          "Hoàng KayLee",
-          "kisstherajn"
-        ],
-        "duration": 224,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1008/MuaHeCuaAi-HoangKayLeekisstherajn-6890065.mp3?st=JxQj1cZRw0CYjOlFHr3JPA&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2020/12/16/c/3/5/6/1608112993626_300.jpg"
-      },
-      {
-        "key": "rieB2lCoU8CY",
-        "title": "Biển Trời Mênh Mông",
-        "artists": [
-          "Aki (7UPPERCUTS)",
-          "CAM",
-          "Juan Phi",
-          "yeuquaimohihi"
-        ],
-        "duration": 234,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1009/BienTroiMenhMong-AkiVNCAMVNJuanPhiyeuquaimohihi-6898955.mp3?st=ObB7f9QJ45WTRPXn72U99g&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2020/12/31/0/b/6/d/1609412193067_300.jpg"
-      },
-      {
-        "key": "PYOHqKw9GimB",
-        "title": "Tình Yêu Màu Nắng",
-        "artists": [
-          "Đoàn Thúy Trang",
-          "BigDaddy"
-        ],
-        "duration": 285,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2037/TinhYeuMauNang-DoanThuyTrang-8899940.mp3?st=eNmxC7a0hBU4-FusHpHqfw&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2023/03/24/3/2/2/6/1679658021838_300.jpg"
-      },
-      {
-        "key": "Mrg5s5IfnvUx",
-        "title": "Lời Đường Mật (Remix)",
-        "artists": [
-          "Lyly",
-          "HIEUTHUHAI"
-        ],
-        "duration": 276,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1008/LoiDuongMatRemix-LylyHIEUTHUHAI-6859730.mp3?st=7GVEWp5vB0ZW8AuWDhmfgg&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
-        "image": "https://image-cdn.nct.vn/song/2020/12/03/6/a/a/3/1606987904645_300.jpg"
-      },
-      {
-        "key": "H1HnswFaeEkP",
-        "title": "Mr Say Đắm",
-        "artists": [
-          "1DEE"
-        ],
-        "duration": 191,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1003/MrSayDam-1DEE-6651985.mp3?st=9Pfv4hC1FOJqmdVNxSBOiQ&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
-        "image": "https://image-cdn.nct.vn/song/2020/09/21/9/4/2/4/1600675444626_300.jpg"
-      },
-      {
-        "key": "xqI1jfaOUztS",
-        "title": "But Me Too",
-        "artists": [
-          "Freaky",
-          "Harose"
-        ],
-        "duration": 188,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1001/ButMeToo-FreakyHaro-6323429.mp3?st=6FCShK1NepQeCz1gZlJF6w&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2020/07/07/a/2/2/f/1594109122957_300.jpg"
-      },
-      {
-        "key": "EDQEXFnNePZv",
-        "title": "Love You Need You",
-        "artists": [
-          "Jayden",
-          "Wansentai"
-        ],
-        "duration": 150,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1001/LoveYouNeedYou-JaydenWansentai-6323762.mp3?st=N9xOxJXtJkgwZXI6AOF8Fg&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2020/07/09/d/2/5/f/1594267362489_300.jpg"
-      },
-      {
-        "key": "pNlk1CcSUhiE",
-        "title": "Yêu Đi Anh Ơi",
-        "artists": [
-          "Kiều Phạm",
-          "RHYDER"
-        ],
-        "duration": 231,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1001/YeuDiAnhOi-KieuPhamQuangAnhRhyder-6332599.mp3?st=dzJtSqSegE3m6wtFDSH0kA&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2020/07/15/b/b/c/7/1594802958128_300.jpg"
-      },
-      {
-        "key": "nsVsorpQpiav",
-        "title": "Green Love",
-        "artists": [
-          "Cashmel",
-          "QNT"
-        ],
-        "duration": 168,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1024/GreenLoveChillNFree-CashmelQNT-7123639.mp3?st=d0wSqtmQLz6XHmzd56Ep7g&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2021/12/16/7/7/f/6/1639636972309_300.jpg"
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1001/HiemCoKhoTim-JSOLHanSara-6330342.mp3?st=a-BULLviLstT96rZmz7vOw&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2020/07/13/a/f/7/f/1594611354950_300.jpg"
       },
       {
         "key": "djSI0psIaQZN",
@@ -1190,6 +1025,18 @@ document.addEventListener('DOMContentLoaded', () => {
         "image": "https://image-cdn.nct.vn/song/2025/07/11/5/d/2/f/1752211873082_300.jpg"
       },
       {
+        "key": "G2E5e7g6NfO6",
+        "title": "Anh Sẽ Cho Mình",
+        "artists": [
+          "Khải",
+          "Sơn Bùi"
+        ],
+        "duration": 195,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2045/AnhSeChoMinh-KhaiSonBui-11722978.mp3?st=CMaGV-GYO3a27UZKa4AAAA&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2023/09/18/7/2/8/d/1695032666053_300.jpg"
+      },
+      {
         "key": "0vDM6esY9Uem",
         "title": "I Luv U Chucamo",
         "artists": [
@@ -1201,6 +1048,155 @@ document.addEventListener('DOMContentLoaded', () => {
         "kbit": 128,
         "streamUrl": "https://stream.nct.vn/NhacCuaTui2022/ILuvYouChucamo-HinoTitieDaduc-7486544.mp3?st=OOdP_u1_9cv1ita26SeXFQ&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
         "image": "https://image-cdn.nct.vn/song/2022/06/15/f/f/d/8/1655287454354_300.jpg"
+      },
+      {
+        "key": "VQvMO3rOkT",
+        "title": "Ngày Mai Trời Lại Sáng",
+        "artists": [
+          "Nguyễn Hồng Thuận",
+          "Lam Trường"
+        ],
+        "duration": 211,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui180/NgayMaiTroiLaiSang-NguyenHongThuan_3cafd.mp3?st=s-Cq6Myj74O51tUN34s8wQ&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2013/11/06/c/c/a/8/1383712586855_300.jpg"
+      },
+      {
+        "key": "n6C1UdVPh6cI",
+        "title": "Tìm Đâu",
+        "artists": [
+          "Pay"
+        ],
+        "duration": 181,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1001/TimDau-Pay-6324397.mp3?st=XUcg_LQyBb6-KCZFxUsx7Q&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2020/07/10/7/0/0/f/1594372640695_300.jpg"
+      },
+      {
+        "key": "6kuDtQlenhm2",
+        "title": "It's You",
+        "artists": [
+          "Hari Won"
+        ],
+        "duration": 217,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui988/ItsYou-HariWon-6054064.mp3?st=axwHs_dGu09uWkCnj3zUsg&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2019/08/13/0/a/f/3/1565686973276_300.jpg"
+      },
+      {
+        "key": "Spiv84rJKKbb",
+        "title": "Nơi Bắt Đầu",
+        "artists": [
+          "Pixel Neko",
+          "Cầm"
+        ],
+        "duration": 164,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2059/NoiBatDauftCam-PixelNekoCam-39735079.mp3?st=Cws3XIGbEGnuLb0QBrWx6A&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2025/12/12/a/2/6/2/1765530010086_300.jpg"
+      },
+      {
+        "key": "mErSry4zLTp5",
+        "title": "Girl Phố",
+        "artists": [
+          "Quỳnh Anh Shyn"
+        ],
+        "duration": 180,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2059/GirlPho-QuynhAnhShyn-41187002.mp3?st=XMDqcxlcrAtoF4scdGVHNg&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2026/03/26/3/5/0/1/1774540795067_300.jpg"
+      },
+      {
+        "key": "oIzSLwq7zFe3",
+        "title": "WDYS",
+        "artists": [
+          "Pixel Neko",
+          "Rhosy"
+        ],
+        "duration": 185,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2059/WDYSftRhosy-PixelNekoRhosy-39735751.mp3?st=BGxdgju4OAixBkPHQ1yfpw&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2025/12/12/a/2/6/2/1765531468395_300.jpg"
+      },
+      {
+        "key": "Fs1nRWH5uPcP",
+        "title": "Thanh Xuân Muôn Màu",
+        "artists": [
+          "CORA Trinh Phạm",
+          "Whisty Eazy"
+        ],
+        "duration": 216,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2046/ThanhXuanMuonMau-CORATrinhPhamWhistyEazy-11959464.mp3?st=GI6A7PjC-rleBun108eL5Q&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2023/10/15/e/1/f/b/1697309694684_300.jpg"
+      },
+      {
+        "key": "lLMlw6FsQ0Sh",
+        "title": "Xóa",
+        "artists": [
+          "Pixel Neko",
+          "Pay"
+        ],
+        "duration": 155,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2059/Xoa-PixelNekoPayQuynhThy-39558549.mp3?st=qHNVMpVHVeJOiVsMqX87xw&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2025/11/27/f/f/e/2/1764221289092_300.jpg"
+      },
+      {
+        "key": "rDaJzzQ21egb",
+        "title": "Không Yêu Cũng Chẳng Cô Đơn",
+        "artists": [
+          "Hưng Cacao"
+        ],
+        "duration": 234,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2057/KhongYeuCungChangCoDon-HungCacao-16212557.mp3?st=hStCz2bj-fXhC3kA3XUqLQ&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2024/09/26/7/4/1/c/1727326468213_300.jpg"
+      },
+      {
+        "key": "AmeCw2biUPcB",
+        "title": "Không Lý Do",
+        "artists": [
+          "Vũ Phụng Tiên",
+          "Hạ"
+        ],
+        "duration": 198,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1020/KhongLyDo-VuPhungTienHaLyAnhKhoa-7065624.mp3?st=t8Izd-QExJMXYx7wnFz9cA&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2021/08/10/b/2/e/0/1628560873036_300.jpg"
+      },
+      {
+        "key": "AH93eSNO8ePt",
+        "title": "Em Có Yêu Như Ngày Hôm Qua",
+        "artists": [
+          "THI"
+        ],
+        "duration": 231,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1020/EmCoYeuNhuNgayHomQua-THI-7069741.mp3?st=EFwemwvSxdxzYbfbrJOf8A&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2021/08/19/2/a/f/0/1629356626618_300.jpg"
+      },
+      {
+        "key": "DnhO309afIRB",
+        "title": "Tình Trần",
+        "artists": [
+          "Huy Diệc"
+        ],
+        "duration": 213,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1020/TinhTran-HuyDiec-7070214.mp3?st=yfAeddW3BYlXimrRLmKMhA&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2021/08/20/f/c/f/e/1629445664769_300.jpg"
+      },
+      {
+        "key": "RMGdPFtmZimH",
+        "title": "Tại Sao Anh Nhận Lời",
+        "artists": [
+          "Lyly"
+        ],
+        "duration": 223,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2045/TaiSaoAnhNhanLoi-LylyNguyenHoangLan-11836975.mp3?st=t-0Hg7jOuM3A2X-S_uPOrQ&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2023/10/02/c/5/c/8/1696251806962_300.jpg"
       },
       {
         "key": "qGmfTN4Z2DKO",
@@ -1215,20 +1211,176 @@ document.addEventListener('DOMContentLoaded', () => {
         "image": "https://image-cdn.nct.vn/song/2020/09/03/9/e/8/4/1599109030421_300.jpg"
       },
       {
-        "key": "xa5CaLd9j48J",
-        "title": "The Stars (female Version)",
+        "key": "CxUr0BDmhgdv",
+        "title": "Chúng Con Thành Đôi",
+        "artists": [
+          "Powerk"
+        ],
+        "duration": 245,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2052/ChungConThanhDoi-Powerk-13956694.mp3?st=ngbO0v7bUydUnqPjQMx7MA&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2024/03/01/b/3/9/b/1709271106740_300.jpg"
+      },
+      {
+        "key": "bioZHIaFUgeJ",
+        "title": "Khu Vườn Nhà Thơ",
+        "artists": [
+          "Góp Thong Thả"
+        ],
+        "duration": 198,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2036/KhuVuonNhaTho-GopThongTha-8843631.mp3?st=HvDFCYnOah6fuqljYkiYaw&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2023/03/13/6/b/7/6/1678679889924_300.jpg"
+      },
+      {
+        "key": "ROPNQ7yKhUH9",
+        "title": "LET ME WAKE UP",
+        "artists": [
+          "Tronie",
+          "Henry Nguyễn"
+        ],
+        "duration": 186,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1026/LetMeWakeUp-TronieHenry-7131294.mp3?st=rPAiGw8eZJ3jp4b38flM5g&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2022/03/01/f/3/d/3/1646143129872_300.jpg"
+      }
+    ]
+  },
+  {
+    "id": "playlist-rap-viet-thinh-hanh",
+    "name": "🎤 Top Hit Rap Việt Thịnh Hành",
+    "description": "Tuyển chọn 100 bản Rap & Hip-Hop Việt dẫn đầu bảng xếp hạng từ các Rapper đình đám (HIEUTHUHAI, Đen Vâu, BigDaddy, Pháp Kiều, RHYDER, HURRYKNG, Freaky, Karik, JustaTee, B Ray, Dick, Huỳnh James...).",
+    "createdAt": "2026-11-16T04:41:38.885Z",
+    "version": "2.5.0",
+    "songs": [
+      {
+        "key": "Mrg5s5IfnvUx",
+        "title": "Lời Đường Mật (Remix)",
+        "artists": [
+          "Lyly",
+          "HIEUTHUHAI"
+        ],
+        "duration": 276,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1008/LoiDuongMatRemix-LylyHIEUTHUHAI-6859730.mp3?st=7GVEWp5vB0ZW8AuWDhmfgg&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
+        "image": "https://image-cdn.nct.vn/song/2020/12/03/6/a/a/3/1606987904645_300.jpg"
+      },
+      {
+        "key": "PYOHqKw9GimB",
+        "title": "Tình Yêu Màu Nắng",
+        "artists": [
+          "Đoàn Thúy Trang",
+          "BigDaddy"
+        ],
+        "duration": 285,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2037/TinhYeuMauNang-DoanThuyTrang-8899940.mp3?st=eNmxC7a0hBU4-FusHpHqfw&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2023/03/24/3/2/2/6/1679658021838_300.jpg"
+      },
+      {
+        "key": "ABLMB2aG7Gtr",
+        "title": "CHÂN THÀNH",
         "artists": [
           "ANH TRAI \"SAY HI\"",
-          "Juky San",
-          "Liz Kim Cương",
-          "Mỹ Mỹ",
-          "52Hz",
-          "Pháo"
+          "RHYDER",
+          "CAPTAIN BOY",
+          "Quang Hùng MasterD",
+          "WEAN",
+          "Ali Hoàng Dương"
         ],
-        "duration": 217,
+        "duration": 258,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/Warner_Audio270/TheStarsFeatJukySanLizKimCuongMyMy52hzPhaofemaleVersion-ANHTRAISAYHI-16206187.mp3?st=YjTQPRxhJiqf87bMd5M1Nw&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2024/10/02/2/a/f/2/1727859430047_300.jpg"
+        "streamUrl": "https://stream.nct.vn/Warner_Audio259/ChanThanhFeatRhyderCaptainQuangHungMasterdWeanAliHoangDuong-ANHTRAISAYHI-15770777.mp3?st=dDBRMXYRlXmLCW7_MBiWHA&e=1794662763&a=0&p=0&r=4f2cea33c36537f0ee0fa93f73c70630",
+        "image": "https://image-cdn.nct.vn/song/2024/08/17/f/b/4/4/1723893395674_300.jpg"
+      },
+      {
+        "key": "cnOYrRTVw5xV",
+        "title": "một người như thế",
+        "artists": [
+          "TINH HÀ \"SAY HI\"",
+          "WEAN",
+          "Pháp Kiều",
+          "CoolKid",
+          "HURRYKNG"
+        ],
+        "duration": 274,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2608/be/66/hjs588w69u.mp3?st=Veo84k9qbirBythJ4Wxyzg&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2026/08/14/t/8/e/K/1786702328021_300.jpg"
+      },
+      {
+        "key": "QusqRM2M6i2a",
+        "title": "Thằng nào làm em suy (Remix)",
+        "artists": [
+          "Freaky",
+          "Chúc Hỷ",
+          "Eopixi",
+          "King JB"
+        ],
+        "duration": 205,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2059/ThangNaoLamEmSuyRemix-FreakyChucHyEopixiKingJB-40994165.mp3?st=2ghiOosY223kI6zcOLxwYw&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2026/03/10/b/0/c/d/1773141426645_300.jpg"
+      },
+      {
+        "key": "gC2swgBESFvv",
+        "title": "Sống Cho Hết Đời Thanh Xuân 4",
+        "artists": [
+          "Dick",
+          "RAP VIỆT"
+        ],
+        "duration": 260,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/Warner_Audio174/SongChoHetDoiThanhXuan4FeatDick-RAPVIET-10979137.mp3?st=Edvn8xm9LfgdspWPkYHXlg&e=1794662795&a=0&p=0&r=8ac2f4c84b14b51fa57748dc04f45d7f",
+        "image": "https://image-cdn.nct.vn/song/2023/08/18/9/e/a/8/1692368496464_300.jpg"
+      },
+      {
+        "key": "xqI1jfaOUztS",
+        "title": "But Me Too",
+        "artists": [
+          "Freaky",
+          "Harose"
+        ],
+        "duration": 188,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1001/ButMeToo-FreakyHaro-6323429.mp3?st=6FCShK1NepQeCz1gZlJF6w&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2020/07/07/a/2/2/f/1594109122957_300.jpg"
+      },
+      {
+        "key": "pNlk1CcSUhiE",
+        "title": "Yêu Đi Anh Ơi",
+        "artists": [
+          "Kiều Phạm",
+          "RHYDER"
+        ],
+        "duration": 231,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1001/YeuDiAnhOi-KieuPhamQuangAnhRhyder-6332599.mp3?st=dzJtSqSegE3m6wtFDSH0kA&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2020/07/15/b/b/c/7/1594802958128_300.jpg"
+      },
+      {
+        "key": "RZBjcwPBU032",
+        "title": "Cầu Vồng Thanh Xuân",
+        "artists": [
+          "OSAD",
+          "Janie"
+        ],
+        "duration": 256,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1000/CauVongThanhXuan-OsadJanie-6308201.mp3?st=QDpalPiW6j7WfcDE3hoeYQ&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2020/06/22/e/2/9/7/1592820085014_300.jpg"
+      },
+      {
+        "key": "0xfmXrPXLLqm",
+        "title": "LAMMOM",
+        "artists": [
+          "LAMOON",
+          "JustaTee"
+        ],
+        "duration": 240,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2059/LAMMOM-LAMOONJustaTee-38289124.mp3?st=Ry7dy3GvGlqoGXZ8oVMdpw&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2025/08/28/a/8/1/2/1756373711209_300.jpg"
       },
       {
         "key": "IqxZYqxhZKXw",
@@ -1242,18 +1394,6 @@ document.addEventListener('DOMContentLoaded', () => {
         "kbit": 128,
         "streamUrl": "https://stream.nct.vn/Warner_Audio178/KhiConMoDanPhaiFeatTezMyraTran-RAPVIET-11341672.mp3?st=gSymghakut3R0CTx43TFeA&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
         "image": "https://image-cdn.nct.vn/song/2023/09/02/5/8/b/4/1693646405719_300.jpg"
-      },
-      {
-        "key": "vJgL3DaveP8T",
-        "title": "Từ A Đến Z",
-        "artists": [
-          "24k.Right",
-          "RAP VIỆT"
-        ],
-        "duration": 197,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/Warner_Audio175/TuADenZFeat24kright-RAPVIET-11123998.mp3?st=i4nK4Eid_WZHeFYCSElyCA&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2023/08/25/b/5/0/5/1692965578320_300.jpg"
       },
       {
         "key": "dA7LfpmZrCJa",
@@ -1288,488 +1428,32 @@ document.addEventListener('DOMContentLoaded', () => {
         "image": "https://image-cdn.nct.vn/song/2023/09/09/9/1/e/5/1694255781566_300.jpg"
       },
       {
-        "key": "ALJhFwSKaOm6",
-        "title": "NOT MY FAULT",
+        "key": "9hVrZ2qY9XqD",
+        "title": "Sao Hạng A",
         "artists": [
-          "EM XINH \"SAY HI\"",
-          "Mỹ Mỹ",
-          "LyHan",
-          "Liu Grace",
-          "MAIQUINN"
-        ],
-        "duration": 245,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2507/a2/55/qy5ps38hfs.mp3?st=cgvZrUh7va1ZpCt_Qrsr9w&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2025/07/19/0/d/b/6/1752878626972_300.jpg"
-      },
-      {
-        "key": "9tnlqUId7YsA",
-        "title": "ĐÃ XINH LẠI CÒN THÔNG MINH",
-        "artists": [
-          "EM XINH \"SAY HI\"",
-          "Bích Phương",
-          "Miu Lê",
-          "Phương Ly",
-          "Bảo Anh",
-          "Orange",
-          "Lyly",
-          "Hoàng Duyên",
-          "Chi Xê",
-          "Vũ Thảo My",
-          "Ngô Lan Hương",
-          "LAMOON",
-          "Quỳnh Anh Shyn",
-          "Saabirose",
-          "Liu Grace",
-          "Mỹ Mỹ"
-        ],
-        "duration": 236,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2506/1b/63/h48wv060p1.mp3?st=gge9MSKOZIh3d9ujfCgAuw&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2025/06/02/e/b/8/e/1748842250540_300.jpg"
-      },
-      {
-        "key": "hzxaln2Xti2U",
-        "title": "EM XINH EM BLING",
-        "artists": [
-          "EM XINH \"SAY HI\"",
-          "Pháo",
-          "Phương Ly",
-          "Juky San",
-          "Chi Xê",
-          "Hoàng Duyên"
-        ],
-        "duration": 202,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2506/19/07/dwwjpscho6.mp3?st=EHGdPPlz9F7WfJ8OSvsi8w&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2025/06/09/5/3/6/3/1749442857092_300.jpg"
-      },
-      {
-        "key": "gio1Wqg9NlIp",
-        "title": "AAA",
-        "artists": [
-          "EM XINH \"SAY HI\"",
-          "Tiên Tiên",
-          "Phương Mỹ Chi",
-          "Juky San",
-          "Lâm Bảo Ngọc",
-          "52Hz",
-          "Pháo",
-          "Han Sara",
-          "DANMY",
-          "Muộii",
-          "Ánh Sáng AZA",
-          "桃子A1J",
-          "LyHan",
-          "MAIQUINN",
-          "Châu Bùi",
-          "Yeolan"
-        ],
-        "duration": 236,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2506/a2/bd/xp08sucoef.mp3?st=w3OD2XKahYX-VOGougNDBw&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2025/06/02/e/b/8/e/1748842250540_300.jpg"
-      },
-      {
-        "key": "2qZT9niJWble",
-        "title": "Take It Easy",
-        "artists": [
-          "Liu Grace",
-          "RAP VIỆT"
-        ],
-        "duration": 164,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/Warner_Audio170/TakeItEasyFeatLiuGrace-RAPVIET-10574052.mp3?st=o_wOomV9iO3FR4JXOwXqVQ&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2023/08/05/3/1/c/1/1691173062137_300.jpg"
-      },
-      {
-        "key": "phCXQoa5sVXU",
-        "title": "CÓ EM VUI",
-        "artists": [
-          "RAP VIỆT",
-          "Ngắn"
-        ],
-        "duration": 224,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/Warner_Audio271/CoEmVuiFeatNgan-RAPVIET-16313128.mp3?st=ht40jxp4-y71GTlbsUqp_w&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2024/10/04/1/9/d/7/1728054066115_300.jpg"
-      },
-      {
-        "key": "QnXfeWz3oYtd",
-        "title": "CỘNG",
-        "artists": [
-          "RAP VIỆT",
-          "Nhật Hoàng",
-          "Lil Van"
-        ],
-        "duration": 222,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/Warner_Audio276/CongFeatNhatHoangLilVan-RAPVIET-16560299.mp3?st=pftnHrUfvfuj3sep6pRTwA&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2024/10/25/e/f/7/3/1729872055681_300.jpg"
-      },
-      {
-        "key": "n3QoQ1P5WLHS",
-        "title": "Tay-lai Pr0 (Tây-lai Pr0)",
-        "artists": [
-          "JustaTee",
-          "Double2T",
-          "RAP VIỆT"
-        ],
-        "duration": 258,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/Warner_Audio181/TaylaiPr0TaylaiPr0featJustateeDouble2t-RAPVIET-11540501.mp3?st=5dQxSKIWxfKPjVQV6a8mwg&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2023/09/09/9/1/e/5/1694255781566_300.jpg"
-      },
-      {
-        "key": "k6WpGO5sdgOk",
-        "title": "Baby Gọi Cho Anh",
-        "artists": [
-          "CAPTAIN BOY",
-          "UMIE",
-          "RAP VIỆT"
-        ],
-        "duration": 178,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/Warner_Audio165/BabyGoiChoAnhFeatCaptainUmie-RAPVIET-10126626.mp3?st=bdjVYHhZ00P0rAYZtUYHag&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2023/07/14/b/6/b/1/1689345321829_300.jpg"
-      },
-      {
-        "key": "8fBWGX9hPFRW",
-        "title": "GÃ SĂN CÁ",
-        "artists": [
-          "EM XINH \"SAY HI\"",
-          "Lâm Bảo Ngọc",
-          "Quỳnh Anh Shyn",
-          "MAIQUINN",
-          "Saabirose",
-          "Quang Hùng MasterD"
-        ],
-        "duration": 232,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2507/fd/84/4g56qmjsg0.mp3?st=9x2NubS7cNqv04-ONlxQcw&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2025/07/01/1/4/c/4/1751334001626_300.jpg"
-      }
-    ]
-  },
-  {
-    "id": "playlist-ballad-cam-xuc",
-    "name": "🌧️ Top Ballad Cảm Xúc & Sâu Lắng",
-    "description": "50 bản tình ca Ballad da diết, chữa lành tâm hồn qua giọng ca của các nghệ sĩ nổi tiếng (Trung Quân, Đức Phúc, Vũ., Hoàng Dũng, Văn Mai Hương, ERIK, Quân A.P, Hoài Lâm, GREY D...).",
-    "createdAt": "2026-11-16T02:57:27.251Z",
-    "version": "2.3.0",
-    "songs": [
-      {
-        "key": "JzDZ5BW4RSTI",
-        "title": "Nơi Này Có Anh",
-        "artists": [
-          "Sơn Tùng M-TP"
-        ],
-        "duration": 260,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui937/NoiNayCoAnh-SonTungMTP-4772041.mp3?st=D9UF0YaPF7HWgfJpFzl-CA&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2024/03/15/4/c/b/d/1710498649541_300.jpg"
-      },
-      {
-        "key": "2AwsjotRy1ES",
-        "title": "Muộn Rồi Mà Sao Còn",
-        "artists": [
-          "Sơn Tùng M-TP"
-        ],
-        "duration": 275,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/Believe_Audio19/MuonRoiMaSaoCon-SonTungMTP-7011803.mp3?st=ixrnqOq70dEEPrBKOcVNHA&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2021/04/29/9/1/f/8/1619691182261_300.jpg"
-      },
-      {
-        "key": "PDQhy2jOk147",
-        "title": "CÓ CHẮC YÊU LÀ ĐÂY",
-        "artists": [
-          "Sơn Tùng M-TP"
-        ],
-        "duration": 202,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2053/COCHACYEULADAY-SonTungMTP-6316913.mp3?st=JrbAOEqvq860fsv8r2D5OA&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2024/03/15/4/c/b/d/1710497543374_300.jpg"
-      },
-      {
-        "key": "JPvSFraXdEAT",
-        "title": "Trái Đất Đẹp Nhất Khi Có Em",
-        "artists": [
-          "Đức Phúc",
-          "ViruSs"
-        ],
-        "duration": 184,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui996/TraiDatDepNhatKhiCoEm-DucPhucViruSs-6238530.mp3?st=4GvRierFfusJHickaYGLpQ&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2020/03/19/2/6/e/8/1584587405790_300.jpg"
-      },
-      {
-        "key": "En0MGqSieGxH",
-        "title": "nếu mai chia tay",
-        "artists": [
-          "MONSTAR",
-          "AMEE"
-        ],
-        "duration": 205,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1020/neumaichiatay-MONSTARAMEE-7057196.mp3?st=HL_sXXSjhq5_6hsYAvg2Og&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2021/07/30/a/0/c/2/1627616265915_300.jpg"
-      },
-      {
-        "key": "1uWWUf6ZAHC4",
-        "title": "Gác Lại Âu Lo",
-        "artists": [
-          "Da LAB",
-          "Miu Lê"
-        ],
-        "duration": 282,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1001/GacLaiAuLo-DaLABMiuLe-6360815.mp3?st=bMTT8os80v2_TGWf2JXGBw&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2020/07/24/f/6/5/1/1595564868985_300.jpg"
-      },
-      {
-        "key": "Kx3Kbih0rS5z",
-        "title": "Nàng Thơ",
-        "artists": [
-          "Hoàng Dũng"
-        ],
-        "duration": 254,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1001/NangTho-HoangDung-6413381.mp3?st=AwmMjN-WMTEtNDz6VA_DfA&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2020/07/31/c/5/8/9/1596188259603_300.jpg"
-      },
-      {
-        "key": "FKLm3ZdjI5uR",
-        "title": "Yêu Người Có Ước Mơ",
-        "artists": [
-          "buitruonglinh"
-        ],
-        "duration": 296,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2032/YeuNguoiCoUocMo-buitruonglinh-8396692.mp3?st=UOEnEoPJgQ_cWr_1HH3OrA&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2022/12/15/0/3/9/2/1671089368641_300.jpg"
-      },
-      {
-        "key": "QUuRbjEqXar0",
-        "title": "Hóa Đơn Tiền Điện",
-        "artists": [
-          "Thu Minh",
-          "Hoàng Dũng"
-        ],
-        "duration": 234,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2044/HoaDonTienDien-ThuMinhHoangDung-11100865.mp3?st=tQEELrj_IBLPhh1oAw4hgQ&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2023/08/23/9/d/5/c/1692765420951_300.jpg"
-      },
-      {
-        "key": "O5qj82fh7NbG",
-        "title": "Là Khi Anh Có Em Bên Mình",
-        "artists": [
-          "Huy Lê",
-          "Minh Cà Ri"
-        ],
-        "duration": 240,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui997/LaKhiAnhCoEmBenMinh-HuyLeMinhCaRi-6242258.mp3?st=aIeRXwGi8r1oR5lB4De_2Q&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2020/03/31/4/6/f/c/1585623787574_300.jpg"
-      },
-      {
-        "key": "guNZieDL5sPj",
-        "title": "Mùa Đông Nhắc Tim Còn Thương",
-        "artists": [
-          "Hoài Lâm"
-        ],
-        "duration": 288,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2059/MuaDongNhacTimConThuong-HoaiLam-39795900.mp3?st=OIjwkiUj3zfXjzVQcSO-JA&e=1794662784&a=0&p=0&r=83f8b403f84d603f28bb0ae65c8615ff",
-        "image": "https://image-cdn.nct.vn/song/2025/12/17/6/0/a/c/1765958366586_300.jpg"
-      },
-      {
-        "key": "MZJxJSqYbJSX",
-        "title": "Bản Tình Ca Mùa Đông",
-        "artists": [
-          "Cậu Phát"
-        ],
-        "duration": 219,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2059/BanTinhCaMuaDong-CauPhat-39886177.mp3?st=psNN82mEavflDsJkSIAkKg&e=1794662784&a=0&p=0&r=83f8b403f84d603f28bb0ae65c8615ff",
-        "image": "https://image-cdn.nct.vn/song/2025/12/22/c/f/0/2/1766385709751_300.jpg"
-      },
-      {
-        "key": "PYlLKmVmUFeb",
-        "title": "xuân vũ",
-        "artists": [
-          "Kai Đinh",
-          "Đức Phúc",
-          "Hoàng Rob"
-        ],
-        "duration": 163,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2507/9f/25/ghaxsle1kq.mp3?st=DT2F28sxJfb5X5I8a_C8Jw&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
-        "image": "https://image-cdn.nct.vn/song/2025/07/10/a/0/b/d/1752139360848_300.jpg"
-      },
-      {
-        "key": "ODc0dYqGRxLE",
-        "title": "Tách Trà Thanh Xuân",
-        "artists": [
-          "Văn Mai Hương"
-        ],
-        "duration": 315,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1024/TachTraThanhXuan-VanMaiHuong-7120666.mp3?st=8yJiyTpZSpDhswTp8FuEfA&e=1794577143&a=0&p=0&r=07c728d1fbc10979898289c700d8d53c",
-        "image": "https://image-cdn.nct.vn/song/2021/11/19/6/d/9/1/1637317998163_300.jpg"
-      },
-      {
-        "key": "B1Q3wlGhldTr",
-        "title": "có hẹn với thanh xuân",
-        "artists": [
-          "MONSTAR",
-          "GREY D"
-        ],
-        "duration": 218,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1020/cohenvoithanhxuan-MONSTAR-7050201.mp3?st=UWDNMT6UtRC_sxAWu4X6MQ&e=1794662762&a=0&p=0&r=8be9fa6d8e883c12bd81cbd36073264a",
-        "image": "https://image-cdn.nct.vn/song/2021/07/16/f/4/9/8/1626425507034_300.jpg"
-      },
-      {
-        "key": "oNXVQ2bkB8Ay",
-        "title": "CÔ ĐƠN ANH CŨNG VUI",
-        "artists": [
-          "TINH HÀ \"SAY HI\"",
-          "WEAN",
-          "KIMLONG",
-          "Xuân Định K.Y",
-          "DILLAN"
-        ],
-        "duration": 350,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2607/d4/24/q8av498yb9.mp3?st=l1mR-fg7-5vzLSdWLZ4jDw&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2026/07/10/6/g/w/v/1783666342729_300.jpg"
-      },
-      {
-        "key": "OMuofaJl8iL4",
-        "title": "THẾ GIỚI CỦA ANH",
-        "artists": [
-          "TINH HÀ \"SAY HI\"",
+          "ANH TRAI \"SAY HI\"",
+          "HIEUTHUHAI",
           "Dương Domic",
-          "WEAN",
-          "CONGB",
-          "buitruonglinh",
-          "Van Toan"
-        ],
-        "duration": 257,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2607/b2/82/voy1ne1jjl.mp3?st=AiYq5zKi_k53xWozON0FqQ&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2026/07/24/V/2/2/4/1784877877927_300.jpg"
-      },
-      {
-        "key": "WBksxom1P0Lm",
-        "title": "MỘNG DUYÊN",
-        "artists": [
-          "TINH HÀ \"SAY HI\"",
-          "Quang Hùng MasterD",
           "Song Luân",
           "JSOL",
-          "Sơn.K",
-          "Emil Vergo"
+          "Trần Đăng Dương"
         ],
-        "duration": 288,
+        "duration": 252,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2607/3b/5c/8v33u0o6x3.mp3?st=aGWvpL7FHamXF0aZ4pjymQ&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2026/07/24/V/2/2/4/1784877877927_300.jpg"
+        "streamUrl": "https://stream.nct.vn/Warner_Audio270/SaoHangAFeatHieuthuhaiDuongDomicSongLuanJsolTranDangDuong-ANHTRAISAYHI-16206185.mp3?st=4970CUZdb_MO109HFMD71w&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2024/09/13/f/1/0/2/1726246384758_300.jpg"
       },
       {
-        "key": "2rgIpbCEKtbX",
-        "title": "If U Have A Dream",
+        "key": "A3Paw1blPQuR",
+        "title": "QUAY ĐI QUAY LẠI",
         "artists": [
-          "MIN",
-          "Rtee",
-          "Kai Đinh",
-          "TINLE"
+          "HIEUTHUHAI",
+          "ANH TRAI \"SAY HI\""
         ],
-        "duration": 218,
+        "duration": 210,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1009/IfWeHaveADream-MINRTeeKaiDinh-6912036.mp3?st=9dhHHe5cABn682V-C_bN-Q&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2021/01/05/0/6/1/b/1609843480336_300.jpg"
-      },
-      {
-        "key": "WG0wcxnMbccF",
-        "title": "Summer Vibe",
-        "artists": [
-          "Pay",
-          "Thịnh Suy"
-        ],
-        "duration": 168,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1016/SummerVibe-PayVietNamThinhSuy-7030872.mp3?st=uQsc8yUXr6H51CJmNz9y-Q&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2021/06/09/b/d/a/0/1623212624112_300.jpg"
-      },
-      {
-        "key": "crcW5oD4PcUR",
-        "title": "Tặng Em",
-        "artists": [
-          "Minh Cà Ri",
-          "Tuấn"
-        ],
-        "duration": 234,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui999/TangEm-TuanMinhCaRi-6277241.mp3?st=rig9TtmZWgF_AV7uIf3B4Q&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2020/05/12/2/2/0/9/1589264328591_300.jpg"
-      },
-      {
-        "key": "PYOHqKw9GimB",
-        "title": "Tình Yêu Màu Nắng",
-        "artists": [
-          "Đoàn Thúy Trang",
-          "BigDaddy"
-        ],
-        "duration": 285,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2037/TinhYeuMauNang-DoanThuyTrang-8899940.mp3?st=eNmxC7a0hBU4-FusHpHqfw&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2023/03/24/3/2/2/6/1679658021838_300.jpg"
-      },
-      {
-        "key": "VNPqe8Hq0FRq",
-        "title": "tiny love",
-        "artists": [
-          "Thịnh Suy"
-        ],
-        "duration": 158,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1024/TinyLove-ThinhSuy-7122314.mp3?st=QbVRc6flMc-0NfkLfFSGwA&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2021/12/03/6/8/e/4/1638519606788_300.jpg"
-      },
-      {
-        "key": "hYasE60B0v9P",
-        "title": "Let's Talk About Love",
-        "artists": [
-          "Văn Mai Hương",
-          "Blacka",
-          "Châu Đăng Khoa"
-        ],
-        "duration": 242,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1025/LetsTalkAboutLove-VanMaiHuongBlackaChauDangKhoa-7124748.mp3?st=qxH2r3EgRFZu5ZkFytohlQ&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2021/12/30/d/f/6/5/1640846498725_300.jpg"
-      },
-      {
-        "key": "dA7LfpmZrCJa",
-        "title": "Vẫn Lit - Hội Không Nón",
-        "artists": [
-          "IndieK",
-          "HURRYKNG",
-          "CAPTAIN BOY",
-          "OgeNus",
-          "Strange H",
-          "gung0cay",
-          "Yuno BigBoi",
-          "Tọi",
-          "RAP VIỆT"
-        ],
-        "duration": 434,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/Warner_Audio181/VanLitHoiKhongNonFeatIndiekHurrykngCaptainOgenusStrangeHGung0cayYunoBigboiToi-RAPVIET-11540502.mp3?st=WD-4qxetnfsPVsCHF900YQ&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2023/09/09/9/1/e/5/1694255781566_300.jpg"
+        "streamUrl": "https://stream.nct.vn/NCTSong/2409/55/33/8fjymv06r3.mp3?st=wHj5sEmRsw8hOfplXsrs5A&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2024/08/31/5/f/c/2/1725070519239_300.jpg"
       },
       {
         "key": "SE1G1K2nC0zu",
@@ -1802,38 +1486,6 @@ document.addEventListener('DOMContentLoaded', () => {
         "image": "https://image-cdn.nct.vn/song/2024/08/09/b/d/0/0/1723211825063_300.jpg"
       },
       {
-        "key": "1JITUz09WzVY",
-        "title": "SAU ĐÊM NAY",
-        "artists": [
-          "ANH TRAI \"SAY HI\"",
-          "ERIK",
-          "Đức Phúc",
-          "Quân A.P",
-          "JSOL",
-          "Gemini Hùng Huỳnh"
-        ],
-        "duration": 291,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/Warner_Audio259/SauDemNayFeatErikDucPhucQuanApJsolHungHuynh-ANHTRAISAYHI-15770779.mp3?st=tat6rq-mHbIrqc3iQL3tTg&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2024/08/17/f/b/4/4/1723893395674_300.jpg"
-      },
-      {
-        "key": "0v5fPaVB4qmf",
-        "title": "ANH TRAI NƯỚC VIỆT",
-        "artists": [
-          "ANH TRAI \"SAY HI\"",
-          "ERIK",
-          "Đức Phúc",
-          "Quân A.P",
-          "JSOL",
-          "Gemini Hùng Huỳnh"
-        ],
-        "duration": 251,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/Warner_Audio259/AnhTraiNuocVietFeatErikDucPhucQuanApJsolHungHuynh-ANHTRAISAYHI-15770775.mp3?st=_hc6jCrFQbXzGGGIWLJsqQ&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2024/08/17/f/b/4/4/1723893395674_300.jpg"
-      },
-      {
         "key": "2DHGAbJCbp1b",
         "title": "BẢNH",
         "artists": [
@@ -1860,6 +1512,19 @@ document.addEventListener('DOMContentLoaded', () => {
         "image": "https://image-cdn.nct.vn/song/2024/06/15/9/3/9/1/1718396273723_300.jpg"
       },
       {
+        "key": "n3QoQ1P5WLHS",
+        "title": "Tay-lai Pr0 (Tây-lai Pr0)",
+        "artists": [
+          "JustaTee",
+          "Double2T",
+          "RAP VIỆT"
+        ],
+        "duration": 258,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/Warner_Audio181/TaylaiPr0TaylaiPr0featJustateeDouble2t-RAPVIET-11540501.mp3?st=5dQxSKIWxfKPjVQV6a8mwg&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2023/09/09/9/1/e/5/1694255781566_300.jpg"
+      },
+      {
         "key": "ZViQdtds3AH7",
         "title": "Tình Đầu Quá Chén",
         "artists": [
@@ -1875,33 +1540,84 @@ document.addEventListener('DOMContentLoaded', () => {
         "image": "https://image-cdn.nct.vn/song/2024/09/13/f/1/0/2/1726246384758_300.jpg"
       },
       {
-        "key": "wOkqQPZtWxDm",
-        "title": "Anh Thích Em Ý",
+        "key": "hTOTcDR9r5d4",
+        "title": "But Me Too (Maddi Remix)",
         "artists": [
-          "Lil Zpoet",
-          "Trang X.O.X.O"
+          "Freaky",
+          "Harose"
         ],
-        "duration": 128,
+        "duration": 188,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2039/AnhThichEmY-LilZPoetTrangXOXO-9466796.mp3?st=-OM-ZjQDEYx7eByREObC4Q&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2023/05/12/2/4/f/0/1683901877045_300.jpg"
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1001/ButMeTooMaddiRemix-Freaky-6490067.mp3?st=DRqS-Z2AsHJgRjK3JoI6uQ&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2020/08/13/6/3/1/8/1597286831785_300.jpg"
       },
       {
-        "key": "qWmc2x35NHEk",
-        "title": "MAKE UP",
+        "key": "bUM7OaCnPrqU",
+        "title": "Chơi Vơi (Hiphop Remix)",
+        "artists": [
+          "Feliks Alvin",
+          "Allen"
+        ],
+        "duration": 240,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1014/ChoiVoiHiphopRemix-FeliksAllen-7006337.mp3?st=CL2JC5rIK-wvsbou6CMZGg&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2021/04/19/d/1/f/1/1618801656444_300.jpg"
+      },
+      {
+        "key": "fNF2c9brJQeu",
+        "title": "Chợt Tỉnh Giấc (Official Remix)",
+        "artists": [
+          "RHYDER"
+        ],
+        "duration": 214,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1020/ChotTinhGiacOfficialRemix-QuangAnhRhyder-7068161.mp3?st=WSUtv80a0u7sgZI0I7hyYg&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2021/08/16/c/5/a/8/1629081809822_300.jpg"
+      },
+      {
+        "key": "VxElKxG7k4UK",
+        "title": "Lời Đường Mật",
+        "artists": [
+          "Lyly",
+          "HIEUTHUHAI"
+        ],
+        "duration": 222,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1005/LoiDuongMat-LylyHIEUTHUHAI-6802155.mp3?st=4WZ0eqPxS6Dif_0TrvYhcg&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2020/11/05/4/4/6/c/1604552476279_300.jpg"
+      },
+      {
+        "key": "vdXhGFEWSIMh",
+        "title": "ĐOẠN KỊCH CÂM",
         "artists": [
           "ANH TRAI \"SAY HI\"",
-          "DILLAN",
-          "buitruonglinh",
-          "Đỗ Nam Sơn",
-          "Lohan",
-          "Ryn Lee",
-          "Bảo Thy"
+          "CONGB",
+          "Negav",
+          "B Ray",
+          "CODYNAMVO",
+          "Phạm Đình Thái Ngân",
+          "Mỹ Mỹ"
         ],
-        "duration": 258,
+        "duration": 241,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2511/d3/53/eahs42sipx.mp3?st=SW5J3_YcUdD6H-ia5-cJ3A&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "streamUrl": "https://stream.nct.vn/resa/2511/f4/eb/5yhdkqr2nz.mp3?st=FadsrrYOt47Uwhxcm73Igg&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
         "image": "https://image-cdn.nct.vn/song/2025/11/03/D/2/u/R/1762160793118_300.jpg"
+      },
+      {
+        "key": "ljxRTVWmdNfT",
+        "title": "CŨNG MAY LÀ Ế",
+        "artists": [
+          "ANH TRAI \"SAY HI\"",
+          "B Ray",
+          "Karik",
+          "CODYNAMVO",
+          "GILL",
+          "Ryn Lee"
+        ],
+        "duration": 222,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2511/98/f0/z0qdlvettt.mp3?st=ZS_x9AjK-SxNTLqSdJxj7A&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2025/11/17/Y/f/D/T/1763353192712_300.jpg"
       },
       {
         "key": "0U4Pr5esABDT",
@@ -1920,98 +1636,28 @@ document.addEventListener('DOMContentLoaded', () => {
         "image": "https://image-cdn.nct.vn/song/2024/08/02/6/5/b/a/1722607585053_300.jpg"
       },
       {
-        "key": "Rj5mkaMoR6Df",
-        "title": "Vấn Vương",
+        "key": "QuQ5Abpdfad6",
+        "title": "Đừng Phiền Anh (feat. Pháp Kiều)",
         "artists": [
-          "buitruonglinh"
-        ],
-        "duration": 174,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2058/VanVuong-buitruonglinh-36582521.mp3?st=xry4bXer3Mk3hHuMKDYpvA&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2025/04/16/b/b/0/4/1744790764751_300.jpg"
-      },
-      {
-        "key": "mm1z2UUAd3cP",
-        "title": "Dù Em Từng Yêu",
-        "artists": [
-          "buitruonglinh"
-        ],
-        "duration": 194,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2057/DuEmTungYeu-buitruonglinh-16952751.mp3?st=AohgMp0mgaVamtdv46ihJg&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2024/12/09/e/c/4/1/1733730736531_300.jpg"
-      },
-      {
-        "key": "IfYMlwyQfM6n",
-        "title": "tết tình",
-        "artists": [
-          "TINH HÀ \"SAY HI\"",
-          "Jaysonlei",
-          "Sơn.K",
-          "DILLAN",
-          "Đặng Hồng Hải"
-        ],
-        "duration": 220,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2608/ff/da/dh081ws7js.mp3?st=iGArZwgKOzFSfoe5sk5EdA&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2026/08/14/t/8/e/K/1786702328021_300.jpg"
-      },
-      {
-        "key": "cnOYrRTVw5xV",
-        "title": "một người như thế",
-        "artists": [
-          "TINH HÀ \"SAY HI\"",
-          "WEAN",
-          "Pháp Kiều",
-          "CoolKid",
-          "HURRYKNG"
-        ],
-        "duration": 274,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2608/be/66/hjs588w69u.mp3?st=Veo84k9qbirBythJ4Wxyzg&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2026/08/14/t/8/e/K/1786702328021_300.jpg"
-      },
-      {
-        "key": "1a45uWg71oJ3",
-        "title": "người trên dây",
-        "artists": [
-          "TINH HÀ \"SAY HI\"",
-          "Dương Domic",
-          "Thể Thiên",
-          "VƯƠNG BÌNH",
-          "JSOL"
-        ],
-        "duration": 215,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2608/0f/fc/htnirw8tsr.mp3?st=tkiIQfoez_PILRXhzUdGFA&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2026/08/14/t/8/e/K/1786702328021_300.jpg"
-      },
-      {
-        "key": "9A9stEtxttHb",
-        "title": "happy! (outro)",
-        "artists": [
-          "TINH HÀ \"SAY HI\"",
-          "Dương Domic"
-        ],
-        "duration": 110,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2608/50/f7/z2m4l1cxse.mp3?st=55sxyD4klKlYuCKMOF463w&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2026/08/14/t/8/e/K/1786702328021_300.jpg"
-      },
-      {
-        "key": "8elgx6gQAz7U",
-        "title": "RUN TO YOU (feat. Ali Hoàng Dương, Song Luân, IVAN & KIMLONG)",
-        "artists": [
-          "TINH HÀ \"SAY HI\"",
           "Ali Hoàng Dương",
-          "Song Luân",
-          "IVAN",
-          "KIMLONG"
+          "Pháp Kiều"
         ],
-        "duration": 275,
+        "duration": 230,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2608/61/3e/qpecy9d930.mp3?st=p1YWVRC7yG2OksDPownWcA&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2026/08/07/B/9/p/M/1786092367635_300.jpg"
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2058/DungPhienAnhfeatPhapKieu-AliHoangDuongPhapKieu-36947727.mp3?st=EqK7lwof2ttoQKhhuySK-w&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2025/05/19/3/3/a/8/1747628343192_300.jpg"
+      },
+      {
+        "key": "z4wyJlGPe0ey",
+        "title": "Papurapapa (Tương Tư) (feat. Minsicko)",
+        "artists": [
+          "th?o",
+          "Minsicko"
+        ],
+        "duration": 227,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2058/PapurapapaTuongTufeatMinsicko-thoMinsicko-35427528.mp3?st=GPPEc8o5tFW_35oyRGQf9w&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2025/02/13/5/f/e/3/1739423113428_300.jpg"
       },
       {
         "key": "iNBq9o6BVX1Q",
@@ -2023,21 +1669,6 @@ document.addEventListener('DOMContentLoaded', () => {
         "duration": 20,
         "kbit": 128,
         "streamUrl": "https://stream.nct.vn/resa/2608/23/4f/bqqk2rhi48.mp3?st=icn0Rdkk315SL5W1zqkuSg&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2026/08/07/B/9/p/M/1786092367635_300.jpg"
-      },
-      {
-        "key": "angpyBCuxkfu",
-        "title": "MRT (feat. Xuân Định K.Y, buitruonglinh, CAPTAIN BOY & HYO)",
-        "artists": [
-          "TINH HÀ \"SAY HI\"",
-          "Xuân Định K.Y",
-          "buitruonglinh",
-          "CAPTAIN BOY",
-          "HYO"
-        ],
-        "duration": 331,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2608/27/2b/lrt1fwvb5z.mp3?st=2zSeobVsVrgp3tOiCmg1Ng&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
         "image": "https://image-cdn.nct.vn/song/2026/08/07/B/9/p/M/1786092367635_300.jpg"
       },
       {
@@ -2112,19 +1743,19 @@ document.addEventListener('DOMContentLoaded', () => {
         "image": "https://image-cdn.nct.vn/song/2026/07/24/V/2/2/4/1784877877927_300.jpg"
       },
       {
-        "key": "tvDTOCZAUcvb",
-        "title": "CÓ GÌ ĐÂU MÀ CAY",
+        "key": "OMuofaJl8iL4",
+        "title": "THẾ GIỚI CỦA ANH",
         "artists": [
           "TINH HÀ \"SAY HI\"",
-          "CAPTAIN BOY",
-          "CoolKid",
-          "IVAN",
-          "Xuân Định K.Y",
-          "leonsash"
+          "Dương Domic",
+          "WEAN",
+          "CONGB",
+          "buitruonglinh",
+          "Van Toan"
         ],
-        "duration": 288,
+        "duration": 257,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2607/6f/12/smvquq0n4q.mp3?st=XSt7V9eDKhXV_gwvdJMHug&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "streamUrl": "https://stream.nct.vn/resa/2607/b2/82/voy1ne1jjl.mp3?st=AiYq5zKi_k53xWozON0FqQ&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
         "image": "https://image-cdn.nct.vn/song/2026/07/24/V/2/2/4/1784877877927_300.jpg"
       },
       {
@@ -2144,68 +1775,494 @@ document.addEventListener('DOMContentLoaded', () => {
         "kbit": 128,
         "streamUrl": "https://stream.nct.vn/resa/2607/5d/c8/jqmgnktdb9.mp3?st=BNeXZgyWLH0Sj7aS2cJxMw&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
         "image": "https://image-cdn.nct.vn/song/2026/07/24/V/2/2/4/1784877877927_300.jpg"
-      }
-    ]
-  },
-  {
-    "id": "playlist-giang-sinh-le-hoi",
-    "name": "🎄 Giáng Sinh & Mùa Lễ Hội Sôi Động",
-    "description": "Tuyển chọn 50 bài hát chủ đề Giáng Sinh, Mùa Đông, Năm Mới và tiệc tùng lễ hội cực kỳ sôi động, rộn ràng và vui tươi (Đêm Giáng Sinh Mùa Hạ, Đông Vừa Sang Remix, Một Năm Mới Bình An, Tết Đong Đầy...).",
-    "createdAt": "2026-11-16T02:57:27.262Z",
-    "version": "2.3.0",
-    "songs": [
+      },
       {
-        "key": "0oJUVaYng4pQ",
-        "title": "ĐÊM GIÁNG SINH MÙA HẠ",
+        "key": "K5sM5HjDRSGk",
+        "title": "IDNAT (IM ĐỢI NGƯỜI ANH THƯƠNG)",
+        "artists": [
+          "TINH HÀ \"SAY HI\"",
+          "Wren Evans",
+          "IVAN",
+          "CAPTAIN BOY",
+          "Thể Thiên"
+        ],
+        "duration": 239,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2607/ce/3a/9pr3er43fk.mp3?st=Bx8YihX9FFeLLZNITVlcNQ&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2026/07/10/6/g/w/v/1783666342729_300.jpg"
+      },
+      {
+        "key": "N4mj3v5s9vg0",
+        "title": "XOAY VÒNG",
+        "artists": [
+          "TINH HÀ \"SAY HI\"",
+          "HURRYKNG",
+          "CONGB",
+          "JSOL",
+          "VƯƠNG BÌNH",
+          "KADO (Việt Nam)",
+          "Reeze",
+          "Hoa Xuân Đức"
+        ],
+        "duration": 205,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2607/e8/1a/5nymfjts9z.mp3?st=ejwpt4wGErIUHkyG-JjIOg&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2026/07/10/6/g/w/v/1783666342729_300.jpg"
+      },
+      {
+        "key": "oNXVQ2bkB8Ay",
+        "title": "CÔ ĐƠN ANH CŨNG VUI",
+        "artists": [
+          "TINH HÀ \"SAY HI\"",
+          "WEAN",
+          "KIMLONG",
+          "Xuân Định K.Y",
+          "DILLAN"
+        ],
+        "duration": 350,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2607/d4/24/q8av498yb9.mp3?st=l1mR-fg7-5vzLSdWLZ4jDw&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2026/07/10/6/g/w/v/1783666342729_300.jpg"
+      },
+      {
+        "key": "8midsCPVi5RD",
+        "title": "BAD NIGHT",
+        "artists": [
+          "TINH HÀ \"SAY HI\"",
+          "Dương Domic",
+          "Pháp Kiều",
+          "Đặng Hồng Hải",
+          "Ali Hoàng Dương"
+        ],
+        "duration": 233,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2607/e4/b7/h8l93x8mtn.mp3?st=r7_KCT7MQrIktMzmiQjViA&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2026/07/10/6/g/w/v/1783666342729_300.jpg"
+      },
+      {
+        "key": "VtFikTfhGn51",
+        "title": "TOGETHER WE SHINE",
+        "artists": [
+          "TINH HÀ \"SAY HI\"",
+          "Dương Domic",
+          "Pháp Kiều",
+          "JSOL",
+          "buitruonglinh",
+          "Sơn.K",
+          "CONGB",
+          "VƯƠNG BÌNH",
+          "Đặng Hồng Hải",
+          "IVAN",
+          "HURRYKNG",
+          "Song Luân",
+          "CODYNAMVO",
+          "CoolKid",
+          "Jaysonlei",
+          "HYO",
+          "Thể Thiên",
+          "Wren Evans",
+          "KIMLONG",
+          "CAPTAIN BOY",
+          "WEAN",
+          "Xuân Định K.Y",
+          "Quang Hùng MasterD",
+          "DILLAN",
+          "Ali Hoàng Dương"
+        ],
+        "duration": 316,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2607/ed/14/o66j2p71a9.mp3?st=J9yhVRCcr4HCSLyHXwhchQ&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2026/07/06/h/8/e/9/1783310563751_300.jpg"
+      },
+      {
+        "key": "LLc8dqA9fgyJ",
+        "title": "I.C.O.N",
         "artists": [
           "ANH TRAI \"SAY HI\"",
-          "buitruonglinh",
-          "BigDaddy",
+          "Isaac",
+          "HIEUTHUHAI",
+          "Đức Phúc",
+          "Quân A.P",
+          "Quang Hùng MasterD",
+          "Lou Hoàng",
+          "Pháp Kiều",
+          "WEAN",
+          "Negav",
+          "Hải Đăng Doo",
+          "Gin Tuấn Kiệt",
+          "Ali Hoàng Dương",
+          "NICKY",
+          "Vũ Thịnh",
+          "Công Dương"
+        ],
+        "duration": 197,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/Warner_Audio243/IconFeatIsaacHieuthuhaiDucPhucErikQuanApQuangHungMasterdLouHoangPhapKieuWeanNegavHaiDangDooGinTuanKietAliHoangDuongNickyVuThinhCongDuong-ANHTRAISAYHI-15065465.mp3?st=UzB2aFVr7p5UEa9biacAmA&e=1794577136&a=0&p=0&r=7b9cbbb321d78ed7de611debde459459",
+        "image": "https://image-cdn.nct.vn/song/2024/06/15/9/3/9/1/1718396273723_300.jpg"
+      },
+      {
+        "key": "I27zoLp2Ovzz",
+        "title": "KIM PHÚT, KIM GIỜ",
+        "artists": [
+          "Isaac",
+          "Negav",
+          "HIEUTHUHAI",
+          "HURRYKNG",
+          "Pháp Kiều",
+          "ANH TRAI \"SAY HI\""
+        ],
+        "duration": 295,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/Warner_Audio260/KimPhutKimGioFeatHurrykngHieuthuhaiNegavPhapKieuIsaac-ANHTRAISAYHI-15840467.mp3?st=oHniIWHJeeYrXRs5yyxBWQ&e=1794577136&a=0&p=0&r=7b9cbbb321d78ed7de611debde459459",
+        "image": "https://image-cdn.nct.vn/song/2024/08/23/e/c/3/c/1724421820127_300.jpg"
+      },
+      {
+        "key": "IHIi82CDXKDo",
+        "title": "WALK",
+        "artists": [
+          "ANH TRAI \"SAY HI\"",
+          "HURRYKNG",
+          "HIEUTHUHAI",
+          "Negav",
+          "Pháp Kiều",
+          "Isaac"
+        ],
+        "duration": 232,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/Warner_Audio259/WalkFeatHurrykngHieuthuhaiNegavPhapKieuIsaac-ANHTRAISAYHI-15770778.mp3?st=xTvhaVS6C7zZsh08pDOXzg&e=1794577136&a=0&p=0&r=7b9cbbb321d78ed7de611debde459459",
+        "image": "https://image-cdn.nct.vn/song/2024/08/17/f/b/4/4/1723893395674_300.jpg"
+      },
+      {
+        "key": "gwkZrcqfbbOI",
+        "title": "NGÁO NGƠ",
+        "artists": [
+          "ANH TRAI \"SAY HI\"",
+          "HIEUTHUHAI",
+          "ERIK",
+          "Anh Tú Atus",
+          "JSOL",
+          "Orange"
+        ],
+        "duration": 252,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/Warner_Audio256/NgaoNgoFeatHieuthuhaiErikAnhTuAtusJsolOrange-ANHTRAISAYHI-15564774.mp3?st=02_Z7bFB_42TQefUfz6m3A&e=1794577136&a=0&p=0&r=7b9cbbb321d78ed7de611debde459459",
+        "image": "https://image-cdn.nct.vn/song/2024/08/02/6/5/b/a/1722607585053_300.jpg"
+      },
+      {
+        "key": "BYVwXVPbNBvC",
+        "title": "LOVE SAND",
+        "artists": [
+          "ANH TRAI \"SAY HI\"",
+          "HIEUTHUHAI",
+          "JSOL",
+          "Ali Hoàng Dương",
+          "Vũ Thịnh"
+        ],
+        "duration": 235,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/Warner_Audio248/LoveSandFeatHieuthuhaiJsolAliHoangDuongVuThinh-ANHTRAISAYHI-15285295.mp3?st=rK86QI-FM9CcjCNICrBPDg&e=1794577136&a=0&p=0&r=7b9cbbb321d78ed7de611debde459459",
+        "image": "https://image-cdn.nct.vn/song/2024/07/05/8/d/1/2/1720195916328_300.jpg"
+      },
+      {
+        "key": "fXl25DgC421i",
+        "title": "Một Công Đôi Việc",
+        "artists": [
+          "HURRYKNG",
+          "HIEUTHUHAI",
+          "RAP VIỆT"
+        ],
+        "duration": 255,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/Warner_Audio170/MotCongDoiViecFeatHurrykngHieuthuhai-RAPVIET-10574051.mp3?st=SS0i-ultj8MNvUWMNfl0PA&e=1794577136&a=0&p=0&r=7b9cbbb321d78ed7de611debde459459",
+        "image": "https://image-cdn.nct.vn/song/2023/08/05/3/1/c/1/1691173062137_300.jpg"
+      },
+      {
+        "key": "WAGNWjPyy1vv",
+        "title": "Diệu Kỳ Việt Nam",
+        "artists": [
+          "Bích Phương",
           "Phúc Du",
-          "Đỗ Nam Sơn",
-          "VƯƠNG BÌNH"
+          "HIEUTHUHAI",
+          "GDucky"
         ],
-        "duration": 327,
+        "duration": 285,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2511/a7/04/ngioplo8s4.mp3?st=DdjeAyq3Q2i1cUFbrNT0Kg&e=1794662777&a=0&p=0&r=a6e0c0c4faedf73ef507107b859655b0",
-        "image": "https://image-cdn.nct.vn/song/2025/11/17/Y/f/D/T/1763353192712_300.jpg"
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1010/DieuKyVietNam-BichPhuongPhucDuHIEUTHUHAIGDucky-6919132.mp3?st=rLPstlA3vwYG7D3mqAS-kw&e=1794577136&a=0&p=0&r=7b9cbbb321d78ed7de611debde459459",
+        "image": "https://image-cdn.nct.vn/song/2021/01/17/4/1/0/a/1610876379248_300.jpg"
       },
       {
-        "key": "Usg3E9UB3Td6",
-        "title": "Đông Vừa Sang Remix",
+        "key": "TzFdRrD7LHWi",
+        "title": "Reeves",
         "artists": [
-          "VIET.",
-          "ACV"
+          "KNG",
+          "MANBO",
+          "HIEUTHUHAI"
         ],
-        "duration": 168,
+        "duration": 255,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1006/DongVuaSangRemix-NhuVietACV-6809317.mp3?st=3tjZbW2gVU_nk0D8FdYy7Q&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2020/11/10/2/5/0/9/1604998688123_300.jpg"
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1000/Reeves-KNGMANBOHIEUTHUHAI-6316916.mp3?st=Ldy3OoG0bhQhu7hbgKglfw&e=1794577136&a=0&p=0&r=7b9cbbb321d78ed7de611debde459459",
+        "image": "https://image-cdn.nct.vn/song/2020/06/30/1/1/b/4/1593484149502_300.jpg"
       },
       {
-        "key": "27co2YRnwBTJ",
-        "title": "Một Năm Mới Bình An",
+        "key": "jQjwLvlhKazj",
+        "title": "CHỜ ANH VỀ",
         "artists": [
-          "Sơn Tùng M-TP"
+          "ANH TRAI \"SAY HI\"",
+          "B Ray",
+          "AMEE"
         ],
-        "duration": 247,
+        "duration": 214,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui960/MotNamMoiBinhAn-SonTungMTP-4315569.mp3?st=yRqp7LggQC2A5MlPacDgLA&e=1794577135&a=0&p=0&r=576f595de6ebaed3e188c8beed1149c0",
-        "image": "https://image-cdn.nct.vn/song/2024/03/15/4/c/b/d/1710499827907_300.jpg"
+        "streamUrl": "https://stream.nct.vn/resa/2512/8d/ce/il05jk7ntx.mp3?st=MnO8fLakqN8ABP_6NXLo4A&e=1794577136&a=0&p=0&r=63cb9f18e712905f999a39d9a8481e94",
+        "image": "https://image-cdn.nct.vn/song/2025/12/08/V/Y/X/f/1765165771131_300.jpg"
       },
       {
-        "key": "51rYhcuX5MuW",
-        "title": "Mừng Năm Mới Đến (Happy New Year)",
+        "key": "bZD1VVSYpOpS",
+        "title": "Do For Love",
         "artists": [
-          "Akira Phan",
-          "Lâm Hữu Nghị",
-          "Rapper TSon",
-          "DnK"
+          "B Ray",
+          "AMEE"
         ],
-        "duration": 176,
+        "duration": 189,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1011/MungNamMoiDenHappyNewYear-AkiraPhanLamHuuNghiRapperTSonDNKVietNam-6938348.mp3?st=EiIr98Qz3vq8sdL3vg_24w&e=1794577137&a=0&p=0&r=a41d39994dac3234002e29a1115b89f0",
-        "image": "https://image-cdn.nct.vn/song/2021/02/05/0/8/e/4/1612513349206_300.jpg"
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui995/DoForLove-AMeeBRay-6221980.mp3?st=Y9EMMFxfpyHJuam2GW1meg&e=1794577136&a=0&p=0&r=63cb9f18e712905f999a39d9a8481e94",
+        "image": "https://image-cdn.nct.vn/song/2020/02/11/d/4/5/a/1581406608326_300.jpg"
+      },
+      {
+        "key": "9E0fuizURkYA",
+        "title": "dỗi ít thôi ôm đê (ShenlongZ Remix)",
+        "artists": [
+          "Phúc Du",
+          "AMEE"
+        ],
+        "duration": 189,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2032/DoiItThoiOmDeShenlongZRemix-PhucDuAMEE-8380820.mp3?st=p9dtKgPWUT6lH7e0YR8q4Q&e=1794577136&a=0&p=0&r=63cb9f18e712905f999a39d9a8481e94",
+        "image": "https://image-cdn.nct.vn/song/2022/12/07/5/6/5/7/1670383191949_300.jpg"
+      },
+      {
+        "key": "lLTrUXjAXrud",
+        "title": "dỗi ít thôi ôm đê",
+        "artists": [
+          "Phúc Du",
+          "AMEE"
+        ],
+        "duration": 188,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2032/DoiItThoiOmDe-PhucDuAMEE-8343857.mp3?st=ZKFsKzhxNG_uRRYU1ZTHMg&e=1794577136&a=0&p=0&r=63cb9f18e712905f999a39d9a8481e94",
+        "image": "https://image-cdn.nct.vn/song/2022/12/05/a/d/e/b/1670222703450_300.jpg"
+      },
+      {
+        "key": "TcToTb7FEGP9",
+        "title": "HỀ",
+        "artists": [
+          "EM XINH \"SAY HI\"",
+          "Phương Mỹ Chi",
+          "Phương Ly",
+          "Pháo",
+          "Chi Xê",
+          "WEAN"
+        ],
+        "duration": 266,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2506/d2/c0/jlgarklscw.mp3?st=9wR_hcQTNzpQLOBiqyUyHA&e=1794577136&a=0&p=0&r=0be5a2e7d9be55f4fec128a3e0a5bab6",
+        "image": "https://image-cdn.nct.vn/song/2025/06/23/0/d/2/8/1750662892862_300.jpg"
+      },
+      {
+        "key": "dNS7iGz7jBau",
+        "title": "FOREVER SAY HI",
+        "artists": [
+          "ANH TRAI \"SAY HI\"",
+          "BigDaddy",
+          "OgeNus",
+          "B Ray",
+          "Phúc Du",
+          "Hustlang Robber",
+          "RIO",
+          "Khoi Vu",
+          "Lohan",
+          "Bùi Duy Ngọc",
+          "DILLAN",
+          "Ryn Lee",
+          "Hải Nam",
+          "Jaysonlei",
+          "CODYNAMVO",
+          "Phạm Đình Thái Ngân",
+          "Karik",
+          "Vũ Cát Tường",
+          "GILL",
+          "Tez",
+          "buitruonglinh",
+          "Otis",
+          "Negav",
+          "Mason Nguyen",
+          "Sơn.K",
+          "CONGB",
+          "Jey B",
+          "Ngô Kiến Huy",
+          "VƯƠNG BÌNH",
+          "Nhâm Phương Nam",
+          "Đỗ Nam Sơn"
+        ],
+        "duration": 297,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2512/df/a9/tikrzo4ebe.mp3?st=JFV3LJaPwNE1I1jhzP0ESQ&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2025/12/20/G/Q/a/0/1766242406791_300.jpg"
+      },
+      {
+        "key": "cR5LoawvLAr5",
+        "title": "ALL EYES ON US (REMIX)",
+        "artists": [
+          "ANH TRAI \"SAY HI\"",
+          "BigDaddy",
+          "OgeNus",
+          "B Ray",
+          "Phúc Du",
+          "Hustlang Robber",
+          "RIO",
+          "Khoi Vu",
+          "Lohan",
+          "Bùi Duy Ngọc",
+          "DILLAN",
+          "Ryn Lee",
+          "Hải Nam",
+          "Jaysonlei",
+          "CODYNAMVO",
+          "Phạm Đình Thái Ngân",
+          "Karik",
+          "Vũ Cát Tường",
+          "GILL",
+          "Tez",
+          "buitruonglinh",
+          "Otis",
+          "Negav",
+          "Mason Nguyen",
+          "Sơn.K",
+          "CONGB",
+          "Jey B",
+          "Ngô Kiến Huy",
+          "VƯƠNG BÌNH",
+          "Nhâm Phương Nam",
+          "Đỗ Nam Sơn"
+        ],
+        "duration": 192,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2512/29/a4/sclk5c7ll0.mp3?st=t8mRWnBieVezcWmBtdqTzw&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2025/12/20/G/Q/a/0/1766242406791_300.jpg"
+      },
+      {
+        "key": "ohdUc5kDIMnJ",
+        "title": "NGƯỜI NHƯ ANH XỨNG ĐÁNG CÔ ĐƠN",
+        "artists": [
+          "ANH TRAI \"SAY HI\"",
+          "Vũ Cát Tường",
+          "Karik",
+          "Negav",
+          "Ngô Kiến Huy",
+          "Jey B"
+        ],
+        "duration": 316,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2509/73/e4/qpdfu2t5m0.mp3?st=IQi__47fmNOm1W-HoOSC-g&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2025/09/29/o/W/i/k/1759119226418_300.jpg"
+      },
+      {
+        "key": "Z8vq9PRQpd9A",
+        "title": "THIÊU THÂN",
+        "artists": [
+          "ANH TRAI \"SAY HI\"",
+          "Khoi Vu",
+          "B Ray",
+          "Ryn Lee",
+          "Phạm Đình Thái Ngân",
+          "Bùi Duy Ngọc"
+        ],
+        "duration": 202,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2509/dc/68/vyubsz8bdy.mp3?st=n89w5Vb6Q8kI8dgWz6eU5A&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2025/09/29/o/W/i/k/1759119226418_300.jpg"
+      },
+      {
+        "key": "zT3pgYuoXEqa",
+        "title": "CHILL GUYS NGON ZAI",
+        "artists": [
+          "ANH TRAI \"SAY HI\"",
+          "BigDaddy",
+          "OgeNus",
+          "B Ray",
+          "Phúc Du",
+          "Hustlang Robber",
+          "RIO",
+          "Khoi Vu",
+          "Lohan",
+          "Bùi Duy Ngọc",
+          "DILLAN",
+          "Ryn Lee",
+          "Hải Nam",
+          "Jaysonlei",
+          "CODYNAMVO",
+          "Phạm Đình Thái Ngân"
+        ],
+        "duration": 229,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2509/4c/83/np5axqlb1i.mp3?st=j8TRF3Ol6tN7rR8OzR9rDQ&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2025/09/22/8/2/H/n/1758513735386_300.jpg"
+      },
+      {
+        "key": "UAXoY85t8dIP",
+        "title": "Tiểu Thuyết Tình Yêu 2026 (Eopixi Remix)",
+        "artists": [
+          "Freaky",
+          "Hành Or",
+          "Pinny",
+          "Eopixi"
+        ],
+        "duration": 284,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2609/ae/9e/yp7531jjah.mp3?st=2u4n7LuBChuxkyQ4SkMN9g&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2026/09/07/a/d/d/5/1788775402227_300.jpg"
+      },
+      {
+        "key": "myqn76bJZKBf",
+        "title": "Lửa Thử Vàng (Rising Like A Star)",
+        "artists": [
+          "Hành Or",
+          "Rtee",
+          "Freaky",
+          "Hổ"
+        ],
+        "duration": 218,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2608/79/9d/tc8dhry9wn.mp3?st=9H6iuW3japUnsIIlW77Mfg&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2026/08/18/5/2/4/e/1787051531040_300.jpg"
+      },
+      {
+        "key": "uMTU7xlx3BOG",
+        "title": "TIỂU THUYẾT TÌNH YÊU 2026",
+        "artists": [
+          "Freaky",
+          "Hành Or",
+          "Pinny",
+          "Hổ"
+        ],
+        "duration": 189,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2607/71/69/bf7i70bbd1.mp3?st=BODsVaQkzHywkeGYkZvBTQ&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2026/07/15/c/c/9/8/1784098925534_300.jpg"
+      },
+      {
+        "key": "BMncGEC7MwEn",
+        "title": "BCT2026 (Prod. Hổ)",
+        "artists": [
+          "Hành Or",
+          "Rtee",
+          "Freaky",
+          "5BER1"
+        ],
+        "duration": 354,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2605/de/f5/t8ufkjzjaw.mp3?st=Nj8s9Dd0-sou3oCccpj4yA&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2026/05/15/1/6/8/b/1778829676492_300.jpg"
       },
       {
         "key": "bIuRf6GR9Nid",
@@ -2220,278 +2277,1640 @@ document.addEventListener('DOMContentLoaded', () => {
         "image": "https://image-cdn.nct.vn/song/2026/01/12/4/d/5/5/1768213763086_300.jpg"
       },
       {
-        "key": "ENTFW3hOyB08",
-        "title": "Xuân An Khang (Remix Version)",
+        "key": "Lo31VtxPGXbm",
+        "title": "Trao Nhau Nụ Hôn",
         "artists": [
-          "Khả My"
+          "Phát Hồ",
+          "Freaky"
         ],
-        "duration": 260,
+        "duration": 222,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2056/XuanAnKhangRemixVersion-KhaMy-14838036.mp3?st=-jvc-P4g2thiHmaRoX3_Cg&e=1794662769&a=0&p=0&r=3b5a7cec845e2525f105146bd8c8ed23",
-        "image": "https://image-cdn.nct.vn/song/2024/05/21/8/b/f/f/1716278404160_300.jpg"
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2059/TraoNhauNuHon-PhatHoFreaky-38591753.mp3?st=AGxBUpwbX3W3pDqHdtp2hQ&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2025/09/16/9/2/d/5/1758009354990_300.jpg"
       },
       {
-        "key": "i7SZugn4k2Kt",
-        "title": "Xuân Yên Bình (Un9 Remix)",
+        "key": "8KGCPjMg2pC5",
+        "title": "Nghĩ Nhiều",
         "artists": [
-          "Hannie",
-          "Emma Nhất Khanh"
+          "Hành Or",
+          "Freaky"
         ],
-        "duration": 173,
+        "duration": 192,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2051/XuanYenBinhUn9Remix-HannieEmmaNhatKhanh-13593591.mp3?st=A_zZ1ec6-MRA6iAl7PddcA&e=1794662774&a=0&p=0&r=00f665330c3271d43d4ee5e33eacef9e",
-        "image": "https://image-cdn.nct.vn/song/2024/01/30/7/7/2/a/1706610897599_300.jpg"
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2058/NghiNhieu-HanhOrFreaky-36974541.mp3?st=4nS3tYf33NU2rcunxESdTA&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2025/05/21/0/8/a/b/1747816065241_300.jpg"
       },
       {
-        "key": "Z1JvVbzsRppH",
-        "title": "Ta Cùng Làm - Tết Càng Lớn",
+        "key": "8bRSmTcH7bG0",
+        "title": "Cypher Love",
         "artists": [
-          "Bích Phương"
+          "KHOA",
+          "Minh Huy",
+          "Freaky",
+          "Pjnboys",
+          "Bảo Kun",
+          "Koo",
+          "Dubbie",
+          "BILLY100",
+          "Night T"
         ],
-        "duration": 189,
+        "duration": 432,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2049/TaCungLamTetCangLon-BichPhuong-13068355.mp3?st=izBNH6B4kgh1YK1cVLqe_w&e=1794662761&a=0&p=0&r=29602f5d4d14b506050fadfd3a19fc71",
-        "image": "https://image-cdn.nct.vn/song/2023/12/20/3/3/8/9/1703078777259_300.jpg"
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2058/CypherLove-KHOANguyenKhoaMinhHuyFreakyPjnboysBaoKunKooDubbieBILLY100NightT-35367138.mp3?st=bwkF4j3pN6ajC0T_8mrOuA&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2025/02/10/b/a/7/c/1739165883078_300.jpg"
       },
       {
-        "key": "I6CfSOWyunCG",
-        "title": "Ô Kìa Mùa Xuân Vui (Gala Nhạc Việt 15)",
+        "key": "hTSnGs46119Y",
+        "title": "Tết Đong Đầy 5",
         "artists": [
-          "Văn Mai Hương",
-          "Quân A.P"
+          "KHOA",
+          "Freaky"
         ],
-        "duration": 259,
+        "duration": 205,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1011/OKiaMuaXuanVui-VanMaiHuongQuanAP-6937902.mp3?st=jX2IH8B4iLTlfqPEgg3cyw&e=1794577142&a=0&p=0&r=be238e5d6ae8b1a709c3a5225c958d87",
-        "image": "https://image-cdn.nct.vn/song/2021/02/04/5/a/2/5/1612422418216_300.jpg"
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2058/TetDongDay5-KHOAFreaky-35086100.mp3?st=iaRBJ-kE2k__P1KkE8tphA&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2025/01/19/3/c/b/3/1737293490949_300.jpg"
       },
       {
-        "key": "C6AQMcOgvjaW",
-        "title": "Xuân Mang Tết Đến (Gala Nhạc Việt 15)",
+        "key": "4baBf7m1FCej",
+        "title": "Tao Muốn Có Ngày Đẹp Trời",
         "artists": [
-          "Bảo Anh"
+          "Minh Huy",
+          "Freaky",
+          "Hustlang HBo",
+          "Nam Joyy"
         ],
-        "duration": 189,
+        "duration": 309,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1010/XuanMangTetDen-BaoAnh-6929949.mp3?st=9dvZZSXP7X5okku4LTIPeA&e=1794662768&a=0&p=0&r=903a4ca27bf6fac7a778b9967fadf1f3",
-        "image": "https://image-cdn.nct.vn/song/2021/01/28/2/5/3/c/1611812599683_300.jpg"
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2057/TaoMuonCoNgayDepTroi-MinhHuyFreakyHustlangHBoNamJoyy-16355046.mp3?st=aPFGlxBWUZsFPd93sGjn_w&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2024/10/09/a/6/f/f/1728465234994_300.jpg"
       },
       {
-        "key": "0U28uMd0wraE",
-        "title": "Cảnh Đẹp Sapa Tuyết Rơi (Tây Bắc EDM)",
+        "key": "LjXKd9Rknlst",
+        "title": "Muốn Cưa Được Em",
         "artists": [
-          "Vmotion",
-          "A Phủ",
-          "AudioBay"
+          "Freaky",
+          "HENNESSY"
         ],
-        "duration": 194,
+        "duration": 170,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NCTSong/2408/58/2c/dbapd0j2yb.mp3?st=q18s6os7iabyWwx2iNr9Xw&e=1794662781&a=0&p=0&r=0eba1f0512a1b15cd4298bea3704c3bc",
-        "image": "https://image-cdn.nct.vn/song/2024/08/23/c/0/0/e/35080_300.jpg"
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2057/MuonCuaDuocEm-FreakyHennessy-16352486.mp3?st=5ODEVdEU2wrG58pbejdyJA&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2024/10/09/a/6/f/f/1728444878624_300.jpg"
       },
       {
-        "key": "IfYMlwyQfM6n",
-        "title": "tết tình",
+        "key": "azept7itHFSP",
+        "title": "Mẹ Anh Thường Nhắc Về Em",
         "artists": [
-          "TINH HÀ \"SAY HI\"",
-          "Jaysonlei",
-          "Sơn.K",
-          "DILLAN",
-          "Đặng Hồng Hải"
-        ],
-        "duration": 220,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2608/ff/da/dh081ws7js.mp3?st=iGArZwgKOzFSfoe5sk5EdA&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2026/08/14/t/8/e/K/1786702328021_300.jpg"
-      },
-      {
-        "key": "angpyBCuxkfu",
-        "title": "MRT (feat. Xuân Định K.Y, buitruonglinh, CAPTAIN BOY & HYO)",
-        "artists": [
-          "TINH HÀ \"SAY HI\"",
-          "Xuân Định K.Y",
-          "buitruonglinh",
-          "CAPTAIN BOY",
-          "HYO"
-        ],
-        "duration": 331,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2608/27/2b/lrt1fwvb5z.mp3?st=2zSeobVsVrgp3tOiCmg1Ng&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2026/08/07/B/9/p/M/1786092367635_300.jpg"
-      },
-      {
-        "key": "93pEKL5IJC7Z",
-        "title": "01 Nhạc Nền Noel Giáng Sinh Vui Vẻ",
-        "artists": [
-          "AudioBay"
+          "Freaky",
+          "Olew"
         ],
         "duration": 200,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NCTSong/2410/4e/e2/0768cf63ej.mp3?st=ROFxRTbN4qsCj6yiCA0a4w&e=1794662786&a=0&p=0&r=b009ba19779b129501cfab4ff5e968e6",
-        "image": "https://image-cdn.nct.vn/song/2024/10/12/7/e/f/0/70741_300.jpg"
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2056/MeAnhThuongNhacVeEm-FreakyOlewVietNam-15151271.mp3?st=cp04hEcmQBdOaGueOkDQBA&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2024/06/25/4/4/7/1/1719301196943_300.jpg"
       },
       {
-        "key": "zEyN8x2ilNrL",
-        "title": "Mùa Đông Đã Đến",
+        "key": "DzKODGz9hHly",
+        "title": "EVE",
         "artists": [
-          "Hà Ny"
-        ],
-        "duration": 168,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2059/MuaDongDaDen-HaNy-41749996.mp3?st=pscaWILeFL_AoUI8IzuyQQ&e=1794577137&a=0&p=0&r=a41d39994dac3234002e29a1115b89f0",
-        "image": "https://image-cdn.nct.vn/song/2026/05/15/1/6/8/b/1778820267794_300.jpg"
-      },
-      {
-        "key": "MZJxJSqYbJSX",
-        "title": "Bản Tình Ca Mùa Đông",
-        "artists": [
-          "Cậu Phát"
+          "GreenV",
+          "Freaky"
         ],
         "duration": 219,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2059/BanTinhCaMuaDong-CauPhat-39886177.mp3?st=psNN82mEavflDsJkSIAkKg&e=1794662784&a=0&p=0&r=83f8b403f84d603f28bb0ae65c8615ff",
-        "image": "https://image-cdn.nct.vn/song/2025/12/22/c/f/0/2/1766385709751_300.jpg"
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2053/EVE-GreenVFreaky-14146189.mp3?st=VQYJbfBPM_cY8Eu6YAK4EA&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2024/03/19/d/4/1/2/1710832767382_300.jpg"
       },
       {
-        "key": "2enz6wFd4BB8",
-        "title": "Là Tại Mùa Đông",
+        "key": "y8eIqOnOx6vD",
+        "title": "Giữa Thành Phố",
         "artists": [
-          "T.R.I",
-          "MiQ"
+          "Tempo G",
+          "Anh Thư Phan",
+          "Freaky"
         ],
-        "duration": 237,
+        "duration": 244,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2059/LaTaiMuaDong-TRIMiQVietNam-39794616.mp3?st=qwF5um2piBS2I4Q1Is6Qyg&e=1794662784&a=0&p=0&r=83f8b403f84d603f28bb0ae65c8615ff",
-        "image": "https://image-cdn.nct.vn/song/2025/12/17/6/0/a/c/1765954583244_300.jpg"
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2052/GiuaThanhPho-TempoGAnhThuPhanFreaky-13672608.mp3?st=85to1xe7p1TybsEQ2HWz1w&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2024/02/06/1/a/e/4/1707205128834_300.jpg"
       },
       {
-        "key": "hMyyzJIPA4h1",
-        "title": "MÙA ĐÔNG GHÉ QUA",
+        "key": "HLwEAhyeYKlq",
+        "title": "Freaky Horanhac Session 3",
         "artists": [
-          "Cassano",
-          "Guen"
+          "Freaky",
+          "Hổ"
         ],
-        "duration": 207,
+        "duration": 178,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2512/57/cd/xldwlx80fl.mp3?st=V3gZTuN-VpCM7nIFPBjw2g&e=1794662784&a=0&p=0&r=83f8b403f84d603f28bb0ae65c8615ff",
-        "image": "https://image-cdn.nct.vn/song/2025/12/04/9/e/e/4/1764834362766_300.jpg"
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2051/FreakyHoranhacSession3-FreakyHo-13638361.mp3?st=Pz-XurGl6-msywY41O0bwg&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2024/02/02/3/e/1/3/1706865468012_300.jpg"
       },
       {
-        "key": "oYGU5RpkxTTH",
-        "title": "Những Cơn Mưa Dài Cuối Đông",
+        "key": "NVNTw9gASEeF",
+        "title": "Em Cứ Bước (CM1X Remix)",
         "artists": [
-          "BigDaddy",
-          "Hồng Nhung"
-        ],
-        "duration": 234,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2057/NhungConMuaDaiCuoiDong-BigDaddyHongNhung-16687122.mp3?st=rf5k1yFz7Xw2QSj1GzgzCg&e=1794662796&a=0&p=0&r=4857ad45c926386232f3a47558ccab2e",
-        "image": "https://image-cdn.nct.vn/song/2024/11/11/d/0/d/4/1731313876443_300.jpg"
-      },
-      {
-        "key": "PrqwxFafe8xw",
-        "title": "Thanh Xuân Vương Trên Vai Gầy (HeineKen Remix)",
-        "artists": [
-          "Quyết Tiến Maz",
-          "Gia Bảo"
-        ],
-        "duration": 376,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1010/ThanhXuanVuongTrenVaiGayHeinekenRemix-QuyetTienMazGiaBao-6926932.mp3?st=3CwfaiKpkKL-XPRS0MWaGQ&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
-        "image": "https://image-cdn.nct.vn/song/2021/01/21/5/c/9/9/1611198082884_300.jpg"
-      },
-      {
-        "key": "G0JQpzqQRDfL",
-        "title": "Asian Cheerful Party - Travel Background Music (EDM Version)",
-        "artists": [
-          "AudioBay"
-        ],
-        "duration": 220,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NCTSong/2410/8f/86/hysu503d4j.mp3?st=XchsUppUo5BnrxJM5QIMaw&e=1794662781&a=0&p=0&r=0eba1f0512a1b15cd4298bea3704c3bc",
-        "image": "https://image-cdn.nct.vn/song/2024/10/12/8/2/8/4/15175_300.jpg"
-      },
-      {
-        "key": "H2E1RSa1Phrn",
-        "title": "Phuket's Hottest Pool Party Resorts Travel Vlog (Asian Edm)",
-        "artists": [
-          "Vmotion",
-          "AudioBay",
-          "Vprod Music"
-        ],
-        "duration": 190,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2057/PhuketsHottestPoolPartyResortsTravelVlogAsianEdm-VmotionAudioBayVprodMusic-15999076.mp3?st=KnBwpxLiMe1-VGKNOJI2vA&e=1794662781&a=0&p=0&r=0eba1f0512a1b15cd4298bea3704c3bc",
-        "image": "https://image-cdn.nct.vn/song/2024/09/09/3/b/4/9/1725879986598_300.jpg"
-      },
-      {
-        "key": "fgggJZGsjyYI",
-        "title": "Exciting Lion Dance Drumming For Asian New Year (Nhạc Múa Lân)",
-        "artists": [
-          "Múa Rối Nước Art"
-        ],
-        "duration": 172,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NCTSong/2408/5e/a6/3k3qycd2my.mp3?st=bmQWCbfPGB8KoxcPU-hMsw&e=1794662781&a=0&p=0&r=46cf0f3efbb722452b75be57348d9317",
-        "image": "https://image-cdn.nct.vn/song/2024/08/23/f/d/3/7/64445_300.jpg"
-      },
-      {
-        "key": "Fq3JSNG1ngI8",
-        "title": "Nhạc Tết Không Lời - Pháo Hoa Đêm Giao Thừa",
-        "artists": [
-          "AudioBay"
+          "Freaky",
+          "DAT NHO",
+          "CM1X"
         ],
         "duration": 200,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NCTSong/2410/28/73/t4a2tn6c1c.mp3?st=2GB7wd-B5DgXdl1qSavbzA&e=1794662784&a=0&p=0&r=c5d3646fed90d795ddc46bbf0447fc01",
-        "image": "https://image-cdn.nct.vn/song/2024/10/12/6/f/0/a/10413_300.jpg"
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2051/EmCuBuocCM1XRemix-FreakyDATNHOCM1X-13596767.mp3?st=FAjj6B0bbXj4rwBAL0_n4w&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2024/01/30/7/7/2/a/1706626088646_300.jpg"
       },
       {
-        "key": "YmfHl9ZLyLEt",
-        "title": "Nhạc Tết Không Lời - Cảnh Bắn Pháo Hoa Hoành Tráng",
+        "key": "SYJqlQtALFsZ",
+        "title": "Em Cứ Bước",
         "artists": [
-          "AudioBay"
+          "Freaky",
+          "DAT NHO"
         ],
-        "duration": 202,
+        "duration": 210,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NCTSong/2410/e6/a8/25xqn8mzee.mp3?st=I3eB_356Le49y0hk0vV3IA&e=1794577144&a=0&p=0&r=155371077a83c7b2327d92589cd0fbc6",
-        "image": "https://image-cdn.nct.vn/song/2024/10/12/4/c/1/9/14108_300.jpg"
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2048/EmCuBuoc-FreakyDATNHO-12474178.mp3?st=3hpUVTAhK771CuRccWJKbQ&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2023/11/21/a/b/f/4/1700551560024_300.jpg"
       },
       {
-        "key": "ge0WIEVrY5dF",
-        "title": "Tết Đến Nơi Thật Rồi",
+        "key": "rqdAx3J6jyA1",
+        "title": "Mời Buồn Sang Chơi (Acoustic Version)",
         "artists": [
-          "Min Min",
-          "Long Phi",
-          "Didi"
+          "Bảo Yến Rosie",
+          "Freaky",
+          "Châu Đăng Khoa"
+        ],
+        "duration": 220,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2047/MoiBuonSangChoiAcousticVersion-BaoYenRosieFreakyChauDangKhoa-12165269.mp3?st=YNb6QVCiK2_VQRo1T02Blw&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2023/11/02/9/6/4/6/1698918654363_300.jpg"
+      },
+      {
+        "key": "ZMRUyjT64keA",
+        "title": "Muốn Quên Được Em (KPROX Remix)",
+        "artists": [
+          "Freaky",
+          "SEANPOET"
+        ],
+        "duration": 224,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2043/MuonQuenDuocEmKPROXRemix-Freaky-10326625.mp3?st=qpGMb863uhFuhYBaA_iSuQ&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2023/07/31/b/4/4/c/1690796537160_300.jpg"
+      },
+      {
+        "key": "A5yTNXUk5n1S",
+        "title": "Muốn Quên Được Em (QUANVROX Remix)",
+        "artists": [
+          "Freaky",
+          "SEANPOET"
+        ],
+        "duration": 199,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2043/MuonQuenDuocEmQUANVROXRemix-Freaky-10326623.mp3?st=bs8DCRTTwqgDPPODf1EPSA&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2023/07/31/b/4/4/c/1690796463039_300.jpg"
+      },
+      {
+        "key": "t31lx6Sl5Sqm",
+        "title": "Muốn Quên Được Em (DUZME Remix)",
+        "artists": [
+          "Freaky",
+          "SEANPOET"
+        ],
+        "duration": 184,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2043/MuonQuenDuocEmDUZMERemix-Freaky-10326591.mp3?st=SmjYpVC4PeMoHfQAinifhw&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2023/07/31/b/4/4/c/1690795653799_300.jpg"
+      },
+      {
+        "key": "2hnqRGO1AxSh",
+        "title": "Muốn Quên Được Em (CM1X Remix)",
+        "artists": [
+          "Freaky",
+          "SEANPOET"
+        ],
+        "duration": 190,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2043/MuonQuenDuocEmCM1XRemix-Freaky-10326267.mp3?st=14YXX5zHK4B30uQHTZaLSQ&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2023/07/31/b/4/4/c/1690790438515_300.jpg"
+      },
+      {
+        "key": "1iTCVCDlp11V",
+        "title": "Muốn Quên Được Em",
+        "artists": [
+          "Freaky",
+          "SEANPOET"
+        ],
+        "duration": 190,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2042/MuonQuenDuocEm-Freaky-10089792.mp3?st=x2WTA-bB0Pv7ypgvYsgu8Q&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2023/07/13/a/e/f/0/1689184276745_300.jpg"
+      },
+      {
+        "key": "zKMTTTdmSkwB",
+        "title": "Sài Gòn 24h",
+        "artists": [
+          "Freaky",
+          "TÔ CHÂU"
+        ],
+        "duration": 212,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2042/SaiGon24h-FreakyTOCHAUVietNam-10084646.mp3?st=gWJ6ys7L3dxTkIsyGLQ7zw&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2023/07/12/e/d/1/2/1689175661644_300.jpg"
+      },
+      {
+        "key": "u7Vn8qWVYt6J",
+        "title": "Thanh Xuân Có Nhau",
+        "artists": [
+          "SEANPOET",
+          "Freaky"
+        ],
+        "duration": 221,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2038/ThanhXuanCoNhau-VA-9362715.mp3?st=iFIeL1Iyo2EiLOpxBrFiOQ&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2025/09/17/1/9/d/0/1758102396985_300.jpg"
+      },
+      {
+        "key": "4imjtyVPdt86",
+        "title": "Ghé Vào Tai",
+        "artists": [
+          "UMIE",
+          "Freaky",
+          "Hổ"
+        ],
+        "duration": 155,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2034/GheVaoTai-UMIEFreakyHo-8514373.mp3?st=4NxVNvoigfLzu4rN0s1p6Q&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2023/01/12/e/2/4/d/1673508699888_300.jpg"
+      },
+      {
+        "key": "fhR43evJMRZP",
+        "title": "Tán Em",
+        "artists": [
+          "KHOA",
+          "Freaky"
+        ],
+        "duration": 188,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2033/TanEm-KHOANguyenKhoaFreaky-8445577.mp3?st=ZktNXKDk_dHCvTk-KommHQ&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2022/12/21/b/2/7/c/1671607770938_300.jpg"
+      },
+      {
+        "key": "2eGgibj6YecO",
+        "title": "Quả Táo",
+        "artists": [
+          "TIA",
+          "Freaky",
+          "CM1X"
+        ],
+        "duration": 264,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2033/QuaTao-TiaHaiChauFreakyCM1X-8428473.mp3?st=oldkIKROFwpGrRowljRVQQ&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2022/12/16/7/d/4/0/1671185141260_300.jpg"
+      },
+      {
+        "key": "qbALDeuz95PW",
+        "title": "Riu Gơ",
+        "artists": [
+          "Freaky",
+          "T.R.I",
+          "Trần Quang Trường"
+        ],
+        "duration": 249,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2030/RiuGo-FreakyTRIBeon-8186440.mp3?st=OB_sdKrbpGk-c-8S9yHLJw&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2022/11/01/e/b/7/c/1667286829871_300.jpg"
+      },
+      {
+        "key": "NsprSsRZkgYG",
+        "title": "Tài Từ Trong Trứng",
+        "artists": [
+          "Freaky"
+        ],
+        "duration": 120,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2029/TaiTuTrongTrung-Freaky-8093728.mp3?st=UbwxqRm-eCUFOg52eLphjQ&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2022/10/19/7/1/f/4/1666168315603_300.jpg"
+      },
+      {
+        "key": "ak9qyLrmBjqN",
+        "title": "Tuesday (CM1X Remix)",
+        "artists": [
+          "Freaky"
         ],
         "duration": 201,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1011/TetDenNoiThatRoi-MinMin-6937831.mp3?st=zpQqKsfTDA0OlUCggq1QZA&e=1794662763&a=0&p=0&r=25455659e81a80b06f2ad96e5e4a6aae",
-        "image": "https://image-cdn.nct.vn/song/2021/02/04/5/a/2/5/1612409930668_300.jpg"
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2028/TuesdayCM1XRemix-Freaky-7851420.mp3?st=ynn6VvyWxXXWo0Tti5Ld1w&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2022/09/08/b/6/2/9/1662634241513_300.jpg"
       },
       {
-        "key": "aB7DBOc2yVJA",
-        "title": "Tết Này Yêu Thương Trọn Vẹn",
+        "key": "SsDUe4BQKhvU",
+        "title": "Gọi Cho Anh Đi Bae",
         "artists": [
-          "Cường Sahara"
+          "KHOA",
+          "Freaky"
         ],
-        "duration": 265,
+        "duration": 188,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2058/TetNayYeuThuongTronVen-CuongSahara-35370757.mp3?st=hkkEKLWy9lgJHdu1Iw2jUQ&e=1794662787&a=0&p=0&r=f8ac4d5d7d1ab0c261970878a1bfbbfc",
-        "image": "https://image-cdn.nct.vn/song/2025/02/10/b/a/7/c/1739182470616_300.jpg"
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2027/GoiChoAnhDiBae-KhoaFreaky-7806505.mp3?st=fLn0RWniDZaRQddwwECevw&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2022/08/22/6/b/a/9/1661161152601_300.jpg"
       },
       {
-        "key": "1a3GVmai4T4J",
-        "title": "Cho Mùa Xuân Bên Em",
+        "key": "QZPu7RIAJyY3",
+        "title": "Tuesday",
         "artists": [
-          "BIN",
-          "MeiA"
+          "Freaky"
+        ],
+        "duration": 200,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2027/Tuesday-Freaky-7771103.mp3?st=8xFhJNNG_GhqTBF-U49E_w&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2022/08/12/4/2/3/2/1660300084240_300.jpg"
+      },
+      {
+        "key": "NFt8ncegAcJk",
+        "title": "Ta Can Nhau Khong",
+        "artists": [
+          "Tempo G",
+          "Freaky",
+          "SIVAN"
+        ],
+        "duration": 220,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2022/TaCanNhauKhong-TempoGFreakySIVANMinhAnSivan-7290490.mp3?st=mNJHA9MNyFrcmESlatmRNA&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2022/06/01/4/b/6/9/1654067141439_300.jpg"
+      },
+      {
+        "key": "acW0G9E5S07a",
+        "title": "Yêu Mỗi Em",
+        "artists": [
+          "Sóc Nâu",
+          "Freaky"
+        ],
+        "duration": 192,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2022/YeuMoiEm-SocNauFreaky-7235491.mp3?st=CFJC9WbkYekVX8QOmXOl2g&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2022/05/25/0/6/5/4/1653450079125_300.jpg"
+      },
+      {
+        "key": "NZgd7IupAE3U",
+        "title": "Sân Khấu Lầm Tưởng",
+        "artists": [
+          "Freaky",
+          "RAP VIỆT"
+        ],
+        "duration": 232,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/Warner_Audio73/SanKhauLamTuongFeatFreaky-RAPVIET-7138816.mp3?st=dYKKBRMd0Tvg9og_U5yTJA&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2022/01/18/e/b/3/0/1642491962561_300.jpg"
+      },
+      {
+        "key": "0iaceejVO5mm",
+        "title": "Vì Đó Là Anh",
+        "artists": [
+          "2Can",
+          "Freaky",
+          "RAP VIỆT"
+        ],
+        "duration": 164,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1024/ViDoLaAnh-2CanFreakyRAPVIET-7122090.mp3?st=UNA7oLoJBS4hexYdP-2oOg&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2021/12/02/7/5/4/1/1638432039815_300.jpg"
+      },
+      {
+        "key": "zz2ywetOw77L",
+        "title": "Teen Rap Việt",
+        "artists": [
+          "Freaky",
+          "RAP VIỆT"
+        ],
+        "duration": 164,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1024/TeenRapViet-FreakyRAPVIET-7121381.mp3?st=9hHUIaAY5jq3jrSEBmhIwg&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2021/11/26/4/a/f/f/1637912221887_300.jpg"
+      },
+      {
+        "key": "jk34xOOdsZK7",
+        "title": "Healing",
+        "artists": [
+          "Freaky",
+          "SUMMER VEE"
+        ],
+        "duration": 215,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1022/Healing-FreakySummerVee-7090679.mp3?st=UxdRA5wHeRWTjelT1xFR7Q&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2021/09/17/5/a/b/4/1631859764320_300.jpg"
+      },
+      {
+        "key": "ejYMU3QCMZ8C",
+        "title": "GENZ",
+        "artists": [
+          "Freaky",
+          "Nhật Hoàng"
+        ],
+        "duration": 151,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1020/Genz-FreakyNhatHoang-7067061.mp3?st=ZkWVpGp7u9hQSvZPOps5jQ&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
+        "image": "https://image-cdn.nct.vn/song/2021/08/13/7/b/0/e/1628835376920_300.jpg"
+      }
+    ]
+  },
+  {
+    "id": "playlist-ballad-cam-xuc",
+    "name": "🌧️ Top Ballad Cảm Xúc & Sâu Lắng",
+    "description": "Tuyển chọn 100 tình khúc Ballad da diết, mộc mạc và sâu lắng chạm đến trái tim từ các giọng ca vàng (Trung Quân Idol, Vũ., Đức Phúc, ERIK, Hoàng Dũng, Văn Mai Hương, Bùi Anh Tuấn, Phan Mạnh Quỳnh, Noo Phước Thịnh, AMEE, Phương Ly, Thịnh Suy...).",
+    "createdAt": "2026-11-16T04:41:38.925Z",
+    "version": "2.5.0",
+    "songs": [
+      {
+        "key": "QEX3eU6yxm2r",
+        "title": "Ta Còn Yêu Nhau (HITStory Live Version)",
+        "artists": [
+          "Đức Phúc",
+          "HITSTORY - Chuyện Nhạc"
+        ],
+        "duration": 212,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2058/TaConYeuNhauHITStoryLiveVersion-DucPhucHITStory-35133252.mp3?st=UU9sYUZzjTD4ufuP0UtZJw&e=1794577141&a=0&p=0&r=443a766ab370b8d4d2b2a27c07542e78",
+        "image": "https://image-cdn.nct.vn/song/2025/01/22/3/1/a/1/1737525316880_300.jpg"
+      },
+      {
+        "key": "Kx3Kbih0rS5z",
+        "title": "Nàng Thơ",
+        "artists": [
+          "Hoàng Dũng"
+        ],
+        "duration": 254,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1001/NangTho-HoangDung-6413381.mp3?st=AwmMjN-WMTEtNDz6VA_DfA&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2020/07/31/c/5/8/9/1596188259603_300.jpg"
+      },
+      {
+        "key": "jvaolomZtGnd",
+        "title": "Một Ngàn Nỗi Đau",
+        "artists": [
+          "Văn Mai Hương",
+          "Hứa Kim Tuyền"
+        ],
+        "duration": 321,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2023/MotNganNoiDau-VanMaiHuongHuaKimTuyen-7561897.mp3?st=5BK9fuz6pUnNr5SZey8oxg&e=1794577143&a=0&p=0&r=07c728d1fbc10979898289c700d8d53c",
+        "image": "https://image-cdn.nct.vn/song/2022/06/22/2/2/2/d/1655884422688_300.jpg"
+      },
+      {
+        "key": "tZRixwuv75MV",
+        "title": "Cầu Hôn (Happy Version)",
+        "artists": [
+          "Văn Mai Hương"
+        ],
+        "duration": 244,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1010/CauHonHappyVersion-VanMaiHuong-6927334.mp3?st=VlZdN2UVpGtbRTXJGZlDAw&e=1794577143&a=0&p=0&r=07c728d1fbc10979898289c700d8d53c",
+        "image": "https://image-cdn.nct.vn/song/2021/01/22/9/f/2/1/1611280551489_300.jpg"
+      },
+      {
+        "key": "E2izzWhGMenY",
+        "title": "Tôi Thương Ba (Original Soundtrack From \"Con Nhót Mót Chồng\")",
+        "artists": [
+          "Văn Mai Hương",
+          "Hồ Trung Dũng"
+        ],
+        "duration": 356,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2038/ToiThuongBaOriginalSoundtrackFromConNhotMotChong-VanMaiHuongHoTrungDung-9356964.mp3?st=KbqxpTeupfJ4fdtdDenL8g&e=1794577143&a=0&p=0&r=07c728d1fbc10979898289c700d8d53c",
+        "image": "https://image-cdn.nct.vn/song/2023/04/24/7/a/f/6/1682319459521_300.jpg"
+      },
+      {
+        "key": "4yr3Kru4RDD1",
+        "title": "Chuyện Rằng",
+        "artists": [
+          "Thịnh Suy"
+        ],
+        "duration": 272,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1007/ChuyenRang1-ThinhSuy-6465355.mp3?st=pZjsV9cAsY2UW3xQjHlhdw&e=1794577146&a=0&p=0&r=da95dcf22d5abc0686f5dadba2ebd80c",
+        "image": "https://image-cdn.nct.vn/song/2020/08/07/d/e/f/2/1596786667818_300.jpg"
+      },
+      {
+        "key": "FY0A6ONtGfXn",
+        "title": "Chạy Khỏi Thế Giới Này (Cukak Remix)",
+        "artists": [
+          "Da LAB",
+          "Phương Ly"
+        ],
+        "duration": 294,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2023/ChayKhoiTheGioiNayCukakRemix-DaLABPhuongLy-7583822.mp3?st=f2gvYkLF2OQhXUyIjL1jzw&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2022/07/06/5/e/b/8/1657077703565_300.jpg"
+      },
+      {
+        "key": "WG0wcxnMbccF",
+        "title": "Summer Vibe",
+        "artists": [
+          "Pay",
+          "Thịnh Suy"
         ],
         "duration": 168,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1024/ChoMuaXuanBenEm-BINMeiA-7123632.mp3?st=PFQffRJX4OQ4MHIQ6jJhtg&e=1794662784&a=0&p=0&r=83f8b403f84d603f28bb0ae65c8615ff",
-        "image": "https://image-cdn.nct.vn/song/2021/12/16/7/7/f/6/1639635172171_300.jpg"
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1016/SummerVibe-PayVietNamThinhSuy-7030872.mp3?st=uQsc8yUXr6H51CJmNz9y-Q&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2021/06/09/b/d/a/0/1623212624112_300.jpg"
+      },
+      {
+        "key": "crcW5oD4PcUR",
+        "title": "Tặng Em",
+        "artists": [
+          "Minh Cà Ri",
+          "Tuấn"
+        ],
+        "duration": 234,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui999/TangEm-TuanMinhCaRi-6277241.mp3?st=rig9TtmZWgF_AV7uIf3B4Q&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2020/05/12/2/2/0/9/1589264328591_300.jpg"
+      },
+      {
+        "key": "PYOHqKw9GimB",
+        "title": "Tình Yêu Màu Nắng",
+        "artists": [
+          "Đoàn Thúy Trang",
+          "BigDaddy"
+        ],
+        "duration": 285,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2037/TinhYeuMauNang-DoanThuyTrang-8899940.mp3?st=eNmxC7a0hBU4-FusHpHqfw&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2023/03/24/3/2/2/6/1679658021838_300.jpg"
+      },
+      {
+        "key": "k7JcJSWgCbfj",
+        "title": "Anh Từng Mơ (Mee Remix)",
+        "artists": [
+          "Lê Vũ",
+          "Xám"
+        ],
+        "duration": 294,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1018/AnhTungMoMeeRemix-LeVuXam-7050223.mp3?st=vVvlGbOF3MjixWwNO9YVXA&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
+        "image": "https://image-cdn.nct.vn/song/2021/07/16/f/4/9/8/1626428030937_300.jpg"
+      },
+      {
+        "key": "KhhlwmNMt0Zv",
+        "title": "Lỡ Duyên Vậy Thôi (ChungQ x HHD Remix)",
+        "artists": [
+          "Trần Minh Vũ",
+          "Khả Huy"
+        ],
+        "duration": 257,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1019/LoDuyenVayThoiChungqXHhdRemix-TranMinhVuKhaHuy-7061387.mp3?st=Ah0xBEb6IZLmDLYH4YsqIQ&e=1794568319&a=8&p=0&r=763a6e71-413f-4016-ab1e-6a274444200a",
+        "image": "https://image-cdn.nct.vn/song/2021/08/05/3/c/a/5/1628131016229_300.jpg"
+      },
+      {
+        "key": "JPvSFraXdEAT",
+        "title": "Trái Đất Đẹp Nhất Khi Có Em",
+        "artists": [
+          "Đức Phúc",
+          "ViruSs"
+        ],
+        "duration": 184,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui996/TraiDatDepNhatKhiCoEm-DucPhucViruSs-6238530.mp3?st=4GvRierFfusJHickaYGLpQ&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2020/03/19/2/6/e/8/1584587405790_300.jpg"
+      },
+      {
+        "key": "VNPqe8Hq0FRq",
+        "title": "tiny love",
+        "artists": [
+          "Thịnh Suy"
+        ],
+        "duration": 158,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1024/TinyLove-ThinhSuy-7122314.mp3?st=QbVRc6flMc-0NfkLfFSGwA&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2021/12/03/6/8/e/4/1638519606788_300.jpg"
+      },
+      {
+        "key": "hYasE60B0v9P",
+        "title": "Let's Talk About Love",
+        "artists": [
+          "Văn Mai Hương",
+          "Blacka",
+          "Châu Đăng Khoa"
+        ],
+        "duration": 242,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1025/LetsTalkAboutLove-VanMaiHuongBlackaChauDangKhoa-7124748.mp3?st=qxH2r3EgRFZu5ZkFytohlQ&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2021/12/30/d/f/6/5/1640846498725_300.jpg"
+      },
+      {
+        "key": "kAOgYCUopEVC",
+        "title": "Anh Yêu Nụ Cười Ấy",
+        "artists": [
+          "An Vũ"
+        ],
+        "duration": 184,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2038/AnhYeuNuCuoiAy-AnVu-9180211.mp3?st=bcZDPK202SD36j8JbMQjIQ&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2023/04/13/f/6/b/c/1681379933706_300.jpg"
+      },
+      {
+        "key": "AmeCw2biUPcB",
+        "title": "Không Lý Do",
+        "artists": [
+          "Vũ Phụng Tiên",
+          "Hạ"
+        ],
+        "duration": 198,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1020/KhongLyDo-VuPhungTienHaLyAnhKhoa-7065624.mp3?st=t8Izd-QExJMXYx7wnFz9cA&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2021/08/10/b/2/e/0/1628560873036_300.jpg"
+      },
+      {
+        "key": "kvS8Bw6RFZeB",
+        "title": "Gần Bên Em (Ready For You)",
+        "artists": [
+          "Vũ Thảo My"
+        ],
+        "duration": 206,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2054/GanBenEmReadyForYou-VuThaoMy-14329585.mp3?st=uuWAU221FHh4HQfUV8gj8Q&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2024/04/05/b/7/4/5/1712290502151_300.jpg"
+      },
+      {
+        "key": "dA7LfpmZrCJa",
+        "title": "Vẫn Lit - Hội Không Nón",
+        "artists": [
+          "IndieK",
+          "HURRYKNG",
+          "CAPTAIN BOY",
+          "OgeNus",
+          "Strange H",
+          "gung0cay",
+          "Yuno BigBoi",
+          "Tọi",
+          "RAP VIỆT"
+        ],
+        "duration": 434,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/Warner_Audio181/VanLitHoiKhongNonFeatIndiekHurrykngCaptainOgenusStrangeHGung0cayYunoBigboiToi-RAPVIET-11540502.mp3?st=WD-4qxetnfsPVsCHF900YQ&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2023/09/09/9/1/e/5/1694255781566_300.jpg"
+      },
+      {
+        "key": "9tnlqUId7YsA",
+        "title": "ĐÃ XINH LẠI CÒN THÔNG MINH",
+        "artists": [
+          "EM XINH \"SAY HI\"",
+          "Bích Phương",
+          "Miu Lê",
+          "Phương Ly",
+          "Bảo Anh",
+          "Orange",
+          "Lyly",
+          "Hoàng Duyên",
+          "Chi Xê",
+          "Vũ Thảo My",
+          "Ngô Lan Hương",
+          "LAMOON",
+          "Quỳnh Anh Shyn",
+          "Saabirose",
+          "Liu Grace",
+          "Mỹ Mỹ"
+        ],
+        "duration": 236,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2506/1b/63/h48wv060p1.mp3?st=gge9MSKOZIh3d9ujfCgAuw&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2025/06/02/e/b/8/e/1748842250540_300.jpg"
+      },
+      {
+        "key": "hzxaln2Xti2U",
+        "title": "EM XINH EM BLING",
+        "artists": [
+          "EM XINH \"SAY HI\"",
+          "Pháo",
+          "Phương Ly",
+          "Juky San",
+          "Chi Xê",
+          "Hoàng Duyên"
+        ],
+        "duration": 202,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2506/19/07/dwwjpscho6.mp3?st=EHGdPPlz9F7WfJ8OSvsi8w&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2025/06/09/5/3/6/3/1749442857092_300.jpg"
+      },
+      {
+        "key": "SE1G1K2nC0zu",
+        "title": "NỖI ĐAU NGÂY DẠI",
+        "artists": [
+          "ANH TRAI \"SAY HI\"",
+          "HIEUTHUHAI",
+          "Đức Phúc",
+          "Công Dương"
+        ],
+        "duration": 258,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/Warner_Audio245/NoiDauNgayDaiFeatHieuthuhaiDucPhucCongDuong-ANHTRAISAYHI-15145547.mp3?st=fKnA1xgbbUHk4UDhwZbx0w&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2024/06/25/4/4/7/1/1719253194515_300.jpg"
+      },
+      {
+        "key": "ITZdSZPfW2PF",
+        "title": "I'M THINKING ABOUT YOU",
+        "artists": [
+          "ANH TRAI \"SAY HI\"",
+          "RHYDER",
+          "WEAN",
+          "Đức Phúc",
+          "Gemini Hùng Huỳnh",
+          "tlinh"
+        ],
+        "duration": 278,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/Warner_Audio257/IMThinkingAboutYouFeatRhyderWeanDucPhucHungHuynhTlinh-ANHTRAISAYHI-15631775.mp3?st=Ou23s_kpqQBjwcmaT5wmUA&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2024/08/09/b/d/0/0/1723211825063_300.jpg"
+      },
+      {
+        "key": "1JITUz09WzVY",
+        "title": "SAU ĐÊM NAY",
+        "artists": [
+          "ANH TRAI \"SAY HI\"",
+          "ERIK",
+          "Đức Phúc",
+          "Quân A.P",
+          "JSOL",
+          "Gemini Hùng Huỳnh"
+        ],
+        "duration": 291,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/Warner_Audio259/SauDemNayFeatErikDucPhucQuanApJsolHungHuynh-ANHTRAISAYHI-15770779.mp3?st=tat6rq-mHbIrqc3iQL3tTg&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2024/08/17/f/b/4/4/1723893395674_300.jpg"
+      },
+      {
+        "key": "0v5fPaVB4qmf",
+        "title": "ANH TRAI NƯỚC VIỆT",
+        "artists": [
+          "ANH TRAI \"SAY HI\"",
+          "ERIK",
+          "Đức Phúc",
+          "Quân A.P",
+          "JSOL",
+          "Gemini Hùng Huỳnh"
+        ],
+        "duration": 251,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/Warner_Audio259/AnhTraiNuocVietFeatErikDucPhucQuanApJsolHungHuynh-ANHTRAISAYHI-15770775.mp3?st=_hc6jCrFQbXzGGGIWLJsqQ&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2024/08/17/f/b/4/4/1723893395674_300.jpg"
+      },
+      {
+        "key": "2DHGAbJCbp1b",
+        "title": "BẢNH",
+        "artists": [
+          "ANH TRAI \"SAY HI\"",
+          "Anh Tú Atus",
+          "Song Luân",
+          "RHYDER",
+          "HURRYKNG",
+          "CAPTAIN BOY",
+          "Quang Trung",
+          "Dương Domic",
+          "Anh Tú",
+          "JSOL",
+          "Đỗ Phú Quí",
+          "Tage",
+          "Phạm Đình Thái Ngân",
+          "Phạm Anh Duy",
+          "Gemini Hùng Huỳnh",
+          "ERIK"
+        ],
+        "duration": 217,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/Warner_Audio243/BangFeatAnhTuAtusSongLuanRhyderHurrykngCaptainQuangTrungDuongDomicAnhTuJsolDoPhuQuiTagePhamDinhThaiNganPhamAnhDuyHungHuynh-ANHTRAISAYHI-15065466.mp3?st=Kxof2sAB-5RkGVjffYIF-g&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2024/06/15/9/3/9/1/1718396273723_300.jpg"
+      },
+      {
+        "key": "GhjCJqbl700Z",
+        "title": "VỖ TAY",
+        "artists": [
+          "EM XINH \"SAY HI\"",
+          "Phương Ly"
+        ],
+        "duration": 241,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2508/61/bf/b6kzt769ea.mp3?st=oPQJF8VH_aaag1XPdiCL1w&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2025/08/19/p/8/e/b/1755557818393_300.jpg"
+      },
+      {
+        "key": "ZViQdtds3AH7",
+        "title": "Tình Đầu Quá Chén",
+        "artists": [
+          "ANH TRAI \"SAY HI\"",
+          "Quang Hùng MasterD",
+          "Negav",
+          "Pháp Kiều",
+          "ERIK"
+        ],
+        "duration": 316,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/Warner_Audio270/TinhDauQuaChenFeatQuangHungMasterdNegavPhapKieuErik-ANHTRAISAYHI-16206182.mp3?st=sk043ivtYyvHl44GgUzyEg&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2024/09/13/f/1/0/2/1726246384758_300.jpg"
+      },
+      {
+        "key": "sfOAUHdZuTKR",
+        "title": "Bad Girl (Dành Một Mình Mỗi Anh)",
+        "artists": [
+          "Vũ Thảo My"
+        ],
+        "duration": 193,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2054/BadGirlDanhMotMinhMoiAnh-VuThaoMy-14329595.mp3?st=eP1f3eP3NmeGhGQF4VZjjw&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2024/04/05/b/7/4/5/1712290970766_300.jpg"
+      },
+      {
+        "key": "9tFcUMkGrFCv",
+        "title": "Làm Em Say (Fall In Love)",
+        "artists": [
+          "Vũ Thảo My"
+        ],
+        "duration": 181,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2054/LamEmSayFallInLove-VuThaoMy-14329814.mp3?st=V1jTrjlW3ZeYNkErqzqEkA&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2024/04/05/b/7/4/5/1712295947457_300.jpg"
+      },
+      {
+        "key": "ISOjWT6AAOO5",
+        "title": "Bang Bang",
+        "artists": [
+          "Vũ Thảo My",
+          "Jsdrmns"
+        ],
+        "duration": 180,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2043/BangBang-VuThaoMyJsdrmns-10302195.mp3?st=x-5or8hkzHYEBwXliSOw8A&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2023/07/26/1/0/8/1/1690347293732_300.jpg"
+      },
+      {
+        "key": "nCoHxnUpElbO",
+        "title": "Lạc Vào Em (Remix)",
+        "artists": [
+          "Lê Vũ"
+        ],
+        "duration": 187,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2029/LacVaoEmRemix-LeVuTre-8019784.mp3?st=rmNzKV5APZPA9xjRfZ2_Dw&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2022/10/05/2/3/6/c/1664962948204_300.jpg"
+      },
+      {
+        "key": "jFQphrABK5rk",
+        "title": "Nơi Ta Từng (Pro. By KRIZH) (Cukak Remix)",
+        "artists": [
+          "Xuân Vũ",
+          "Nghĩa Phùng"
+        ],
+        "duration": 211,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2031/NoiTaTungProByKRIZHCukakRemix-XuanVuNghiaPhung-8294894.mp3?st=wzH2uhyTXQi7utaJUDgubw&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2022/11/21/4/f/d/3/1669006256129_300.jpg"
+      },
+      {
+        "key": "TVXIVGpuhAIK",
+        "title": "Lỡ Duyên Vậy Thôi (LeeRit x HHD Remix)",
+        "artists": [
+          "Trần Minh Vũ",
+          "Khả Huy"
+        ],
+        "duration": 248,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1019/LoDuyenVayThoiLeeritXHhdRemix-TranMinhVuKhaHuy-7061391.mp3?st=asux0-RO7s7oKQKCLm4f7Q&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2021/08/05/3/c/a/5/1628131095592_300.jpg"
+      },
+      {
+        "key": "OKgLsFkaz03e",
+        "title": "Vọng Phu (Remix Version)",
+        "artists": [
+          "Vũ Phan Dương Ninh"
+        ],
+        "duration": 162,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1021/VongPhuRemixVersion-VuPhanDuongNinh-7080244.mp3?st=b1pcIQoS8I5oHOggSnERNg&e=1794568318&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2021/09/02/8/9/0/5/1630551832086_300.jpg"
+      },
+      {
+        "key": "QUuRbjEqXar0",
+        "title": "Hóa Đơn Tiền Điện",
+        "artists": [
+          "Thu Minh",
+          "Hoàng Dũng"
+        ],
+        "duration": 234,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2044/HoaDonTienDien-ThuMinhHoangDung-11100865.mp3?st=tQEELrj_IBLPhh1oAw4hgQ&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2023/08/23/9/d/5/c/1692765420951_300.jpg"
+      },
+      {
+        "key": "lxDuygG2FF5d",
+        "title": "Chạy Khỏi Thế Giới Này",
+        "artists": [
+          "Da LAB",
+          "Phương Ly"
+        ],
+        "duration": 255,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2023/ChayKhoiTheGioiNay-DaLABPhuongLy-7574104.mp3?st=dKpmYzpKkMU4EoWbtV-Nig&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2022/06/27/6/d/1/7/1656334890653_300.jpg"
+      },
+      {
+        "key": "O5qj82fh7NbG",
+        "title": "Là Khi Anh Có Em Bên Mình",
+        "artists": [
+          "Huy Lê",
+          "Minh Cà Ri"
+        ],
+        "duration": 240,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui997/LaKhiAnhCoEmBenMinh-HuyLeMinhCaRi-6242258.mp3?st=aIeRXwGi8r1oR5lB4De_2Q&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2020/03/31/4/6/f/c/1585623787574_300.jpg"
+      },
+      {
+        "key": "wOkqQPZtWxDm",
+        "title": "Anh Thích Em Ý",
+        "artists": [
+          "Lil Zpoet",
+          "Trang X.O.X.O"
+        ],
+        "duration": 128,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2039/AnhThichEmY-LilZPoetTrangXOXO-9466796.mp3?st=-OM-ZjQDEYx7eByREObC4Q&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2023/05/12/2/4/f/0/1683901877045_300.jpg"
+      },
+      {
+        "key": "En0MGqSieGxH",
+        "title": "nếu mai chia tay",
+        "artists": [
+          "MONSTAR",
+          "AMEE"
+        ],
+        "duration": 205,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1020/neumaichiatay-MONSTARAMEE-7057196.mp3?st=HL_sXXSjhq5_6hsYAvg2Og&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2021/07/30/a/0/c/2/1627616265915_300.jpg"
+      },
+      {
+        "key": "0U4Pr5esABDT",
+        "title": "REGRET",
+        "artists": [
+          "ANH TRAI \"SAY HI\"",
+          "Quân A.P",
+          "Pháp Kiều",
+          "Quang Trung",
+          "Ali Hoàng Dương",
+          "Lâm Bảo Ngọc"
+        ],
+        "duration": 252,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/Warner_Audio256/RegretFeatQuanApPhapKieuQuangTrungAliHoangDuongLamBaoNgoc-ANHTRAISAYHI-15564775.mp3?st=4del4Okh93yiwVJT0mxECQ&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
+        "image": "https://image-cdn.nct.vn/song/2024/08/02/6/5/b/a/1722607585053_300.jpg"
+      },
+      {
+        "key": "LLc8dqA9fgyJ",
+        "title": "I.C.O.N",
+        "artists": [
+          "ANH TRAI \"SAY HI\"",
+          "Isaac",
+          "HIEUTHUHAI",
+          "Đức Phúc",
+          "Quân A.P",
+          "Quang Hùng MasterD",
+          "Lou Hoàng",
+          "Pháp Kiều",
+          "WEAN",
+          "Negav",
+          "Hải Đăng Doo",
+          "Gin Tuấn Kiệt",
+          "Ali Hoàng Dương",
+          "NICKY",
+          "Vũ Thịnh",
+          "Công Dương"
+        ],
+        "duration": 197,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/Warner_Audio243/IconFeatIsaacHieuthuhaiDucPhucErikQuanApQuangHungMasterdLouHoangPhapKieuWeanNegavHaiDangDooGinTuanKietAliHoangDuongNickyVuThinhCongDuong-ANHTRAISAYHI-15065465.mp3?st=UzB2aFVr7p5UEa9biacAmA&e=1794577136&a=0&p=0&r=7b9cbbb321d78ed7de611debde459459",
+        "image": "https://image-cdn.nct.vn/song/2024/06/15/9/3/9/1/1718396273723_300.jpg"
+      },
+      {
+        "key": "gwkZrcqfbbOI",
+        "title": "NGÁO NGƠ",
+        "artists": [
+          "ANH TRAI \"SAY HI\"",
+          "HIEUTHUHAI",
+          "ERIK",
+          "Anh Tú Atus",
+          "JSOL",
+          "Orange"
+        ],
+        "duration": 252,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/Warner_Audio256/NgaoNgoFeatHieuthuhaiErikAnhTuAtusJsolOrange-ANHTRAISAYHI-15564774.mp3?st=02_Z7bFB_42TQefUfz6m3A&e=1794577136&a=0&p=0&r=7b9cbbb321d78ed7de611debde459459",
+        "image": "https://image-cdn.nct.vn/song/2024/08/02/6/5/b/a/1722607585053_300.jpg"
+      },
+      {
+        "key": "BYVwXVPbNBvC",
+        "title": "LOVE SAND",
+        "artists": [
+          "ANH TRAI \"SAY HI\"",
+          "HIEUTHUHAI",
+          "JSOL",
+          "Ali Hoàng Dương",
+          "Vũ Thịnh"
+        ],
+        "duration": 235,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/Warner_Audio248/LoveSandFeatHieuthuhaiJsolAliHoangDuongVuThinh-ANHTRAISAYHI-15285295.mp3?st=rK86QI-FM9CcjCNICrBPDg&e=1794577136&a=0&p=0&r=7b9cbbb321d78ed7de611debde459459",
+        "image": "https://image-cdn.nct.vn/song/2024/07/05/8/d/1/2/1720195916328_300.jpg"
+      },
+      {
+        "key": "jQjwLvlhKazj",
+        "title": "CHỜ ANH VỀ",
+        "artists": [
+          "ANH TRAI \"SAY HI\"",
+          "B Ray",
+          "AMEE"
+        ],
+        "duration": 214,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2512/8d/ce/il05jk7ntx.mp3?st=MnO8fLakqN8ABP_6NXLo4A&e=1794577136&a=0&p=0&r=63cb9f18e712905f999a39d9a8481e94",
+        "image": "https://image-cdn.nct.vn/song/2025/12/08/V/Y/X/f/1765165771131_300.jpg"
+      },
+      {
+        "key": "bZD1VVSYpOpS",
+        "title": "Do For Love",
+        "artists": [
+          "B Ray",
+          "AMEE"
+        ],
+        "duration": 189,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui995/DoForLove-AMeeBRay-6221980.mp3?st=Y9EMMFxfpyHJuam2GW1meg&e=1794577136&a=0&p=0&r=63cb9f18e712905f999a39d9a8481e94",
+        "image": "https://image-cdn.nct.vn/song/2020/02/11/d/4/5/a/1581406608326_300.jpg"
+      },
+      {
+        "key": "wUQDyBZc0Hp6",
+        "title": "từ 1 sẽ thành 2",
+        "artists": [
+          "Kai Đinh",
+          "AMEE"
+        ],
+        "duration": 251,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2058/Tu1SeThanh2-KaiDinhAMEE-37231478.mp3?st=paLOMUAjQMT8MK7NpFcpMw&e=1794577136&a=0&p=0&r=63cb9f18e712905f999a39d9a8481e94",
+        "image": "https://image-cdn.nct.vn/song/2025/06/30/6/a/1/a/1751252985261_300.jpg"
+      },
+      {
+        "key": "UPO552h7LrqB",
+        "title": "baby you are not alone",
+        "artists": [
+          "Kai Đinh",
+          "AMEE",
+          "TDK"
+        ],
+        "duration": 277,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2058/BabyYouAreNotAlone-KaiDinhAMEETDK-17021511.mp3?st=4y1UGr88_VMVcpQEzM5cEA&e=1794577136&a=0&p=0&r=63cb9f18e712905f999a39d9a8481e94",
+        "image": "https://image-cdn.nct.vn/song/2024/12/18/8/2/9/3/1734506693199_300.jpg"
+      },
+      {
+        "key": "PhwFrsyFayXm",
+        "title": "Trái đất ôm Mặt trời",
+        "artists": [
+          "Kai Đinh",
+          "AMEE",
+          "GREY D"
+        ],
+        "duration": 193,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2056/TraiDatOmMatTroi-KaiDinhAMEEGREYD-15211404.mp3?st=XYDmNujhCU0YJUOYxSmjxQ&e=1794577136&a=0&p=0&r=63cb9f18e712905f999a39d9a8481e94",
+        "image": "https://image-cdn.nct.vn/song/2024/06/30/d/e/4/f/1719756110820_300.jpg"
+      },
+      {
+        "key": "9E0fuizURkYA",
+        "title": "dỗi ít thôi ôm đê (ShenlongZ Remix)",
+        "artists": [
+          "Phúc Du",
+          "AMEE"
+        ],
+        "duration": 189,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2032/DoiItThoiOmDeShenlongZRemix-PhucDuAMEE-8380820.mp3?st=p9dtKgPWUT6lH7e0YR8q4Q&e=1794577136&a=0&p=0&r=63cb9f18e712905f999a39d9a8481e94",
+        "image": "https://image-cdn.nct.vn/song/2022/12/07/5/6/5/7/1670383191949_300.jpg"
+      },
+      {
+        "key": "lLTrUXjAXrud",
+        "title": "dỗi ít thôi ôm đê",
+        "artists": [
+          "Phúc Du",
+          "AMEE"
+        ],
+        "duration": 188,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2032/DoiItThoiOmDe-PhucDuAMEE-8343857.mp3?st=ZKFsKzhxNG_uRRYU1ZTHMg&e=1794577136&a=0&p=0&r=63cb9f18e712905f999a39d9a8481e94",
+        "image": "https://image-cdn.nct.vn/song/2022/12/05/a/d/e/b/1670222703450_300.jpg"
+      },
+      {
+        "key": "kvyyApgfnHC3",
+        "title": "hai mươi hai (22)",
+        "artists": [
+          "Hứa Kim Tuyền",
+          "AMEE"
+        ],
+        "duration": 239,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2022/HaiMuoiHai22-HuaKimTuyenAMEE-7231237.mp3?st=Tjd4cR4z0Q5CFsPEXBjMRw&e=1794577136&a=0&p=0&r=63cb9f18e712905f999a39d9a8481e94",
+        "image": "https://image-cdn.nct.vn/song/2022/05/24/9/6/e/a/1653363505428_300.jpg"
+      },
+      {
+        "key": "NpjQ8CWkUjMm",
+        "title": "ĐẦU MÈO ĐUÔI CHUỘT",
+        "artists": [
+          "EM XINH \"SAY HI\"",
+          "Phương Ly",
+          "MAIQUINN",
+          "Tiên Tiên",
+          "Miu Lê"
+        ],
+        "duration": 231,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2508/6a/1b/d9mpsc18et.mp3?st=REV2eZ7OjE2nfJvkwmM_jQ&e=1794577136&a=0&p=0&r=0be5a2e7d9be55f4fec128a3e0a5bab6",
+        "image": "https://image-cdn.nct.vn/song/2025/08/26/q/N/V/K/1756192636010_300.jpg"
+      },
+      {
+        "key": "EemTHbrT7zsG",
+        "title": "CỨ ĐỔ TẠI CƠN MƯA",
+        "artists": [
+          "EM XINH \"SAY HI\"",
+          "Phương Ly",
+          "Orange",
+          "Châu Bùi",
+          "52Hz",
+          "Vũ Thảo My"
+        ],
+        "duration": 254,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2508/6f/53/2jc7ampscu.mp3?st=bEcp2f-xYYzvNH4BUHQFPw&e=1794577136&a=0&p=0&r=0be5a2e7d9be55f4fec128a3e0a5bab6",
+        "image": "https://image-cdn.nct.vn/song/2025/08/09/5/4/8/0/1754690686377_300.jpg"
+      },
+      {
+        "key": "GHHOVuQrqVgb",
+        "title": "CHẲNG PHẢI ANH ĐÂU",
+        "artists": [
+          "EM XINH \"SAY HI\"",
+          "Phương Ly",
+          "Vũ Thảo My",
+          "Orange",
+          "Châu Bùi",
+          "52Hz"
+        ],
+        "duration": 261,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2508/33/58/7lm8uo7som.mp3?st=I-Bb8eua98V0Qz1nEPX_RQ&e=1794577136&a=0&p=0&r=0be5a2e7d9be55f4fec128a3e0a5bab6",
+        "image": "https://image-cdn.nct.vn/song/2025/08/02/c/a/5/c/1754116077508_300.jpg"
+      },
+      {
+        "key": "PmTBiEoqtguv",
+        "title": "SO ĐẬM",
+        "artists": [
+          "EM XINH \"SAY HI\"",
+          "Phương Ly",
+          "Vũ Thảo My",
+          "Châu Bùi",
+          "Muộii"
+        ],
+        "duration": 220,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2507/f2/25/zrs8lb6fvs.mp3?st=MlYjQbCWwQ9xcHlB7Fl7Ng&e=1794577136&a=0&p=0&r=0be5a2e7d9be55f4fec128a3e0a5bab6",
+        "image": "https://image-cdn.nct.vn/song/2025/07/11/5/d/2/f/1752211873082_300.jpg"
+      },
+      {
+        "key": "TcToTb7FEGP9",
+        "title": "HỀ",
+        "artists": [
+          "EM XINH \"SAY HI\"",
+          "Phương Mỹ Chi",
+          "Phương Ly",
+          "Pháo",
+          "Chi Xê",
+          "WEAN"
+        ],
+        "duration": 266,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2506/d2/c0/jlgarklscw.mp3?st=9wR_hcQTNzpQLOBiqyUyHA&e=1794577136&a=0&p=0&r=0be5a2e7d9be55f4fec128a3e0a5bab6",
+        "image": "https://image-cdn.nct.vn/song/2025/06/23/0/d/2/8/1750662892862_300.jpg"
+      },
+      {
+        "key": "yGQnRwqJszZZ",
+        "title": "THE REAL AURA",
+        "artists": [
+          "EM XINH \"SAY HI\"",
+          "Bích Phương",
+          "Phương Ly",
+          "Tiên Tiên",
+          "Bảo Anh",
+          "Phương Mỹ Chi",
+          "Juky San",
+          "Orange",
+          "Lyly",
+          "52Hz",
+          "Lâm Bảo Ngọc",
+          "Vũ Thảo My",
+          "Hoàng Duyên",
+          "Châu Bùi",
+          "Quỳnh Anh Shyn",
+          "Pháo",
+          "LAMOON",
+          "Ngô Lan Hương",
+          "Muộii",
+          "Han Sara",
+          "Liu Grace",
+          "DANMY",
+          "Saabirose",
+          "Ánh Sáng AZA",
+          "桃子A1J",
+          "LyHan",
+          "Yeolan",
+          "Chi Xê",
+          "MAIQUINN",
+          "Miu Lê",
+          "Mỹ Mỹ"
+        ],
+        "duration": 300,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2505/bd/d8/62tyklivzx.mp3?st=v9mx8Q7XAHx8ZhoIxn3M9Q&e=1794577136&a=0&p=0&r=0be5a2e7d9be55f4fec128a3e0a5bab6",
+        "image": "https://image-cdn.nct.vn/song/2025/05/30/5/3/9/3/1748590504600_300.jpg"
+      },
+      {
+        "key": "svttWv0SzbBB",
+        "title": "Chạy Khỏi Thế Giới Này (Lofi Version By Zeaplee)",
+        "artists": [
+          "Da LAB",
+          "Phương Ly"
+        ],
+        "duration": 243,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2024/ChayKhoiTheGioiNayLofiVersionByZeaplee-DaLABPhuongLy-7609566.mp3?st=KhWLksKTMmtql0Jv-iqgkA&e=1794577136&a=0&p=0&r=0be5a2e7d9be55f4fec128a3e0a5bab6",
+        "image": "https://image-cdn.nct.vn/song/2022/07/12/8/a/2/b/1657597988117_300.jpg"
+      },
+      {
+        "key": "WPYW2FolcVng",
+        "title": "Đến Giờ Cơm",
+        "artists": [
+          "Minh Cà Ri",
+          "PiaLinh"
+        ],
+        "duration": 236,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2059/DenGioCom-MinhCaRiPiaLinh-40977858.mp3?st=3SDx0S79LD0wPtlkkK4_dA&e=1794577137&a=0&p=0&r=a41d39994dac3234002e29a1115b89f0",
+        "image": "https://image-cdn.nct.vn/song/2026/03/09/6/a/4/4/1773054710057_300.jpg"
+      },
+      {
+        "key": "i3ahBHGg53DQ",
+        "title": "Đến Lúc Thay Đổi Rồi",
+        "artists": [
+          "Trung Quân",
+          "Bùi Anh Tuấn"
+        ],
+        "duration": 281,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2058/DenLucThayDoiRoi-TrungQuanIdolBuiAnhTuan-35450829.mp3?st=GQbOYQPT1T_XCBmuIXtQhA&e=1794577137&a=0&p=0&r=a41d39994dac3234002e29a1115b89f0",
+        "image": "https://image-cdn.nct.vn/song/2025/02/14/d/d/1/2/1739546200472_300.jpg"
+      },
+      {
+        "key": "Pt8XvLl8voDa",
+        "title": "Liệu Đến Bao Giờ",
+        "artists": [
+          "Nguyenn",
+          "Đặng Tuấn Vũ"
+        ],
+        "duration": 289,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2057/LieuDenBaoGio-NguyennDangTuanVu-15793651.mp3?st=KJEs-F-Ft6Q2jbIOlm4Rcw&e=1794577137&a=0&p=0&r=a41d39994dac3234002e29a1115b89f0",
+        "image": "https://image-cdn.nct.vn/song/2024/08/20/b/7/7/8/1724143338467_300.jpg"
+      },
+      {
+        "key": "LLml709khlYD",
+        "title": "Khi Ta Lớn 2",
+        "artists": [
+          "An Vũ"
+        ],
+        "duration": 291,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2059/KhiTaLon2-AnVu-42090874.mp3?st=gM4qnFNw8aSHDp2SLsgPSw&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2026/06/08/4/3/3/3/1780901228931_300.jpg"
+      },
+      {
+        "key": "xuVFlwRvI8uf",
+        "title": "Không Thể Làm Gì Khác",
+        "artists": [
+          "Dani D",
+          "Đặng Tuấn Vũ"
+        ],
+        "duration": 309,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2059/KhongTheLamGiKhac-DaniDDangTuanVu-41893943.mp3?st=Rvm7huqejCLgCvOaIhOg5Q&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2026/05/26/5/6/b/d/1779790716786_300.jpg"
+      },
+      {
+        "key": "h2giVRJnRfCX",
+        "title": "Tình Đẹp Ta Đau (Version 2)",
+        "artists": [
+          "Phượng Vũ",
+          "Nguyễn Trung Đức"
+        ],
+        "duration": 249,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2059/TinhDepTaDauVersion2-PhuongVuNguyenTrungDuc-41638563.mp3?st=MFImhgQf7mLxxrpdeBBlNw&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2026/05/06/4/3/3/8/1778060119649_300.jpg"
+      },
+      {
+        "key": "mnvXbycsu5O9",
+        "title": "CÁCH YÊU ĐÚNG ĐIỆU (PHIÊN BẢN ATSH) [Day 9 Version]",
+        "artists": [
+          "ANH TRAI \"SAY HI\"",
+          "Song Luân",
+          "Gin Tuấn Kiệt",
+          "Hải Đăng Doo",
+          "NICKY",
+          "Vũ Thịnh"
+        ],
+        "duration": 222,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2604/0c/7b/i4esmwd5bs.mp3?st=jgaR8mfqHJGMPv0fjTol8Q&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2026/04/19/B/X/0/u/1776532587893_300.jpg"
+      },
+      {
+        "key": "dNS7iGz7jBau",
+        "title": "FOREVER SAY HI",
+        "artists": [
+          "ANH TRAI \"SAY HI\"",
+          "BigDaddy",
+          "OgeNus",
+          "B Ray",
+          "Phúc Du",
+          "Hustlang Robber",
+          "RIO",
+          "Khoi Vu",
+          "Lohan",
+          "Bùi Duy Ngọc",
+          "DILLAN",
+          "Ryn Lee",
+          "Hải Nam",
+          "Jaysonlei",
+          "CODYNAMVO",
+          "Phạm Đình Thái Ngân",
+          "Karik",
+          "Vũ Cát Tường",
+          "GILL",
+          "Tez",
+          "buitruonglinh",
+          "Otis",
+          "Negav",
+          "Mason Nguyen",
+          "Sơn.K",
+          "CONGB",
+          "Jey B",
+          "Ngô Kiến Huy",
+          "VƯƠNG BÌNH",
+          "Nhâm Phương Nam",
+          "Đỗ Nam Sơn"
+        ],
+        "duration": 297,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2512/df/a9/tikrzo4ebe.mp3?st=JFV3LJaPwNE1I1jhzP0ESQ&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2025/12/20/G/Q/a/0/1766242406791_300.jpg"
+      },
+      {
+        "key": "umJDoD7NYfA6",
+        "title": "LIÊN KHÚC VŨ TRỤ SAY HI (HERMOSA - TADIDA - ĐOẠN KỊCH CÂM - HÚT)",
+        "artists": [
+          "ANH TRAI \"SAY HI\"",
+          "EM XINH \"SAY HI\"",
+          "Sơn.K",
+          "CONGB",
+          "CODYNAMVO",
+          "Phạm Đình Thái Ngân",
+          "Mỹ Mỹ",
+          "Vũ Thảo My",
+          "MAIQUINN",
+          "Ánh Sáng AZA",
+          "Ali Hoàng Dương",
+          "Hải Đăng Doo"
+        ],
+        "duration": 344,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2512/9e/04/k0gtr2e8un.mp3?st=DorJfyHR0891BIVwGvVLKQ&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2025/12/20/G/Q/a/0/1766242406791_300.jpg"
+      },
+      {
+        "key": "cR5LoawvLAr5",
+        "title": "ALL EYES ON US (REMIX)",
+        "artists": [
+          "ANH TRAI \"SAY HI\"",
+          "BigDaddy",
+          "OgeNus",
+          "B Ray",
+          "Phúc Du",
+          "Hustlang Robber",
+          "RIO",
+          "Khoi Vu",
+          "Lohan",
+          "Bùi Duy Ngọc",
+          "DILLAN",
+          "Ryn Lee",
+          "Hải Nam",
+          "Jaysonlei",
+          "CODYNAMVO",
+          "Phạm Đình Thái Ngân",
+          "Karik",
+          "Vũ Cát Tường",
+          "GILL",
+          "Tez",
+          "buitruonglinh",
+          "Otis",
+          "Negav",
+          "Mason Nguyen",
+          "Sơn.K",
+          "CONGB",
+          "Jey B",
+          "Ngô Kiến Huy",
+          "VƯƠNG BÌNH",
+          "Nhâm Phương Nam",
+          "Đỗ Nam Sơn"
+        ],
+        "duration": 192,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2512/29/a4/sclk5c7ll0.mp3?st=t8mRWnBieVezcWmBtdqTzw&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2025/12/20/G/Q/a/0/1766242406791_300.jpg"
+      },
+      {
+        "key": "X0JT4FJG99Ye",
+        "title": "VIỆT NAM HƠN TỪNG NGÀY (HaNoi Concert Version)",
+        "artists": [
+          "EM XINH \"SAY HI\"",
+          "Saabirose",
+          "Orange",
+          "Muộii",
+          "Lâm Bảo Ngọc",
+          "LAMOON",
+          "LyHan",
+          "Vũ Thảo My",
+          "桃子A1J",
+          "Ngô Lan Hương",
+          "MAIQUINN"
+        ],
+        "duration": 334,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2512/3b/59/fu2m2r7l86.mp3?st=xLBvJ5Mw0_nmGxvw7ywHcA&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2025/12/19/4/Z/U/K/1766141907250_300.jpg"
+      },
+      {
+        "key": "ohdUc5kDIMnJ",
+        "title": "NGƯỜI NHƯ ANH XỨNG ĐÁNG CÔ ĐƠN",
+        "artists": [
+          "ANH TRAI \"SAY HI\"",
+          "Vũ Cát Tường",
+          "Karik",
+          "Negav",
+          "Ngô Kiến Huy",
+          "Jey B"
+        ],
+        "duration": 316,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/resa/2509/73/e4/qpdfu2t5m0.mp3?st=IQi__47fmNOm1W-HoOSC-g&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2025/09/29/o/W/i/k/1759119226418_300.jpg"
+      },
+      {
+        "key": "MQJS4xbaHt0T",
+        "title": "Nơi Ta Từng (Pro. By KRIZH) (Duzme Remix)",
+        "artists": [
+          "Xuân Vũ",
+          "Nghĩa Phùng"
+        ],
+        "duration": 299,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2031/NoiTaTungProByKRIZHDuzmeRemix-XuanVuNghiaPhung-8291488.mp3?st=Bvv5YGwQMkvvjUQqOTejkA&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2022/11/18/5/2/9/8/1668777877434_300.jpg"
+      },
+      {
+        "key": "MA37Ze4diO54",
+        "title": "Gieo Niềm Đau",
+        "artists": [
+          "An Vũ"
+        ],
+        "duration": 189,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1026/GieoNiemDau-AnVu-7135748.mp3?st=0Vw4Aj2u3oMVk1RX-ocw7A&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2022/03/07/4/e/0/3/1646612795895_300.jpg"
+      },
+      {
+        "key": "k1OYVm7jkuLj",
+        "title": "THUYỀN EM XA BẾN ĐÔ NƠI NÀO - REMIX BY SILEN PROD",
+        "artists": [
+          "Vũ Phan Dương Ninh"
+        ],
+        "duration": 271,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2036/THUYENEMXABENDONOINAOREMIXBYSILENPROD-VuPhanDuongNinh-8790349.mp3?st=K1Y8ZpnPP54pQnMeHy9m7g&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2023/02/28/8/3/7/e/1677569380965_300.jpg"
+      },
+      {
+        "key": "iAayDPt2GZlh",
+        "title": "THUYỀN EM XA BẾN ĐÔ NƠI NÀO - REMIX BY LD PROD",
+        "artists": [
+          "Vũ Phan Dương Ninh"
+        ],
+        "duration": 227,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2036/THUYENEMXABENDONOINAOREMIXBYLDPROD-VuPhanDuongNinh-8790188.mp3?st=o-c8onxtfplKpEqha3-40w&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2023/02/28/8/3/7/e/1677568799624_300.jpg"
+      },
+      {
+        "key": "CKX1Tdlv3eLd",
+        "title": "Yêu Trong Nắng Mai (Lofi Mix)",
+        "artists": [
+          "Hồ Văn Quý",
+          "Lê Vũ"
+        ],
+        "duration": 213,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1025/YeuTrongNangMaiLofiMix-HoVanQuyLeVuTre-7130025.mp3?st=-uQfsIzBU-Ox9HEm8ZjLww&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2022/02/14/9/a/9/8/1644830572875_300.jpg"
+      },
+      {
+        "key": "5UEdFDFzlWb6",
+        "title": "Khi Ta Già (Lofi Version)",
+        "artists": [
+          "Vũ Thịnh"
+        ],
+        "duration": 310,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui1010/KhiTaGiaLofiVersion-VuThinhTheWings-6931843.mp3?st=_fsOdRKsoaUl9pP1iEUIUw&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2023/04/10/e/5/0/a/1681109839969_300.jpg"
+      },
+      {
+        "key": "PcrpyCkxfffS",
+        "title": "Tô Màu Trời Mây",
+        "artists": [
+          "Huy Vũ",
+          "Soulient"
+        ],
+        "duration": 246,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2059/ToMauTroiMay-HuyVuTreSoulient-37959967.mp3?st=jvwkjEpJ0ZDxaFBbJzQ_jA&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2025/08/04/d/7/b/a/1754296309132_300.jpg"
+      },
+      {
+        "key": "dl4R575kkskZ",
+        "title": "Thêm Bao Lâu",
+        "artists": [
+          "Lê Vũ"
+        ],
+        "duration": 189,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2059/ThemBaoLau-LeVuTre-37694815.mp3?st=KMdtbf8mJltO4_QDbl1H2Q&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2025/07/15/0/d/c/0/1752575559315_300.jpg"
+      },
+      {
+        "key": "Lsfelh0EKVI3",
+        "title": "Mưa Lại Tuôn",
+        "artists": [
+          "Lê Vũ"
+        ],
+        "duration": 209,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2059/MuaLaiTuon-LeVuTre-37694783.mp3?st=IgVYnFggahHFRFjBdtNzMA&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2025/07/15/0/d/c/0/1752575436615_300.jpg"
+      },
+      {
+        "key": "LhcQL28BzC4u",
+        "title": "Ghé Tai Đây",
+        "artists": [
+          "Lê Vũ"
+        ],
+        "duration": 146,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2059/GheTaiDay-LeVuTre-37694734.mp3?st=iUVng4P-iRiSo3Xz5lH_Cw&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2025/07/15/0/d/c/0/1752575294991_300.jpg"
+      },
+      {
+        "key": "pBq9EE2zROv7",
+        "title": "Chuẩn Bị Lúc Chia Tay",
+        "artists": [
+          "Lê Vũ"
+        ],
+        "duration": 228,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2059/ChuanBiLucChiaTay-LeVuTre-37694673.mp3?st=5cvHG7GQg9JQ3VXXxJR6Bg&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2025/07/15/0/d/c/0/1752575182310_300.jpg"
+      },
+      {
+        "key": "dTj6gxj8qYV2",
+        "title": "Lạc Vào Đồi Hoa",
+        "artists": [
+          "Lê Vũ"
+        ],
+        "duration": 223,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2059/LacVaoDoiHoa-LeVuTre-37694615.mp3?st=YmUTTPDms-BWR5Rb4_vFDQ&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2025/07/15/0/d/c/0/1752574969404_300.jpg"
       },
       {
         "key": "PYlLKmVmUFeb",
@@ -2507,253 +3926,201 @@ document.addEventListener('DOMContentLoaded', () => {
         "image": "https://image-cdn.nct.vn/song/2025/07/10/a/0/b/d/1752139360848_300.jpg"
       },
       {
-        "key": "k2fFVGY3UopC",
-        "title": "Tự Dưng Lại Tết",
+        "key": "GEpAfLkKHKVk",
+        "title": "ĐIỀU EM LUÔN MONG MUỐN",
         "artists": [
-          "Đạt Ozy",
-          "Lâm Phúc",
-          "Công Beat"
-        ],
-        "duration": 193,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2051/TuDungLaiTet-DatOzyLamPhucCongBeat-13605669.mp3?st=jUjFczQb5lzl_2tOvizLNA&e=1794577140&a=0&p=0&r=fda55a388824f6cfc8af9b3e67587e5f",
-        "image": "https://image-cdn.nct.vn/song/2024/01/31/c/9/2/3/1706674982172_300.jpg"
-      },
-      {
-        "key": "CrszKiYPQCMA",
-        "title": "Sự Tích Mùa Xuân",
-        "artists": [
-          "Bùi Anh Tuấn",
-          "ICD"
-        ],
-        "duration": 329,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1010/SuTichMuaXuan-BuiAnhTuanICD-6927849.mp3?st=zHoYy8aWy7slHEUI2_RzKg&e=1794577144&a=0&p=0&r=6be9cacb270d56628fc359ac079b8879",
-        "image": "https://image-cdn.nct.vn/song/2021/01/23/a/c/9/0/1611401459292_300.jpg"
-      },
-      {
-        "key": "B1Q3wlGhldTr",
-        "title": "có hẹn với thanh xuân",
-        "artists": [
-          "MONSTAR",
-          "GREY D"
-        ],
-        "duration": 218,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1020/cohenvoithanhxuan-MONSTAR-7050201.mp3?st=UWDNMT6UtRC_sxAWu4X6MQ&e=1794662762&a=0&p=0&r=8be9fa6d8e883c12bd81cbd36073264a",
-        "image": "https://image-cdn.nct.vn/song/2021/07/16/f/4/9/8/1626425507034_300.jpg"
-      },
-      {
-        "key": "RZBjcwPBU032",
-        "title": "Cầu Vồng Thanh Xuân",
-        "artists": [
-          "OSAD",
-          "Janie"
-        ],
-        "duration": 256,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1000/CauVongThanhXuan-OsadJanie-6308201.mp3?st=QDpalPiW6j7WfcDE3hoeYQ&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2020/06/22/e/2/9/7/1592820085014_300.jpg"
-      },
-      {
-        "key": "Fs1nRWH5uPcP",
-        "title": "Thanh Xuân Muôn Màu",
-        "artists": [
-          "CORA Trinh Phạm",
-          "Whisty Eazy"
-        ],
-        "duration": 216,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2046/ThanhXuanMuonMau-CORATrinhPhamWhistyEazy-11959464.mp3?st=GI6A7PjC-rleBun108eL5Q&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2023/10/15/e/1/f/b/1697309694684_300.jpg"
-      },
-      {
-        "key": "ZHbDkwNthphi",
-        "title": "Thanh Xuân Yêu Em",
-        "artists": [
-          "Sing"
-        ],
-        "duration": 211,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2058/ThanhXuanYeuEm-Sing-37035931.mp3?st=6-xvN08x6uudlg9YdwnKAQ&e=1794568319&a=8&p=0&r=1f4532d7-9778-42f1-9e41-384cf4b53d9b",
-        "image": "https://image-cdn.nct.vn/song/2025/05/29/9/8/7/1/1748488301882_300.jpg"
-      },
-      {
-        "key": "hTSnGs46119Y",
-        "title": "Tết Đong Đầy 5",
-        "artists": [
-          "KHOA",
-          "Freaky"
-        ],
-        "duration": 205,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2058/TetDongDay5-KHOAFreaky-35086100.mp3?st=iaRBJ-kE2k__P1KkE8tphA&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
-        "image": "https://image-cdn.nct.vn/song/2025/01/19/3/c/b/3/1737293490949_300.jpg"
-      },
-      {
-        "key": "u7Vn8qWVYt6J",
-        "title": "Thanh Xuân Có Nhau",
-        "artists": [
-          "SEANPOET",
-          "Freaky"
-        ],
-        "duration": 221,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2038/ThanhXuanCoNhau-VA-9362715.mp3?st=iFIeL1Iyo2EiLOpxBrFiOQ&e=1794577139&a=0&p=0&r=e9d640806fdc94face6305b502720edc",
-        "image": "https://image-cdn.nct.vn/song/2025/09/17/1/9/d/0/1758102396985_300.jpg"
-      },
-      {
-        "key": "qNUHMrJwB56p",
-        "title": "đông về (intro)",
-        "artists": [
-          "Lâm Phúc"
-        ],
-        "duration": 95,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2058/DongVeintro-LamPhuc-17121757.mp3?st=wUyGZ_igpoZeZZdAV1wPKg&e=1794577140&a=0&p=0&r=fda55a388824f6cfc8af9b3e67587e5f",
-        "image": "https://image-cdn.nct.vn/song/2024/12/25/2/9/9/5/1735120490600_300.jpg"
-      },
-      {
-        "key": "D1xNzcGu11QU",
-        "title": "Trước Khi Thanh Xuân Nghỉ Ngơi (Prod. By Fillinus)",
-        "artists": [
-          "Nguyễn Thúc Thùy Tiên",
-          "Đức Phúc",
-          "August",
-          "Anngo",
-          "Thuy MX",
-          "Wong",
-          "LeWiuy"
-        ],
-        "duration": 117,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2044/TruocKhiThanhXuanNghiNgoiProdByFillinus-NguyenThucThuyTienDucPhucAugustVietNamAnngoThuyMXWongVietNamLeWiuy-11028651.mp3?st=xzxpBVwpgjd07yf2GcTLDQ&e=1794577141&a=0&p=0&r=443a766ab370b8d4d2b2a27c07542e78",
-        "image": "https://image-cdn.nct.vn/song/2023/08/21/f/8/2/5/1692592011643_300.jpg"
-      },
-      {
-        "key": "ODc0dYqGRxLE",
-        "title": "Tách Trà Thanh Xuân",
-        "artists": [
-          "Văn Mai Hương"
-        ],
-        "duration": 315,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1024/TachTraThanhXuan-VanMaiHuong-7120666.mp3?st=8yJiyTpZSpDhswTp8FuEfA&e=1794577143&a=0&p=0&r=07c728d1fbc10979898289c700d8d53c",
-        "image": "https://image-cdn.nct.vn/song/2021/11/19/6/d/9/1/1637317998163_300.jpg"
-      },
-      {
-        "key": "mIUPW9b6nVUg",
-        "title": "Ta Vẽ Mùa Xuân",
-        "artists": [
-          "Min Min",
-          "Đinh Đaa"
-        ],
-        "duration": 247,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui1011/TaVeMuaXuan-MinMinDinhDaa-6938334.mp3?st=rGQITyv7F2bYZxSkjDpxNQ&e=1794662763&a=0&p=0&r=25455659e81a80b06f2ad96e5e4a6aae",
-        "image": "https://image-cdn.nct.vn/song/2021/02/05/0/8/e/4/1612511522980_300.jpg"
-      },
-      {
-        "key": "Lro9wbJLTDqS",
-        "title": "Xuân An Khang",
-        "artists": [
-          "Khả My"
-        ],
-        "duration": 227,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2056/XuanAnKhang-KhaMy-14838034.mp3?st=pYQr0KMsmhiGDhi5nWjAfw&e=1794662769&a=0&p=0&r=3b5a7cec845e2525f105146bd8c8ed23",
-        "image": "https://image-cdn.nct.vn/song/2024/05/21/8/b/f/f/1716278370431_300.jpg"
-      },
-      {
-        "key": "OQfzEXSZ0Aot",
-        "title": "Xuân Yên Bình",
-        "artists": [
-          "Hannie",
-          "Emma Nhất Khanh"
-        ],
-        "duration": 216,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2050/XuanYenBinh-HannieEmmaNhatKhanh-13232151.mp3?st=QVPs0DTpdJQKzbX3ckOBKw&e=1794662774&a=0&p=0&r=00f665330c3271d43d4ee5e33eacef9e",
-        "image": "https://image-cdn.nct.vn/song/2023/12/29/5/6/0/2/1703836083546_300.jpg"
-      },
-      {
-        "key": "VdzBpRInLDHP",
-        "title": "Mùa Đông",
-        "artists": [
-          "FreshlyRC",
-          "The Wind"
-        ],
-        "duration": 148,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/resa/2607/4d/64/psss9fi6hd.mp3?st=6tl_HPXEfqsLcttdcppsYw&e=1794662784&a=0&p=0&r=83f8b403f84d603f28bb0ae65c8615ff",
-        "image": "https://image-cdn.nct.vn/song/2026/07/23/6/9/1/5/1784783092884_300.jpg"
-      },
-      {
-        "key": "guNZieDL5sPj",
-        "title": "Mùa Đông Nhắc Tim Còn Thương",
-        "artists": [
-          "Hoài Lâm"
-        ],
-        "duration": 288,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2059/MuaDongNhacTimConThuong-HoaiLam-39795900.mp3?st=OIjwkiUj3zfXjzVQcSO-JA&e=1794662784&a=0&p=0&r=83f8b403f84d603f28bb0ae65c8615ff",
-        "image": "https://image-cdn.nct.vn/song/2025/12/17/6/0/a/c/1765958366586_300.jpg"
-      },
-      {
-        "key": "f1Epnj4Ch5ks",
-        "title": "Hàn Mặc Tử Gặp Hồ Xuân Hương",
-        "artists": [
-          "Lâm Anh Kiệt"
-        ],
-        "duration": 349,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2059/HanMacTuGapHoXuanHuong-LamAnhKiet-41316090.mp3?st=exaLZvbWei1Ua00-X3wPKw&e=1794662788&a=0&p=0&r=5a2ec4390ed36b0d07513581499194d5",
-        "image": "https://image-cdn.nct.vn/song/2026/04/07/d/3/3/5/1775557572162_300.jpg"
-      },
-      {
-        "key": "OGcDSYPsPSPf",
-        "title": "Người Thứ Ba (feat. Minh Tuyết)",
-        "artists": [
-          "Đàm Vĩnh Hưng",
-          "Minh Tuyết"
-        ],
-        "duration": 377,
-        "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui2058/NguoiThuBafeatMinhTuyet-DamVinhHungMinhTuyet-36973148.mp3?st=34dKoF4rjB2aH-_oxyjngw&e=1794662788&a=0&p=0&r=01a62623bb284f75db1f158cd821387d",
-        "image": "https://image-cdn.nct.vn/song/2025/05/21/0/8/a/b/1747801954282_300.jpg"
-      },
-      {
-        "key": "Isuj2D5NvXHX",
-        "title": "Nhạc Nền Cảnh Người Dân Về Quê Đón Tết",
-        "artists": [
-          "AudioBay"
+          "EM XINH \"SAY HI\"",
+          "Tiên Tiên",
+          "Juky San",
+          "Vũ Thảo My",
+          "桃子A1J",
+          "Gemini Hùng Huỳnh"
         ],
         "duration": 196,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NCTSong/2410/b3/15/1tisfv07vd.mp3?st=rdDd1QivmGa_lT8camSbnw&e=1794662788&a=0&p=0&r=11c57dea097289c5ea5a055c7ee45022",
-        "image": "https://image-cdn.nct.vn/song/2024/10/12/7/f/7/4/67991_300.jpg"
+        "streamUrl": "https://stream.nct.vn/resa/2507/8b/bd/p848yoxqke.mp3?st=_Pcx2qht98hnPuS4EdzH_A&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2025/07/01/1/4/c/4/1751334001626_300.jpg"
       },
       {
-        "key": "lY24VtmhoN6M",
-        "title": "Thanh Xuân Còn Lại Bao Nhiêu",
+        "key": "BYBlMKuPxCKw",
+        "title": "MẮT EM",
         "artists": [
-          "Thu Thủy"
+          "NP.2",
+          "Lê Vũ"
         ],
-        "duration": 271,
+        "duration": 199,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NhacCuaTui999/ThanhXuanConLaiBaoNhieu-ThuThuy-6284749.mp3?st=utQ3LTJG_KLJXhf3UW8gEA&e=1794662789&a=0&p=0&r=5f3d198043329a10ac014084b953bb9d",
-        "image": "https://image-cdn.nct.vn/song/2020/05/22/5/a/6/8/1590141000986_300.jpg"
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2058/MATEM-NP2LeVuTre-37120836.mp3?st=V2jLreGYPlVxbGmAFSuPbQ&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2025/06/10/d/d/3/f/1749528558742_300.jpg"
       },
       {
-        "key": "JEWdCT5DBRYD",
-        "title": "Nhạc Nền Tết Xa Quê",
+        "key": "crIRjGKD2pRy",
+        "title": "ĐỒNG DAO XINH GÁI",
         "artists": [
-          "AudioBay"
+          "EM XINH \"SAY HI\"",
+          "Quỳnh Anh Shyn",
+          "Miu Lê",
+          "Orange",
+          "Vũ Thảo My",
+          "Mỹ Mỹ"
         ],
-        "duration": 189,
+        "duration": 220,
         "kbit": 128,
-        "streamUrl": "https://stream.nct.vn/NCTSong/2410/3d/05/qrqwt2wjlv.mp3?st=JJWa6LhbhaCRlUBOoGGsuA&e=1794662789&a=0&p=0&r=216e40da7adb78b047faf588e1dd0811",
-        "image": "https://image-cdn.nct.vn/song/2024/10/12/d/e/7/4/59378_300.jpg"
+        "streamUrl": "https://stream.nct.vn/resa/2506/e5/7d/bjjufkjzkn.mp3?st=Kd2gfOi_nX0KVoRHt81zPA&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2025/06/09/5/3/6/3/1749442857092_300.jpg"
+      },
+      {
+        "key": "I1ae4LP4sdMu",
+        "title": "Đừng Buồn Em Nhé (feat. Khói, Dương Triệu Vũ)",
+        "artists": [
+          "Đàm Vĩnh Hưng",
+          "Khói",
+          "Dương Triệu Vũ"
+        ],
+        "duration": 334,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2058/DungBuonEmNhefeatKhoiDuongTrieuVu-DamVinhHungKhoiDuongTrieuVu-36973195.mp3?st=XBdEt4q4tQ1C14eZwavfwA&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2025/05/21/0/8/a/b/1747802564627_300.jpg"
+      },
+      {
+        "key": "F30FCLsZidVt",
+        "title": "Lặng Im Xa Rời (Remix)",
+        "artists": [
+          "Vũ ZF"
+        ],
+        "duration": 204,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2058/LangImXaRoiRemix-VuZF-36806721.mp3?st=T1qEysH2uGepkewQbYwbPA&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2025/05/07/3/f/e/c/1746614513870_300.jpg"
+      },
+      {
+        "key": "3d02jDLlhYCa",
+        "title": "Cơ Hội Cuối",
+        "artists": [
+          "An Vũ"
+        ],
+        "duration": 280,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2058/CoHoiCuoi-AnVu-36681929.mp3?st=JcDj5G36T10SHD3D-X0h5Q&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2025/04/25/9/6/f/d/1745570268232_300.jpg"
+      },
+      {
+        "key": "OrrSR2k68fTu",
+        "title": "Quện",
+        "artists": [
+          "Trương Đăng Châu",
+          "Kan Vũ"
+        ],
+        "duration": 194,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2058/Quen-TruongDangChauKanVuVietNam-36454883.mp3?st=I9hFElgDPl8iJiHMiug9NA&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2025/04/08/5/2/0/0/1744089628185_300.jpg"
+      },
+      {
+        "key": "M5jG2O5nOtYr",
+        "title": "Nếu như em gọi đó là giấc mơ (Liveshow \"Về Nhà Về Giữa Thiên Nhiên\")",
+        "artists": [
+          "Phượng Vũ",
+          "Xin Chào Entertainment"
+        ],
+        "duration": 225,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2058/NeuNhuEmGoiDoLaGiacMoLiveshowVeNhaVeGiuaThienNhien-PhuongVuTheVoiceVietAnh-36413588.mp3?st=AG_ldKaAbmR62OTP0ch0tA&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2025/04/04/8/e/e/2/1743741784387_300.jpg"
+      },
+      {
+        "key": "XipMpsJYn29w",
+        "title": "Lặng Im Xa Rời",
+        "artists": [
+          "Vũ ZF"
+        ],
+        "duration": 256,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2058/LangImXaRoi-VuZF-35927433.mp3?st=u2hx8_u-XW_r6VjVFWHnkQ&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2025/03/11/e/d/9/d/1741664930968_300.jpg"
+      },
+      {
+        "key": "x2Ub52MAUU2H",
+        "title": "Sao Anh Có Thể Quên",
+        "artists": [
+          "An Vũ"
+        ],
+        "duration": 204,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2058/SaoAnhCoTheQuen-AnVu-35373971.mp3?st=NP4CZm_68RHIHU6UapaB1w&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2025/02/10/b/a/7/c/1739194486802_300.jpg"
+      },
+      {
+        "key": "jh0CLliA2Ob1",
+        "title": "Yên Bình Thương Em",
+        "artists": [
+          "An Vũ"
+        ],
+        "duration": 212,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2058/YenBinhThuongEm-AnVu-35373954.mp3?st=1ymeT9sU6XU9FZ3RSZmMWQ&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2025/02/10/b/a/7/c/1739194435813_300.jpg"
+      },
+      {
+        "key": "qJVOXV4BSVux",
+        "title": "Sao Mà Em Lại Không",
+        "artists": [
+          "SimonC",
+          "Lê Vũ"
+        ],
+        "duration": 199,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2057/SaoMaEmLaiKhong-SimonCLeVuTre-16776690.mp3?st=LWcrYPJjtNLmbuM_2QZ7yg&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2024/11/20/d/0/b/4/1732093430714_300.jpg"
+      },
+      {
+        "key": "7OP26LsRXywJ",
+        "title": "HY VỌNG",
+        "artists": [
+          "RAP VIỆT",
+          "LOWER",
+          "DABLO",
+          "Vũ Phụng Tiên"
+        ],
+        "duration": 196,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/Warner_Audio278/HyVongFeatLowerDabloVuPhungTien-RAPVIET-16626075.mp3?st=ERoOYd03bcN2IwYOx9DgjA&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2024/11/05/2/0/5/4/1730801806967_300.jpg"
+      },
+      {
+        "key": "2BEAfoMBVwIa",
+        "title": "Tô Lên Trái Tim",
+        "artists": [
+          "Lê Vũ",
+          "Rion"
+        ],
+        "duration": 242,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2057/ToLenTraiTim-LeVuTreRionVietNam-16409360.mp3?st=Qn_SWHtPVb7k6b7k7uH3GQ&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2024/10/22/d/4/0/c/1729583001226_300.jpg"
+      },
+      {
+        "key": "SmwWyjA599eK",
+        "title": "Chẳng Để Em Phải Cô Đơn",
+        "artists": [
+          "An Vũ"
+        ],
+        "duration": 255,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2057/ChangDeEmPhaiCoDon-AnVu-16352915.mp3?st=m3xNlTUG6I9SXsjLAQIOVQ&e=1794577137&a=0&p=0&r=6e33b92896ab3191d9175465972f8ce6",
+        "image": "https://image-cdn.nct.vn/song/2024/10/09/a/6/f/f/1728448333720_300.jpg"
+      },
+      {
+        "key": "KCnyEPRfYOwh",
+        "title": "Trăng Sáng Soi",
+        "artists": [
+          "Minh Cà Ri",
+          "PiaLinh"
+        ],
+        "duration": 255,
+        "kbit": 128,
+        "streamUrl": "https://stream.nct.vn/NhacCuaTui2059/TrangSangSoi-MinhCaRiPiaLinh-40977915.mp3?st=IJl2GtYDY7SILiA-ap3GQg&e=1794577140&a=0&p=0&r=59e3d6c260cc80a14f91ee87290af93b",
+        "image": "https://image-cdn.nct.vn/song/2026/03/09/6/a/4/4/1773054839327_300.jpg"
       }
     ]
   }
@@ -16377,7 +17744,7 @@ console.log('✅ Đã đồng bộ thành công ' + ${currentPlaylists.length} +
         if (confirm('Khôi phục lại 6 danh sách phát mẫu tuyển chọn v2.2.0 (450 bài hát)? Các bài hát tự thêm sẽ bị đặt lại.')) {
           savePlaylists(DEFAULT_PLAYLISTS);
           setActivePlaylist(DEFAULT_PLAYLISTS[0].id);
-          showToast('Đã khôi phục 4 danh sách phát mẫu v2.3.0 (200 bài)!', 'success');
+          showToast('Đã khôi phục 3 danh sách phát mẫu v2.5.0 (300 bài)!', 'success');
         }
       });
     }

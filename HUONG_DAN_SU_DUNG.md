@@ -1,6 +1,6 @@
-# 📖 HƯỚNG DẪN SỬ DỤNG CHI TIẾT (Phiên bản 2.4.0)
+# 📖 HƯỚNG DẪN SỬ DỤNG CHI TIẾT (Phiên bản 2.5.0)
 
-## 🎯 Mục Tiêu & Các Tính Năng Nổi Bật v2.4.0
+## 🎯 Mục Tiêu & Các Tính Năng Nổi Bật v2.5.0
 Cung cấp giải pháp trọn gói tự động hóa và nâng cấp trình phát **https://player.xmusicstation.com/**:
 1. **Kho 200 Bài Hát Tuyển Chọn Chuẩn XMusic (50 bài/chủ đề)**: 4 chủ đề tuyển chọn đỉnh cao: Nhạc Việt Sôi Động 2026, Top Hit Rap Việt Thịnh Hành, Ballad Cảm Xúc Sâu Lắng, và Giáng Sinh & Mùa Lễ Hội Sôi Động.
 2. **Sửa Triệt Để Thuật Toán Shuffle**: Sử dụng Fisher-Yates shuffle toàn diện mảng (đảo ngẫu nhiên 100% mọi vị trí trong danh sách phát, khắc phục hoàn toàn hiện tượng chỉ đảo ~15 bài đầu), kết hợp thuật toán phân tách ca sĩ tránh phát liên tiếp.
@@ -48,7 +48,7 @@ Cung cấp giải pháp trọn gói tự động hóa và nâng cấp trình ph�
 
 ### 1. Mở khóa & Thêm bài hát từ Playlist Nhà Phát Hành (TINH HÀ "SAY HI" & Kho Bản Quyền)
 - **Vấn đề trước đây**: Nhà phát hành cài sẵn các playlist (như *[2Q] Nhạc Việt Hè Về*, *TINH HÀ "SAY HI"*, *[2Q] Nhạc Việt Sôi Động 2.0*...) chứa nhiều bài hát độc quyền. Trước đây, khi bấm "+ List tôi" với album *TINH HÀ "SAY HI"*, chuỗi tên ca sĩ chứa dấu ngoặc kép khiến hệ thống bị lỗi phân tích cú pháp HTML và không thêm được vào danh sách phát. Ngoài ra, do các bài này không xuất hiện trên ô tìm kiếm công cộng, trình phát không nạp bài được.
-- **Cách sử dụng tính năng mới trong v2.4.0**:
+- **Cách sử dụng tính năng mới trong v2.5.0**:
   1. Mở Sidebar **XMusic Assistant** trên trang web (hoặc Web Dashboard).
   2. Bấm vào tab **📻 Kho Nhà Phát Hành** (hoặc menu *Kho Nhà Phát Hành* trên Dashboard).
   3. Chọn danh sách phát **`TINH HÀ "SAY HI"`** (hoặc bất kỳ playlist nào trong 11 playlist có sẵn của nhà phát hành).
@@ -62,7 +62,7 @@ Cung cấp giải pháp trọn gói tự động hóa và nâng cấp trình ph�
 
 ### 2. Khắc phục lỗi nạp lệch bài hát (100% Khớp Đúng Bài & Nghệ Sĩ)
 - **Vấn đề trước đây**: Do cơ chế cũ chỉ bấm kết quả đầu tiên (`rows[0]`) hoặc bị dính kết quả cũ từ lần tìm kiếm trước, hệ thống thường nạp nhầm bản Beat karaoke, bản Remix sai hoặc bài hát khác ca sĩ.
-- **Giải pháp mới trong v2.4.0**:
+- **Giải pháp mới trong v2.5.0**:
   1. **Nạp trực tiếp siêu tốc (Vue 3 Memory Bridge)**: Khi nạp danh sách, tiện ích ưu tiên đẩy trực tiếp đối tượng bài hát chuẩn vào hàng đợi phát của player thông qua cơ chế duyệt đệ quy cây component Vue 3 (`comp.subTree`). Không cần gõ lại ô tìm kiếm, không độ trễ mạng và đảm bảo đúng 100% bài hát.
   2. **Thuật toán đối soát khớp thông minh (Smart Match Engine)**: Trong trường hợp dự phòng qua giao diện tìm kiếm, công cụ sẽ:
      - Tự động xóa kết quả cũ trước khi tìm từ khóa mới.
@@ -75,7 +75,7 @@ Cung cấp giải pháp trọn gói tự động hóa và nâng cấp trình ph�
 
 ### 3. Tùy biến xáo trộn (Shuffle) Playlist đã lưu - Khắc Phục Lỗi Chỉ Đảo ~15 Bài Đầu
 - **Vấn đề trước đây**: Thuật toán shuffle cũ nhóm theo ca sĩ rồi lấy round-robin khiến các ca sĩ ít bài bị cạn sau lượt đầu, dẫn đến hiện tượng chỉ đảo thứ tự khoảng 15 bài đầu tiên, 35 bài còn lại ở đuôi danh sách bị cố định thứ tự.
-- **Thuật toán mới trong v2.4.0 (Fisher-Yates + Smoothing Pass)**:
+- **Thuật toán mới trong v2.5.0 (Fisher-Yates + Smoothing Pass)**:
   - **Fisher-Yates Shuffle 100%**: Đảo ngẫu nhiên công bằng tuyệt đối toàn bộ danh sách từ bài số 1 đến bài cuối cùng (bất kể danh sách 50 bài, 100 bài hay 200 bài).
   - **Smoothing Pass**: Tự động phân tách nghệ sĩ nếu phát hiện 2 bài của cùng 1 ca sĩ chính đứng sát nhau, giúp trải nghiệm nghe nhạc phong phú và không bị trùng lặp.
   - **Nút `🔀 Nạp Trộn Bài` (Shuffle & Queue)**: Xáo trộn ngẫu nhiên thứ tự các bài trước khi đưa vào hàng đợi phát của trang web (không làm thay đổi thứ tự playlist đã lưu trong máy).
@@ -86,12 +86,11 @@ Cung cấp giải pháp trọn gói tự động hóa và nâng cấp trình ph�
 
 ---
 
-### 4. Kho 200 Bài Hát Tuyển Chọn Chuẩn XMusic (50 bài / Playlist)
-Toàn bộ bài hát đều đã được đối soát 100% bản quyền phát được trên XMusicStation với đầy đủ `key`, `duration`, `streamUrl`, ảnh bìa và nghệ sĩ gốc:
-1. **⚡ Top Nhạc Việt Sôi Động & Remix 2026 (50 bài)**: EDM, Remix, Vinahouse và Pop Dance bùng nổ năng lượng (Sơn Tùng M-TP, Da LAB, Tăng Duy Tân, ANH TRAI "SAY HI", EM XINH "SAY HI", Cukak, Phong Max, Freaky Remix...).
-2. **🎤 Top Hit Rap Việt Thịnh Hành (50 bài)**: Tuyển chọn những bản rap hot nhất dẫn đầu bảng xếp hạng (HIEUTHUHAI, RHYDER, Pháp Kiều, HURRYKNG, Đen Vâu, BigDaddy, Negav, Double2T, Tez...).
-3. **🌧️ Top Ballad Cảm Xúc & Sâu Lắng (50 bài)**: Giai điệu trữ tình, sâu lắng và da diết (Trung Quân Idol, Vũ., Đức Phúc, Hoàng Dũng, Văn Mai Hương, ERIK, Bùi Anh Tuấn, Quân A.P...).
-4. **🎄 Giáng Sinh & Mùa Lễ Hội Sôi Động (50 bài)**: Nhạc Noel, Mùa Đông, Năm Mới và tiệc tùng lễ hội rộn ràng, tươi vui (Đêm Giáng Sinh Mùa Hạ, Đông Vừa Sang Remix, Mùa Đông Đã Đến, Một Năm Mới Bình An, Tết Đong Đầy, Tết Tình...).
+### 4. Kho 300 Bài Hát Tuyển Chọn Chuẩn XMusic (100 bài / Playlist)
+Toàn bộ 300 bài hát đều được lấy từ kho nhạc bản quyền XMusic Station, là các ca khúc hot hit quen thuộc của các nghệ sĩ tên tuổi lớn:
+1. **⚡ Top Nhạc Việt Sôi Động & Remix 2026 (100 bài)**: Pop Dance, Vinahouse, EDM cực sung (Sơn Tùng M-TP, Tăng Duy Tân, ANH TRAI "SAY HI", EM XINH "SAY HI", TINH HÀ "SAY HI", Da LAB, Hoàng Thùy Linh, Cukak, Phong Max...).
+2. **🎤 Top Hit Rap Việt Thịnh Hành (100 bài)**: Rap & Hip-Hop thịnh hành dẫn đầu xu hướng (HIEUTHUHAI, Đen Vâu, BigDaddy, Pháp Kiều, RHYDER, HURRYKNG, Freaky, Karik, JustaTee, B Ray, Dick...).
+3. **🌧️ Top Ballad Cảm Xúc & Sâu Lắng (100 bài)**: Giai điệu mộc mạc, tha thiết, sâu lắng chạm đến trái tim (Trung Quân Idol, Vũ., Đức Phúc, ERIK, Hoàng Dũng, Văn Mai Hương, Bùi Anh Tuấn, Phan Mạnh Quỳnh, Noo Phước Thịnh, AMEE, Phương Ly, Thịnh Suy, Quân A.P...).
 
 ---
 
@@ -114,7 +113,7 @@ Khi có phiên bản kho nhạc mới hoặc bạn muốn đồng bộ 450 bài 
 - Bấm nút **`☁️ Cập Nhật`** (trên Web Player hoặc Web Dashboard).
 - Hộp thoại cập nhật cung cấp 2 chế độ:
   - **`🟢 Cập nhật & Giữ lại Playlist cá nhân (Khuyên dùng)`**: Hệ thống tự động nhận diện các playlist bạn đã tự tạo để bảo toàn 100%, đồng thời nâng cấp 6 playlist tuyển chọn hệ thống lên phiên bản mới nhất (450 bài hát).
-  - **`🔄 Làm mới hoàn toàn`**: Đặt lại toàn bộ thư viện về nguyên bản 6 playlist tuyển chọn v2.2.0.
+  - **`🔄 Làm mới hoàn toàn`**: Đặt lại toàn bộ thư viện về nguyên bản 6 playlist tuyển chọn v2.5.0
   - **Đồng bộ từ URL tùy chỉnh**: Bạn có thể nhập bất kỳ đường link API hoặc file JSON nào trong mạng nội bộ để cập nhật cho toàn bộ máy trạm.
 
 ---
@@ -128,7 +127,7 @@ Hệ thống tích hợp sẵn tab **`🚀 Cập Nhật`** ngay trên thanh côn
 2. Hệ thống hiển thị nguồn Admin được bảo vệ: `hotrocvst-cell/xmusic-station` (Khóa bảo mật 🔒).
 3. Bấm **`🔍 Kiểm Tra Bản Cập Nhật Từ Admin (GitHub)`**:
    - Nếu phát hiện **Phiên bản mới hơn từ Admin**:
-     - Hiển thị badge: `🎉 Có phiên bản mới: v2.4.0` kèm danh sách tính năng & bài hát mới (*Release Notes*).
+     - Hiển thị badge: `🎉 Có phiên bản mới: v2.5.0` kèm danh sách tính năng & bài hát mới (*Release Notes*).
      - Bấm **`⚡ 1. Nạp Kho Nhạc Mới Từ Admin`**: Tải thẳng `sample-playlists.json` mới nhất về và chạy Smart Merge (bảo toàn nguyên vẹn playlist cá nhân).
      - Bấm **`📥 2. Cập Nhật Tampermonkey Script`**: Mở link raw userscript để Tampermonkey tự động nạp bản mới.
      - Bấm **`📦 3. Tải Extension .zip Từ GitHub`**: Tải file zip tiện ích từ GitHub Releases.
@@ -146,19 +145,19 @@ Chi tiết đầy đủ xem tại [QUY_TRINH_PHAT_HANH.md](QUY_TRINH_PHAT_HANH.m
 
 2. **Bước 2: Phát hành qua GitHub Desktop App (Khuyên dùng)**:
    - Mở ứng dụng **GitHub Desktop** -> Ở tab **Changes**, kiểm tra danh sách file đã cập nhật.
-   - Ô Summary: nhập `release: v2.4.0` -> Bấm nút **`Commit to main`**.
+   - Ô Summary: nhập `release: v2.5.0` -> Bấm nút **`Commit to main`**.
    - Bấm nút **`Push origin`** ở thanh trên cùng để đẩy commit.
    - **Tạo Tag kích hoạt Release**:
      1. Chuyển sang tab **History** ở cột bên trái.
      2. Bấm chuột phải vào Commit vừa tạo trên cùng -> Chọn **`Create Tag...`**.
-     3. Nhập tên tag: `v2.4.0` (phải có chữ `v` ở đầu) -> Bấm **`Create Tag`**.
+     3. Nhập tên tag: `v2.5.0` (phải có chữ `v` ở đầu) -> Bấm **`Create Tag`**.
      4. Bấm nút **`Push origin`** ở thanh trên cùng để đẩy Tag lên GitHub.
 
 3. **Bước 2 (Dự phòng): Phát hành qua dòng lệnh Git CLI**:
    ```powershell
    git add .
-   git commit -m "release: v2.4.0"
-   git tag v2.4.0
+   git commit -m "release: v2.5.0"
+   git tag v2.5.0
    git push origin main --tags
    ```
 
