@@ -12,7 +12,7 @@ const header = `// ==UserScript==
 // @name         XMusicStation - Tự Động Đăng Nhập & Tạo Playlist Phát Nhạc (Left Sidebar)
 // @namespace    https://github.com/hotrocvst-cell/xmusic-station
 // @version      ${currentVersion}
-// @description  Kho ${totalSongs} bài hát tuyển chọn (75 bài/playlist), chia sẻ playlist qua mã, đồng bộ Cloud chính thức từ hotrocvst-cell/xmusic-station
+// @description  Kho ${totalSongs} bài hát tuyển chọn (50 bài/playlist), chia sẻ playlist qua mã, đồng bộ Cloud chính thức từ hotrocvst-cell/xmusic-station
 // @author       hotrocvst-cell
 // @match        *://player.xmusicstation.com/*
 // @match        *://web.xmusicstation.com/*

@@ -1,9 +1,9 @@
 # 🎵 XMusicStation Auto Playlist & Queue Manager
 
-[![Version](https://img.shields.io/badge/version-2.2.0-blue.svg)](https://github.com/hotrocvst-cell/xmusic-station)
+[![Version](https://img.shields.io/badge/version-2.3.0-blue.svg)](https://github.com/hotrocvst-cell/xmusic-station)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Target](https://img.shields.io/badge/platform-player.xmusicstation.com-purple.svg)](https://player.xmusicstation.com/)
-[![Curated Songs](https://img.shields.io/badge/catalog-450%20bài%20hát-orange.svg)](sample-playlists.json)
+[![Curated Songs](https://img.shields.io/badge/catalog-200%20bài%20hát-orange.svg)](sample-playlists.json)
 [![Admin](https://img.shields.io/badge/official%20admin-hotrocvst--cell-red.svg)](https://github.com/hotrocvst-cell/xmusic-station)
 
 > **Bộ công cụ tự động hóa phát nhạc, quản lý danh sách phát thông minh và mở khóa toàn bộ kho nhạc bản quyền trên [player.xmusicstation.com](https://player.xmusicstation.com/).**
@@ -66,9 +66,9 @@ Mở trình duyệt truy cập: **`http://localhost:3000`**
 
 ## 🌟 TÍNH NĂNG NỔI BẬT
 
-1. **Kho 450 Bài Hát Tuyển Chọn Chuẩn XMusic (75 bài / Chủ đề)**:
-   - Tuyển tập 6 danh sách phát hot nhất dựa trên xu hướng mạng xã hội và các bảng xếp hạng âm nhạc thịnh hành.
-   - Toàn bộ 450 bài hát đều được lấy trực tiếp từ hệ thống XMusic Station, có đầy đủ âm thanh bản quyền chất lượng cao, hình ảnh bìa và thời lượng chính xác.
+1. **Kho 200 Bài Hát Tuyển Chọn Chuẩn XMusic (50 bài / Chủ đề)**:
+   - Tuyển chọn 4 chủ đề chuẩn: **Nhạc Việt Sôi Động 2026**, **Top Hit Rap Việt Thịnh Hành**, **Ballad Cảm Xúc & Sâu Lắng**, và **Giáng Sinh & Mùa Lễ Hội Sôi Động**.
+   - Toàn bộ 200 bài hát đều được lấy trực tiếp từ kho nhạc bản quyền XMusic Station, có đầy đủ âm thanh chất lượng cao, hình ảnh bìa và thời lượng chính xác.
 
 2. **Chia Sẻ Playlist Bằng Mã `XMPL2` & Mạng Nội Bộ**:
    - Bấm **`🔗 Chia Sẻ`** tại bất kỳ playlist nào để tạo mã chia sẻ siêu gọn dạng `XMPL2:...`.
@@ -79,30 +79,30 @@ Mở trình duyệt truy cập: **`http://localhost:3000`**
    - **Bảo mật tuyệt đối**: Nguồn cập nhật được khóa cứng duy nhất từ Admin: `https://github.com/hotrocvst-cell/xmusic-station`. Ngăn chặn hoàn toàn việc người dùng can thiệp hay đổi sang nguồn khác.
    - **Smart Merge Update**: Tự động nhận diện và bảo toàn 100% các playlist do người dùng tự tạo khi cập nhật kho bài hát mới từ Admin.
 
-4. **Mở Khóa Kho Nhà Phát Hành (12 Playlist / ~600 Bài Hát)**:
-   - Cho phép duyệt, nghe thử và nhặt từng bài hát lẻ từ các playlist mặc định của nhà phát hành sang Playlist cá nhân hoặc Now Playing.
+4. **Mở Khóa Kho Nhà Phát Hành (11 Playlist / 518 Bài Hát Bản Quyền)**:
+   - Hỗ trợ đầy đủ các album và bài hát độc quyền từ nhà phát hành (bao gồm toàn bộ 24 ca khúc **TINH HÀ "SAY HI"**).
+   - Cho phép duyệt, nghe thử, thêm bài lẻ vào playlist cá nhân hoặc nạp trực tiếp siêu tốc vào hàng đợi phát nhạc.
    - Công cụ tìm kiếm kết hợp (**Hybrid Search**) quét đồng thời cả kho Online và bài hát độc quyền từ nhà phát hành.
 
 5. **Nạp Nhạc Chính Xác 100% (Khắc Phục Hoàn Toàn Lỗi Lệch Bài)**:
-   - Sử dụng cơ chế nạp trực tiếp siêu tốc **Vue 3 Memory Bridge** vào bộ nhớ trình phát.
+   - Sử dụng cơ chế nạp trực tiếp siêu tốc **Vue 3 Memory Bridge** (hỗ trợ đệ quy `comp.subTree`) vào bộ nhớ trình phát.
    - Thuật toán đối soát thông minh (**Smart Match Engine**) kiểm tra nghiêm ngặt cả Tên bài hát và Nghệ sĩ, loại trừ các bản Beat/Karaoke/Cover sai.
 
-6. **Tùy Biến Trộn Bài (Smart Artist-Separation Shuffle)**:
-   - Nút **`🔀 Nạp Trộn Bài`** xáo trộn danh sách trước khi đưa vào hàng đợi phát.
-   - Nút **`🔀 Đảo Thứ Tự`** trực tiếp trên playlist theo thuật toán phân bổ nghệ sĩ (tránh lặp ca sĩ liên tiếp) kèm nút **`↩ Hoàn Tác`** (Undo).
+6. **Tùy Biến Trộn Bài Đỉnh Cao (Fisher-Yates 100% Toàn Danh Sách)**:
+   - Khắc phục triệt để lỗi shuffle chỉ đảo ~15 bài đầu: Thuật toán Fisher-Yates mới đảo ngẫu nhiên công bằng 100% mọi vị trí trong danh sách.
+   - Kết hợp lượt vuốt mượt (**Smoothing Pass**) tự động phân bổ tách nghệ sĩ, đảm bảo không có 2 bài của cùng 1 ca sĩ phát liên tiếp nhau.
+   - Hỗ trợ nút **`↩ Hoàn Tác`** (Undo) để khôi phục ngay vị trí ban đầu.
 
 ---
 
-## 🎶 6 DANH SÁCH PHÁT TUYỂN CHỌN (450 BÀI HÁT)
+## 🎶 4 DANH SÁCH PHÁT TUYỂN CHỌN CHUẨN v2.3.0 (200 BÀI HÁT)
 
 | # | Tên Playlist | Số lượng | Phong cách & Nghệ sĩ tiêu biểu |
 |---|---|:---:|---|
-| 1 | **🔥 Top V-Pop Trending & Charts 2026** | 75 bài | *Sơn Tùng M-TP, HIEUTHUHAI, Anh Trai Say Hi, Phương Ly, AMEE, Tăng Duy Tân, Đức Phúc, ERIK, Văn Mai Hương...* |
-| 2 | **☕ Acoustic & Coffee Chill Buổi Sáng** | 75 bài | *Thịnh Suy, Vũ., Trang, Mộc Gtar, Pia Solo, WHEE!, RUBY, Trung Quân...* |
-| 3 | **⚡ EDM & Vinahouse Remix Cực Sung** | 75 bài | *Sơn Tùng Remix, Tam Vinh Producer, Freaky Remix, Da LAB Remix, NonHanTa, Machiot...* |
-| 4 | **🌧️ Ballad Tâm Trạng & Lofi Suy** | 75 bài | *Trung Quân, Phương Ly Lofi, Minh Cà Ri, Lâm Phúc, Lâu Phai, Vũ Thịnh...* |
-| 5 | **🌿 Gen Z & Indie Focus Flow (Sáng Tạo)** | 75 bài | *HIEUTHUHAI, tlinh, Freaky, EREN, Quinf, T.R.I, Bích Phương, Phương Ly...* |
-| 6 | **🌸 Pop Tình Ca Ngọt Ngào & Yêu Đời** | 75 bài | *Sơn Tùng M-TP, Đức Phúc, ERIK, Phương Ly, AMEE, LyLy, An Vũ, Hoàng Dũng...* |
+| 1 | **⚡ Top Nhạc Việt Sôi Động & Remix 2026** | 50 bài | *Sơn Tùng M-TP, Da LAB, Tăng Duy Tân, ANH TRAI "SAY HI", EM XINH "SAY HI", Cukak, Phong Max, Freaky Remix...* |
+| 2 | **🎤 Top Hit Rap Việt Thịnh Hành** | 50 bài | *HIEUTHUHAI, RHYDER, Pháp Kiều, HURRYKNG, Đen Vâu, BigDaddy, Negav, Tez, Double2T, Phúc Du, Gill...* |
+| 3 | **🌧️ Top Ballad Cảm Xúc & Sâu Lắng** | 50 bài | *Trung Quân Idol, Vũ., Đức Phúc, Hoàng Dũng, Văn Mai Hương, ERIK, Bùi Anh Tuấn, Quân A.P, Phan Mạnh Quỳnh...* |
+| 4 | **🎄 Giáng Sinh & Mùa Lễ Hội Sôi Động** | 50 bài | *Đêm Giáng Sinh Mùa Hạ, Đông Vừa Sang Remix, Mùa Đông Đã Đến, Một Năm Mới Bình An, Tết Đong Đầy, EDM Festival...* |
 
 ---
 

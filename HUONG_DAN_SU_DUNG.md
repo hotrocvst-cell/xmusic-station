@@ -1,14 +1,14 @@
-# 📖 HƯỚNG DẪN SỬ DỤNG CHI TIẾT (Phiên bản 2.2.0)
+# 📖 HƯỚNG DẪN SỬ DỤNG CHI TIẾT (Phiên bản 2.3.0)
 
-## 🎯 Mục Tiêu & Các Tính Năng Nổi Bật v2.2.0
+## 🎯 Mục Tiêu & Các Tính Năng Nổi Bật v2.3.0
 Cung cấp giải pháp trọn gói tự động hóa và nâng cấp trình phát **https://player.xmusicstation.com/**:
-1. **Kho 450 Bài Hát Tuyển Chọn Chuẩn XMusic (75 bài/chủ đề)**: Mở rộng 6 danh sách phát theo Top Trending V-Pop 2026, Acoustic Chill, Vinahouse Bass Cực Sung, Ballad Lofi Suy, Gen Z Indie và Pop Tình Ca Yêu Đời.
-2. **Giải Pháp Chia Sẻ Nhanh Qua Mã (Share Code `XMPL2`) & Mạng Nội Bộ**: Tạo mã chia sẻ nhỏ gọn gửi qua Zalo/Teams/Email, người nhận chỉ cần 1 cú click là nhập ngay vào thư viện.
-3. **Đồng Bộ Cloud & Cập Nhật Thông Minh (Smart Merge Update)**: Dễ dàng nâng cấp kho playlist tuyển chọn khi có phiên bản mới mà **tuyệt đối không làm mất** các playlist do người dùng tự tạo.
-4. **Ủy quyền tự động**: Tự động đăng nhập tài khoản cấu hình trong `localStorage` (cấu hình trong tab `⚙ Cấu Hình`).
-5. **Mở khóa Kho Nhạc Nhà Phát Hành (12 Playlist có sẵn)**: Cho phép duyệt, nghe thử và thêm bài lẻ từ các playlist mặc định của nhà phát hành sang Playlist cá nhân hoặc hàng đợi phát.
-6. **Sửa triệt để lỗi lệch bài hát khi nạp (100% Accurate)**: Nạp trực tiếp qua Vue memory bridge và thuật toán đối soát điểm thông minh (Smart Match Engine).
-7. **Tùy biến Shuffle Playlist đã lưu**: Hỗ trợ nạp trộn ngẫu nhiên thông minh (Smart Artist Separation) kèm nút hoàn tác (Undo).
+1. **Kho 200 Bài Hát Tuyển Chọn Chuẩn XMusic (50 bài/chủ đề)**: 4 chủ đề tuyển chọn đỉnh cao: Nhạc Việt Sôi Động 2026, Top Hit Rap Việt Thịnh Hành, Ballad Cảm Xúc Sâu Lắng, và Giáng Sinh & Mùa Lễ Hội Sôi Động.
+2. **Sửa Triệt Để Thuật Toán Shuffle**: Sử dụng Fisher-Yates shuffle toàn diện mảng (đảo ngẫu nhiên 100% mọi vị trí trong danh sách phát, khắc phục hoàn toàn hiện tượng chỉ đảo ~15 bài đầu), kết hợp thuật toán phân tách ca sĩ tránh phát liên tiếp.
+3. **Mở Khóa Toàn Diện Playlist Nhà Phát Hành (TINH HÀ "SAY HI")**: Hỗ trợ đầy đủ 100% các ca khúc độc quyền từ album TINH HÀ "SAY HI" (24 bài) và toàn bộ 11 playlist có sẵn của nhà phát hành (518 bài) thêm vào playlist cá nhân hoặc nạp phát trực tiếp.
+4. **Giải Pháp Chia Sẻ Nhanh Qua Mã (Share Code `XMPL2`) & Mạng Nội Bộ**: Tạo mã chia sẻ nhỏ gọn gửi qua Zalo/Teams/Email, người nhận chỉ cần 1 cú click là nhập ngay vào thư viện.
+5. **Đồng Bộ Cloud & Cập Nhật Thông Minh (Smart Merge Update)**: Dễ dàng nâng cấp kho playlist tuyển chọn khi có phiên bản mới mà **tuyệt đối không làm mất** các playlist do người dùng tự tạo.
+6. **Ủy quyền tự động**: Tự động đăng nhập tài khoản cấu hình trong `localStorage` (cấu hình trong tab `⚙ Cấu Hình`).
+7. **Nạp Nhạc Siêu Tốc & Chính Xác (Vue 3 Memory Bridge)**: Nạp trực tiếp qua Vue 3 memory bridge duyệt đệ quy `comp.subTree` và thuật toán đối soát điểm thông minh (Smart Match Engine).
 
 ---
 
@@ -46,24 +46,24 @@ Cung cấp giải pháp trọn gói tự động hóa và nâng cấp trình ph�
 
 ## 🚀 HƯỚNG DẪN SỬ DỤNG 3 TÍNH NĂNG MỚI
 
-### 1. Mở khóa & Thêm bài hát từ Playlist Nhà Phát Hành
-- **Vấn đề trước đây**: Nhà phát hành cài sẵn các playlist (như *[2Q] Nhạc Việt Hè Về*, *TINH HÀ "SAY HI"*, *[2Q] Nhạc Việt Sôi Động 2.0*...) chứa nhiều bài hát độc quyền. Người dùng không thể tìm kiếm những bài này trong ô tìm kiếm để thêm lẻ, mà bị ép phải nghe toàn bộ playlist của nhà phát hành.
-- **Cách sử dụng tính năng mới**:
+### 1. Mở khóa & Thêm bài hát từ Playlist Nhà Phát Hành (TINH HÀ "SAY HI" & Kho Bản Quyền)
+- **Vấn đề trước đây**: Nhà phát hành cài sẵn các playlist (như *[2Q] Nhạc Việt Hè Về*, *TINH HÀ "SAY HI"*, *[2Q] Nhạc Việt Sôi Động 2.0*...) chứa nhiều bài hát độc quyền. Trước đây, khi bấm "+ List tôi" với album *TINH HÀ "SAY HI"*, chuỗi tên ca sĩ chứa dấu ngoặc kép khiến hệ thống bị lỗi phân tích cú pháp HTML và không thêm được vào danh sách phát. Ngoài ra, do các bài này không xuất hiện trên ô tìm kiếm công cộng, trình phát không nạp bài được.
+- **Cách sử dụng tính năng mới trong v2.3.0**:
   1. Mở Sidebar **XMusic Assistant** trên trang web (hoặc Web Dashboard).
-  2. Bấm vào tab **📻 List Nhà Phát Hành** (hoặc menu *Kho Nhà Phát Hành* trên Dashboard).
-  3. Chọn bất kỳ danh sách phát nào của nhà phát hành trong danh sách thả xuống.
-  4. Bạn sẽ thấy danh sách đầy đủ tất cả bài hát bên trong:
-     - Bấm **`+ List tôi`**: Thêm ngay bài hát lẻ đó vào Playlist cá nhân của bạn.
-     - Bấm **`▶ Queue`**: Nạp trực tiếp bài hát đó vào danh sách đang phát (*Now Playing*).
+  2. Bấm vào tab **📻 Kho Nhà Phát Hành** (hoặc menu *Kho Nhà Phát Hành* trên Dashboard).
+  3. Chọn danh sách phát **`TINH HÀ "SAY HI"`** (hoặc bất kỳ playlist nào trong 11 playlist có sẵn của nhà phát hành).
+  4. Bạn sẽ thấy danh sách đầy đủ tất cả 24 bài hát bên trong (như *tết tình*, *MVP (MƯA VỘI PHÓNG)*, *IDNAT*, *CÔ ĐƠN ANH CŨNG VUI*, *DANCIN' MY WAY*...):
+     - Bấm **`+ List tôi`**: Thêm ngay lập tức bài hát lẻ đó vào Playlist cá nhân đang chọn một cách mượt mà và an toàn 100%.
+     - Bấm **`▶ Queue`**: Nạp trực tiếp bài hát đó vào danh sách đang phát (*Now Playing*) siêu tốc qua Vue 3 Memory Bridge.
      - Bấm **`📋 Sao Chép Thành Playlist Cá Nhân`**: Nhân bản toàn bộ danh sách nhà phát hành sang Playlist cá nhân của bạn để thoải mái xóa bớt bài không thích, thêm bài mới hoặc sắp xếp lại thứ tự!
-  5. **Tìm kiếm kết hợp (Hybrid Search)**: Khi gõ tìm kiếm tại tab **🔍 Tìm & Thêm Bài**, hệ thống sẽ quét đồng thời cả kho Online và toàn bộ các bài hát độc quyền từ nhà phát hành. Các bài từ kho nhà phát hành sẽ được gắn thẻ hồng `📻 Kho Nhà Phát Hành: [Tên Playlist]` để bạn dễ dàng nhận biết.
+  5. **Tìm kiếm kết hợp (Hybrid Search)**: Khi gõ tìm kiếm tại tab **🔍 Tìm Bài**, hệ thống sẽ quét đồng thời cả kho Online và toàn bộ các bài hát độc quyền từ nhà phát hành. Các bài từ kho nhà phát hành sẽ được gắn thẻ hồng `📻 Kho Nhà Phát Hành: [Tên Playlist]` để bạn dễ dàng nhận biết và thêm vào.
 
 ---
 
 ### 2. Khắc phục lỗi nạp lệch bài hát (100% Khớp Đúng Bài & Nghệ Sĩ)
 - **Vấn đề trước đây**: Do cơ chế cũ chỉ bấm kết quả đầu tiên (`rows[0]`) hoặc bị dính kết quả cũ từ lần tìm kiếm trước, hệ thống thường nạp nhầm bản Beat karaoke, bản Remix sai hoặc bài hát khác ca sĩ.
-- **Giải pháp mới trong v2.0**:
-  1. **Nạp trực tiếp siêu tốc (Vue 3 Memory Bridge)**: Khi nạp danh sách, tiện ích ưu tiên đẩy trực tiếp đối tượng bài hát chuẩn vào hàng đợi phát của player. Không cần gõ lại ô tìm kiếm, không độ trễ mạng và đảm bảo đúng 100% bài hát.
+- **Giải pháp mới trong v2.3.0**:
+  1. **Nạp trực tiếp siêu tốc (Vue 3 Memory Bridge)**: Khi nạp danh sách, tiện ích ưu tiên đẩy trực tiếp đối tượng bài hát chuẩn vào hàng đợi phát của player thông qua cơ chế duyệt đệ quy cây component Vue 3 (`comp.subTree`). Không cần gõ lại ô tìm kiếm, không độ trễ mạng và đảm bảo đúng 100% bài hát.
   2. **Thuật toán đối soát khớp thông minh (Smart Match Engine)**: Trong trường hợp dự phòng qua giao diện tìm kiếm, công cụ sẽ:
      - Tự động xóa kết quả cũ trước khi tìm từ khóa mới.
      - Tinh lọc tên bài (loại bỏ các thẻ như *[Acoustic Version]*, *(Remix)* nếu tìm kiếm chính xác không có kết quả).
@@ -73,25 +73,25 @@ Cung cấp giải pháp trọn gói tự động hóa và nâng cấp trình ph�
 
 ---
 
-### 3. Tùy biến xáo trộn (Shuffle) Playlist đã lưu
-- **Vấn đề trước đây**: Website player chỉ phát nhạc tuần tự từ trên xuống dưới, không có tính năng trộn bài.
-- **Các tùy chọn Shuffle mới**:
-  - **Nút `🔀 Nạp Trộn Bài` (Shuffle & Queue)**: Nằm ngay cạnh nút Nạp Queue trên thanh tác vụ nhanh. Bấm nút này sẽ xáo trộn ngẫu nhiên thứ tự các bài trước khi đưa vào hàng đợi phát của trang web (không làm thay đổi thứ tự playlist đã lưu trong máy).
+### 3. Tùy biến xáo trộn (Shuffle) Playlist đã lưu - Khắc Phục Lỗi Chỉ Đảo ~15 Bài Đầu
+- **Vấn đề trước đây**: Thuật toán shuffle cũ nhóm theo ca sĩ rồi lấy round-robin khiến các ca sĩ ít bài bị cạn sau lượt đầu, dẫn đến hiện tượng chỉ đảo thứ tự khoảng 15 bài đầu tiên, 35 bài còn lại ở đuôi danh sách bị cố định thứ tự.
+- **Thuật toán mới trong v2.3.0 (Fisher-Yates + Smoothing Pass)**:
+  - **Fisher-Yates Shuffle 100%**: Đảo ngẫu nhiên công bằng tuyệt đối toàn bộ danh sách từ bài số 1 đến bài cuối cùng (bất kể danh sách 50 bài, 100 bài hay 200 bài).
+  - **Smoothing Pass**: Tự động phân tách nghệ sĩ nếu phát hiện 2 bài của cùng 1 ca sĩ chính đứng sát nhau, giúp trải nghiệm nghe nhạc phong phú và không bị trùng lặp.
+  - **Nút `🔀 Nạp Trộn Bài` (Shuffle & Queue)**: Xáo trộn ngẫu nhiên thứ tự các bài trước khi đưa vào hàng đợi phát của trang web (không làm thay đổi thứ tự playlist đã lưu trong máy).
   - **Tùy chọn `☑ Trộn bài khi nạp`**: Đánh dấu vào ô này để mỗi khi nạp danh sách (hoặc khi tiện ích tự động nạp lúc vừa mở trang web), thứ tự bài hát sẽ luôn được tự động xáo trộn.
-  - **Nút `🔀 Đảo Thứ Tự` trên Playlist**: Cho phép xáo trộn trực tiếp thứ tự các bài hát đã lưu trong playlist cá nhân theo thuật toán **Smart Shuffle** (tự động phân bổ tách nghệ sĩ, tránh việc 2 bài của cùng 1 ca sĩ phát liên tiếp nhau).
+  - **Nút `🔀 Đảo Thứ Tự` trên Playlist**: Cho phép xáo trộn trực tiếp thứ tự các bài hát đã lưu trong playlist cá nhân theo thuật toán **Smart Shuffle** mới.
   - **Nút `↩ Hoàn tác` (Undo)**: Xuất hiện ngay sau khi bạn vừa bấm đảo thứ tự, cho phép phục hồi lại vị trí ban đầu nếu bạn chưa ưng ý.
   - **Trên Web Dashboard**: Nút `🔀 Trộn List` nằm ngay trên thanh công cụ của Playlist Detail kèm nút Hoàn tác.
 
 ---
 
-### 4. Kho 450 Bài Hát Tuyển Chọn Chuẩn XMusic (75 bài / Playlist)
+### 4. Kho 200 Bài Hát Tuyển Chọn Chuẩn XMusic (50 bài / Playlist)
 Toàn bộ bài hát đều đã được đối soát 100% bản quyền phát được trên XMusicStation với đầy đủ `key`, `duration`, `streamUrl`, ảnh bìa và nghệ sĩ gốc:
-1. **🔥 Top V-Pop Trending & Charts 2026 (75 bài)**: Các hit bùng nổ của Sơn Tùng M-TP, HIEUTHUHAI, Anh Trai Say Hi, Phương Ly, AMEE, Tăng Duy Tân, Đức Phúc, ERIK, Văn Mai Hương...
-2. **☕ Acoustic & Coffee Chill Buổi Sáng (75 bài)**: Mộc mạc, thư thái cho quán cafe và văn phòng (Thịnh Suy, Vũ., Trang, Mộc Gtar, Pia Solo, WHEE!, Trung Quân...).
-3. **⚡ EDM & Vinahouse Remix Cực Sung (75 bài)**: Năng lượng đỉnh cao cho phòng tập, sự kiện, giờ cao điểm (Sơn Tùng Remix, Tam Vinh Producer, Freaky Remix, Da LAB Remix, NonHanTa...).
-4. **🌧️ Ballad Tâm Trạng & Lofi Suy (75 bài)**: Sâu lắng, hoài niệm cho đêm muộn (Lâu Phai, Trung Quân, Phương Ly Lofi, Minh Cà Ri, Lâm Phúc...).
-5. **🌿 Gen Z & Indie Focus Flow (75 bài)**: R&B / Indie Pop tươi mới, kích thích tập trung và sáng tạo (tlinh, HIEUTHUHAI, EREN, Quinf, T.R.I, Bích Phương...).
-6. **🌸 Pop Tình Ca Ngọt Ngào & Yêu Đời (75 bài)**: Lãng mạn, vui tươi, tích cực (Sơn Tùng, Đức Phúc, Phương Ly, AMEE, LyLy, An Vũ...).
+1. **⚡ Top Nhạc Việt Sôi Động & Remix 2026 (50 bài)**: EDM, Remix, Vinahouse và Pop Dance bùng nổ năng lượng (Sơn Tùng M-TP, Da LAB, Tăng Duy Tân, ANH TRAI "SAY HI", EM XINH "SAY HI", Cukak, Phong Max, Freaky Remix...).
+2. **🎤 Top Hit Rap Việt Thịnh Hành (50 bài)**: Tuyển chọn những bản rap hot nhất dẫn đầu bảng xếp hạng (HIEUTHUHAI, RHYDER, Pháp Kiều, HURRYKNG, Đen Vâu, BigDaddy, Negav, Double2T, Tez...).
+3. **🌧️ Top Ballad Cảm Xúc & Sâu Lắng (50 bài)**: Giai điệu trữ tình, sâu lắng và da diết (Trung Quân Idol, Vũ., Đức Phúc, Hoàng Dũng, Văn Mai Hương, ERIK, Bùi Anh Tuấn, Quân A.P...).
+4. **🎄 Giáng Sinh & Mùa Lễ Hội Sôi Động (50 bài)**: Nhạc Noel, Mùa Đông, Năm Mới và tiệc tùng lễ hội rộn ràng, tươi vui (Đêm Giáng Sinh Mùa Hạ, Đông Vừa Sang Remix, Mùa Đông Đã Đến, Một Năm Mới Bình An, Tết Đong Đầy, Tết Tình...).
 
 ---
 

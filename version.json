@@ -1,16 +1,14 @@
 {
-  "version": "2.2.1",
+  "version": "2.3.0",
   "name": "XMusicStation Auto Playlist & Queue Manager",
-  "updatedAt": "2026-11-08",
-  "playlistsCount": 6,
-  "totalSongs": 450,
+  "updatedAt": "2026-11-16",
+  "playlistsCount": 4,
+  "totalSongs": 200,
   "repository": "https://github.com/hotrocvst-cell/xmusic-station",
   "releaseNotes": [
-    "Sửa lỗi hiển thị UI Tampermonkey (APP_VERSION) và mở rộng match URL",
-    "🔥 Mở rộng 6 playlist tuyển chọn lên 75 bài/playlist (tổng 450 bài bản quyền chuẩn XMusic).",
-    "🔗 Bổ sung tính năng Chia sẻ Playlist qua mã XMPL2 và link mạng nội bộ.",
-    "🚀 Khóa cứng nguồn cập nhật chính thức duy nhất từ Admin: hotrocvst-cell/xmusic-station.",
-    "🔀 Smart Shuffle tách nghệ sĩ và nạp nhạc trực tiếp qua Vue Memory Bridge với độ chính xác 100%."
+    "v2.3.0: Sửa triệt để Smart Shuffle ngẫu nhiên 100% bằng Fisher-Yates + smoothing pass.",
+    "Hỗ trợ đầy đủ các bài hát và album độc quyền Nhà Phát Hành (TINH HÀ SAY HI 24 bài) thêm vào playlist cá nhân và nạp phát trực tiếp siêu tốc.",
+    "Cập nhật 4 danh sách phát tuyển chọn cực đỉnh: Nhạc Việt Sôi Động 2026, Top Hit Rap Việt, Ballad Cảm Xúc Sâu Lắng, Giáng Sinh & Lễ Hội Sôi Động (50 bài/playlist = 200 bài)."
   ],
   "downloadUrls": {
     "samplePlaylists": "https://raw.githubusercontent.com/hotrocvst-cell/xmusic-station/main/sample-playlists.json",
