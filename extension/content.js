@@ -2,7 +2,7 @@
 (function () {
   'use strict';
 
-  const APP_VERSION = '2.3.0';
+  const APP_VERSION = '2.4.0';
   console.log('[XMusic Assistant] Initializing script v' + APP_VERSION + ' (Cloud Sync & 4 Curated Playlists - 200 Songs)...');
 
   // Default configuration

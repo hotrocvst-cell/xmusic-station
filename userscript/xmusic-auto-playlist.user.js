@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         XMusicStation - Tự Động Đăng Nhập & Tạo Playlist Phát Nhạc (Left Sidebar)
 // @namespace    https://github.com/hotrocvst-cell/xmusic-station
-// @version      2.3.0
+// @version      2.4.0
 // @description  Kho 200 bài hát tuyển chọn (50 bài/playlist), chia sẻ playlist qua mã, đồng bộ Cloud chính thức từ hotrocvst-cell/xmusic-station
 // @author       hotrocvst-cell
 // @match        *://player.xmusicstation.com/*
@@ -33,7 +33,7 @@
 (function () {
   'use strict';
 
-  const APP_VERSION = '2.3.0';
+  const APP_VERSION = '2.4.0';
   console.log('[XMusic Assistant] Initializing script v' + APP_VERSION + ' (Cloud Sync & 4 Curated Playlists - 200 Songs)...');
 
   // Default configuration

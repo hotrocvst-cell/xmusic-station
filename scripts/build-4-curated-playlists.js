@@ -77,7 +77,7 @@ function buildList(id, name, description, priorityMatches, generalFilter, target
     name,
     description,
     createdAt: new Date().toISOString(),
-    version: '2.3.0',
+    version: '2.4.0',
     songs: selected
   };
 }

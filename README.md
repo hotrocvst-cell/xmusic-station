@@ -1,6 +1,6 @@
 # 🎵 XMusicStation Auto Playlist & Queue Manager
 
-[![Version](https://img.shields.io/badge/version-2.3.0-blue.svg)](https://github.com/hotrocvst-cell/xmusic-station)
+[![Version](https://img.shields.io/badge/version-2.4.0-blue.svg)](https://github.com/hotrocvst-cell/xmusic-station)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Target](https://img.shields.io/badge/platform-player.xmusicstation.com-purple.svg)](https://player.xmusicstation.com/)
 [![Curated Songs](https://img.shields.io/badge/catalog-200%20bài%20hát-orange.svg)](sample-playlists.json)
@@ -95,7 +95,7 @@ Mở trình duyệt truy cập: **`http://localhost:3000`**
 
 ---
 
-## 🎶 4 DANH SÁCH PHÁT TUYỂN CHỌN CHUẨN v2.3.0 (200 BÀI HÁT)
+## 🎶 4 DANH SÁCH PHÁT TUYỂN CHỌN CHUẨN v2.4.0 (200 BÀI HÁT)
 
 | # | Tên Playlist | Số lượng | Phong cách & Nghệ sĩ tiêu biểu |
 |---|---|:---:|---|
@@ -113,7 +113,7 @@ Dự án đã được tích hợp sẵn công cụ đồng bộ và quy trình 
 ### Bước 1: Đồng bộ cấu hình dự án (1 lệnh duy nhất)
 Chạy lệnh sau tại thư mục dự án:
 ```bash
-npm run bump 2.3.0 "Nội dung cập nhật mới"
+npm run bump 2.4.0 "Nội dung cập nhật mới"
 ```
 *(Lệnh này tự động cập nhật `version.json`, `package.json`, `manifest.json`, đồng thời build lại userscript và tài liệu).*
 
@@ -123,19 +123,19 @@ npm run bump 2.3.0 "Nội dung cập nhật mới"
 
 #### 🖥️ Cách 1: Sử dụng GitHub Desktop App (Khuyên dùng)
 1. Mở **GitHub Desktop** -> Ở cột bên trái (tab **Changes**), bạn sẽ thấy các file đã cập nhật.
-2. Nhập vào ô Summary: `release: v2.3.0` -> Bấm nút xanh **`Commit to main`**.
+2. Nhập vào ô Summary: `release: v2.4.0` -> Bấm nút xanh **`Commit to main`**.
 3. Bấm **`Push origin`** ở thanh công cụ trên cùng.
 4. **Tạo Tag để kích hoạt Release**:
    - Chuyển sang tab **History** (cạnh tab *Changes*).
    - Chuột phải vào commit vừa tạo trên cùng -> Chọn **`Create Tag...`**.
-   - Nhập tên tag: `v2.3.0` -> Bấm **`Create Tag`**.
+   - Nhập tên tag: `v2.4.0` -> Bấm **`Create Tag`**.
    - Bấm nút **`Push origin`** ở thanh trên cùng để đẩy tag lên GitHub!
 
 #### ⌨️ Cách 2: Sử dụng dòng lệnh Git (CLI)
 ```bash
 git add .
-git commit -m "release: v2.3.0"
-git tag v2.3.0
+git commit -m "release: v2.4.0"
+git tag v2.4.0
 git push origin main --tags
 ```
 
