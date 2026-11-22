@@ -1,11 +1,12 @@
 {
-  "version": "2.5.0",
+  "version": "2.5.1",
   "name": "XMusicStation Auto Playlist & Queue Manager",
-  "updatedAt": "2026-11-16",
+  "updatedAt": "2026-11-22",
   "playlistsCount": 3,
   "totalSongs": 300,
   "repository": "https://github.com/hotrocvst-cell/xmusic-station",
   "releaseNotes": [
+    "Sửa lỗi tìm kiếm bài hát idx is not defined, bổ sung host_permissions và cải tiến phản hồi nút kiểm tra cập nhật GitHub",
     "v2.5.0: Tuyển chọn 3 playlist đỉnh cao V-Pop (100 bài/playlist = 300 bài): Nhạc Việt Sôi Động 2026, Top Hit Rap Việt, Ballad Cảm Xúc Sâu Lắng.",
     "Sửa triệt để nút 'Cập Nhật': Tự động chuyển tab và kiểm tra ngay bản phát hành từ GitHub Admin.",
     "Sửa triệt để nút 'Nhập': Hỗ trợ 2 chế độ nạp trực tiếp từ file JSON sao lưu vừa xuất hoặc dán mã chia sẻ XMPL2.",

@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "XMusicStation - Auto Playlist & Manager",
-  "version": "2.5.0",
+  "version": "2.5.1",
   "description": "Tự động đăng nhập, kho 450 bài hát tuyển chọn, chia sẻ playlist qua mã, đồng bộ Cloud và sửa lỗi nạp lệch bài trên XMusicStation",
   "author": "hotrocvst-cell",
   "permissions": [
@@ -10,7 +10,9 @@
   ],
   "host_permissions": [
     "https://player.xmusicstation.com/*",
-    "https://web.xmusicstation.com/*"
+    "https://web.xmusicstation.com/*",
+    "https://raw.githubusercontent.com/*",
+    "https://github.com/*"
   ],
   "action": {
     "default_title": "XMusicStation Playlist Manager",

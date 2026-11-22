@@ -2,7 +2,7 @@
 (function () {
   'use strict';
 
-  const APP_VERSION = '2.5.0';
+  const APP_VERSION = '2.5.1';
   console.log('[XMusic Assistant] Initializing script v' + APP_VERSION + ' (Cloud Sync & 3 Curated Playlists - 300 Songs)...');
 
   // Default configuration
@@ -17681,8 +17681,17 @@
     return 0;
   }
 
+  let isCheckingGithub = false;
   async function checkGithubUpdates(resultContainer) {
     if (!resultContainer) return;
+    if (isCheckingGithub) return;
+    isCheckingGithub = true;
+
+    const btnCheckGithub = document.getElementById('xmusic-btn-check-github');
+    if (btnCheckGithub) {
+      btnCheckGithub.disabled = true;
+      btnCheckGithub.innerHTML = '⏳ Đang kiểm tra GitHub...';
+    }
 
     resultContainer.innerHTML = `
       <div style="color: #94a3b8; font-size: 12px; text-align: center; padding: 12px;">
@@ -17702,6 +17711,7 @@
             • Link kho: <a href="${OFFICIAL_GITHUB_REPO.url}" target="_blank" style="color: #38bdf8; text-decoration: underline;">${OFFICIAL_GITHUB_REPO.fullName}</a>
           </div>
         `;
+        showToast('Không tìm thấy version.json trên GitHub Admin (HTTP ' + res.status + ')', 'error');
         return;
       }
 
@@ -17711,6 +17721,7 @@
 
       let html = '';
       if (isNewer) {
+        showToast('🎉 Phát hiện bản cập nhật mới v' + remote.version + ' từ Admin!', 'info', 2500);
         html = `
           <div style="background: rgba(52, 211, 153, 0.1); border: 1px solid rgba(52, 211, 153, 0.35); border-radius: 10px; padding: 14px;">
             <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
@@ -17740,6 +17751,7 @@
           </div>
         `;
       } else {
+        showToast('✅ Bạn đang sử dụng phiên bản mới nhất (v' + currentVer + ')', 'success', 2000);
         html = `
           <div style="background: rgba(56, 189, 248, 0.1); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 10px; padding: 14px;">
             <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
@@ -17747,11 +17759,11 @@
               <span style="font-weight: 700; color: #38bdf8;">Bạn đang sử dụng phiên bản mới nhất (v${escapeHtml(currentVer)})!</span>
             </div>
             <div style="font-size: 12px; color: #94a3b8; margin-bottom: 10px;">
-              Kho chính thức từ Admin: <b>${OFFICIAL_GITHUB_REPO.fullName}</b> • Phiên bản: v${escapeHtml(remote.version)} (${remote.totalSongs || 450} bài hát).
+              Kho chính thức từ Admin: <b>${OFFICIAL_GITHUB_REPO.fullName}</b> • Phiên bản: v${escapeHtml(remote.version)} (${remote.totalSongs || 300} bài hát).
             </div>
             <div class="xmusic-update-actions">
               <button id="xmusic-btn-force-github-pl" class="xmusic-btn-secondary" style="width: 100%;">
-                🔄 Nạp lại kho 450 bài từ Admin (Đồng bộ tức thì)
+                🔄 Nạp lại kho ${remote.totalSongs || 300} bài từ Admin (Đồng bộ tức thì)
               </button>
               <a href="${OFFICIAL_GITHUB_REPO.url}" target="_blank" class="xmusic-btn-secondary" style="text-align: center; text-decoration: none; display: block; padding: 6px;">
                 🌐 Truy cập Kho GitHub Admin
@@ -17765,8 +17777,9 @@
 
       const applyBtn = resultContainer.querySelector('#xmusic-btn-apply-github-pl') || resultContainer.querySelector('#xmusic-btn-force-github-pl');
       if (applyBtn) {
+        const isForce = applyBtn.id === 'xmusic-btn-force-github-pl';
         applyBtn.onclick = async () => {
-          applyBtn.textContent = 'Đang tải từ Admin GitHub...';
+          applyBtn.textContent = '⏳ Đang tải từ Admin GitHub...';
           applyBtn.disabled = true;
           try {
             const plRes = await fetch(`${OFFICIAL_GITHUB_REPO.rawPlaylistsUrl}?t=${Date.now()}`);
@@ -17784,7 +17797,7 @@
           } catch (err) {
             showToast('Lỗi khi tải playlist từ GitHub: ' + err.message, 'error');
           } finally {
-            applyBtn.textContent = '⚡ 1. Nạp Kho Nhạc Mới Từ Admin';
+            applyBtn.textContent = isForce ? `🔄 Nạp lại kho ${remote.totalSongs || 300} bài từ Admin (Đồng bộ tức thì)` : '⚡ 1. Nạp Kho Nhạc Mới Từ Admin (Giữ Playlist Riêng)';
             applyBtn.disabled = false;
           }
         };
@@ -17795,6 +17808,13 @@
           Lỗi kết nối GitHub Admin: ${escapeHtml(e.message)}
         </div>
       `;
+      showToast('Lỗi kết nối GitHub Admin: ' + e.message, 'error');
+    } finally {
+      isCheckingGithub = false;
+      if (btnCheckGithub) {
+        btnCheckGithub.disabled = false;
+        btnCheckGithub.innerHTML = '🔍 Kiểm Tra Bản Cập Nhật Từ Admin (GitHub)';
+      }
     }
   }
 
@@ -18845,7 +18865,7 @@
               return;
             }
 
-            searchResults.innerHTML = combined.slice(0, 20).map(s => `
+            searchResults.innerHTML = combined.slice(0, 20).map((s, idx) => `
               <div class="xmusic-search-result-item">
                 <div style="flex: 1; overflow: hidden; margin-right: 10px;">
                   <div style="font-weight: 600; font-size: 13px; color: #f8fafc; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">

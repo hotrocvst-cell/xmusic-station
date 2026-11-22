@@ -17614,7 +17614,7 @@ console.log('✅ Đã đồng bộ thành công ' + ${currentPlaylists.length} +
       }
 
       const remote = await res.json();
-      const currentVer = '2.2.0';
+      const currentVer = localStorage.getItem('xmusic_playlists_version') || '2.5.0';
       const isNewer = compareVersions(remote.version, currentVer) > 0;
 
       let html = '';
